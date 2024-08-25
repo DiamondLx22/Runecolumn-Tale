@@ -1,0 +1,515 @@
+fileFormatVersion: 2
+guid: 28f31126b8a052d4c8d0732aa932a890
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: home exteriors, half-timber v4_54
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 131
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c5053154cfba96458c7c5b5dcdfbe00
+      internalID: -854283911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: home exteriors, half-timber v4_58
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 131
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da45a184278f22345b647b31a09c10e9
+      internalID: -1403464888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: home exteriors, half-timber v4_222
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 35
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c690a08078012f34ba0c5b1b97ba4673
+      internalID: 2002844157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: home exteriors, half-timber v4_226
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 35
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01fa7d41998974f4bbf750d2e79fa68c
+      internalID: 1069370952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      home exteriors, half-timber v4_0: 2051748810
+      home exteriors, half-timber v4_1: -1151228667
+      home exteriors, half-timber v4_10: -1264884839
+      home exteriors, half-timber v4_100: -574486547
+      home exteriors, half-timber v4_101: 1647347421
+      home exteriors, half-timber v4_102: -1882599028
+      home exteriors, half-timber v4_103: -1192971085
+      home exteriors, half-timber v4_104: -239791170
+      home exteriors, half-timber v4_105: 1844868413
+      home exteriors, half-timber v4_106: -587898133
+      home exteriors, half-timber v4_107: -2139272171
+      home exteriors, half-timber v4_108: 2022528799
+      home exteriors, half-timber v4_109: 590708002
+      home exteriors, half-timber v4_11: -777146489
+      home exteriors, half-timber v4_110: 1325618609
+      home exteriors, half-timber v4_111: 264417083
+      home exteriors, half-timber v4_112: -9975227
+      home exteriors, half-timber v4_113: 58684063
+      home exteriors, half-timber v4_114: -1884892174
+      home exteriors, half-timber v4_115: -439530661
+      home exteriors, half-timber v4_116: -1514656525
+      home exteriors, half-timber v4_117: -543982627
+      home exteriors, half-timber v4_118: 1681487019
+      home exteriors, half-timber v4_119: 2037544968
+      home exteriors, half-timber v4_12: 1006814133
+      home exteriors, half-timber v4_120: -1849151246
+      home exteriors, half-timber v4_121: 271805674
+      home exteriors, half-timber v4_122: 1809440790
+      home exteriors, half-timber v4_123: 534242767
+      home exteriors, half-timber v4_124: -1251485268
+      home exteriors, half-timber v4_125: -1277013600
+      home exteriors, half-timber v4_126: 531239416
+      home exteriors, half-timber v4_127: -1502023176
+      home exteriors, half-timber v4_128: 528677269
+      home exteriors, half-timber v4_129: 1690171336
+      home exteriors, half-timber v4_13: 1332419837
+      home exteriors, half-timber v4_130: 1118672477
+      home exteriors, half-timber v4_131: 221009953
+      home exteriors, half-timber v4_132: -1950537216
+      home exteriors, half-timber v4_133: -2068012184
+      home exteriors, half-timber v4_134: 300192339
+      home exteriors, half-timber v4_135: 2044253146
+      home exteriors, half-timber v4_136: -620630979
+      home exteriors, half-timber v4_137: 1127122536
+      home exteriors, half-timber v4_138: 991268707
+      home exteriors, half-timber v4_139: -352126357
+      home exteriors, half-timber v4_14: -528202592
+      home exteriors, half-timber v4_140: -1403777249
+      home exteriors, half-timber v4_141: -1487344136
+      home exteriors, half-timber v4_142: 2098433988
+      home exteriors, half-timber v4_143: 109614935
+      home exteriors, half-timber v4_144: 1833455325
+      home exteriors, half-timber v4_145: 1237241361
+      home exteriors, half-timber v4_146: 2135167517
+      home exteriors, half-timber v4_147: 1584698629
+      home exteriors, half-timber v4_148: -115959584
+      home exteriors, half-timber v4_149: -902701057
+      home exteriors, half-timber v4_15: 1606399875
+      home exteriors, half-timber v4_150: 1659669130
+      home exteriors, half-timber v4_151: 1076012586
+      home exteriors, half-timber v4_152: -977687217
+      home exteriors, half-timber v4_153: -1983166867
+      home exteriors, half-timber v4_154: -1824652374
+      home exteriors, half-timber v4_155: 1279872835
+      home exteriors, half-timber v4_156: 126064163
+      home exteriors, half-timber v4_157: 702180355
+      home exteriors, half-timber v4_158: 748034071
+      home exteriors, half-timber v4_159: 1604657031
+      home exteriors, half-timber v4_16: 1980840212
+      home exteriors, half-timber v4_160: 457735355
+      home exteriors, half-timber v4_161: 1122541687
+      home exteriors, half-timber v4_162: 730138997
+      home exteriors, half-timber v4_163: 1934673171
+      home exteriors, half-timber v4_164: 927245964
+      home exteriors, half-timber v4_165: 227352754
+      home exteriors, half-timber v4_166: -41517470
+      home exteriors, half-timber v4_167: 1207201444
+      home exteriors, half-timber v4_168: -17002283
+      home exteriors, half-timber v4_169: -320575885
+      home exteriors, half-timber v4_17: 1510188467
+      home exteriors, half-timber v4_170: -2071896178
+      home exteriors, half-timber v4_171: -486639380
+      home exteriors, half-timber v4_172: 180232295
+      home exteriors, half-timber v4_173: -1517949808
+      home exteriors, half-timber v4_174: -1650035135
+      home exteriors, half-timber v4_175: 1364329721
+      home exteriors, half-timber v4_176: -673207497
+      home exteriors, half-timber v4_177: 1644041678
+      home exteriors, half-timber v4_178: 896783597
+      home exteriors, half-timber v4_179: -1008331554
+      home exteriors, half-timber v4_18: 1710240960
+      home exteriors, half-timber v4_180: -1877919051
+      home exteriors, half-timber v4_181: 1968354050
+      home exteriors, half-timber v4_182: -824391141
+      home exteriors, half-timber v4_183: 198476811
+      home exteriors, half-timber v4_184: -873788386
+      home exteriors, half-timber v4_185: 1076931259
+      home exteriors, half-timber v4_186: 1301180997
+      home exteriors, half-timber v4_187: 756384764
+      home exteriors, half-timber v4_188: -460580592
+      home exteriors, half-timber v4_189: -193653402
+      home exteriors, half-timber v4_19: 1222578106
+      home exteriors, half-timber v4_190: 526061427
+      home exteriors, half-timber v4_191: -1457238485
+      home exteriors, half-timber v4_192: 984756444
+      home exteriors, half-timber v4_193: -746692528
+      home exteriors, half-timber v4_194: -998683143
+      home exteriors, half-timber v4_195: 603797405
+      home exteriors, half-timber v4_196: -658349151
+      home exteriors, half-timber v4_197: -1961589254
+      home exteriors, half-timber v4_198: 1458031706
+      home exteriors, half-timber v4_199: -118084475
+      home exteriors, half-timber v4_2: -1052210550
+      home exteriors, half-timber v4_20: -1660383221
+      home exteriors, half-timber v4_200: -1546216527
+      home exteriors, half-timber v4_201: 1749860883
+      home exteriors, half-timber v4_202: -731937945
+      home exteriors, half-timber v4_203: -511707786
+      home exteriors, half-timber v4_204: 2096418816
+      home exteriors, half-timber v4_205: -849887706
+      home exteriors, half-timber v4_206: 2055654675
+      home exteriors, half-timber v4_207: 181594287
+      home exteriors, half-timber v4_208: 2084360920
+      home exteriors, half-timber v4_209: -1766238820
+      home exteriors, half-timber v4_21: 769898263
+      home exteriors, half-timber v4_210: -470861519
+      home exteriors, half-timber v4_211: 10270614
+      home exteriors, half-timber v4_212: -1629095809
+      home exteriors, half-timber v4_213: 1075165915
+      home exteriors, half-timber v4_214: -16205012
+      home exteriors, half-timber v4_215: 1449351566
+      home exteriors, half-timber v4_216: 1415606201
+      home exteriors, half-timber v4_217: 340825748
+      home exteriors, half-timber v4_218: -386857577
+      home exteriors, half-timber v4_219: 1307161427
+      home exteriors, half-timber v4_22: -2064633299
+      home exteriors, half-timber v4_220: 1796593579
+      home exteriors, half-timber v4_221: -1195027824
+      home exteriors, half-timber v4_222: 2002844157
+      home exteriors, half-timber v4_223: -1675633255
+      home exteriors, half-timber v4_224: -1907517959
+      home exteriors, half-timber v4_225: -291658398
+      home exteriors, half-timber v4_226: 1069370952
+      home exteriors, half-timber v4_227: -966403224
+      home exteriors, half-timber v4_228: -1132373598
+      home exteriors, half-timber v4_229: 851028279
+      home exteriors, half-timber v4_23: 1173677690
+      home exteriors, half-timber v4_230: -857087671
+      home exteriors, half-timber v4_231: -222603298
+      home exteriors, half-timber v4_232: -711477311
+      home exteriors, half-timber v4_233: 1274607296
+      home exteriors, half-timber v4_234: 83335513
+      home exteriors, half-timber v4_235: 1133444081
+      home exteriors, half-timber v4_236: -1213249704
+      home exteriors, half-timber v4_237: -1316883411
+      home exteriors, half-timber v4_238: -167724851
+      home exteriors, half-timber v4_239: -1363222729
+      home exteriors, half-timber v4_24: 41970726
+      home exteriors, half-timber v4_240: 1847917570
+      home exteriors, half-timber v4_241: -1771913433
+      home exteriors, half-timber v4_242: -1681133952
+      home exteriors, half-timber v4_243: -1028696472
+      home exteriors, half-timber v4_244: -1047455901
+      home exteriors, half-timber v4_245: -1858467083
+      home exteriors, half-timber v4_246: -2028342980
+      home exteriors, half-timber v4_247: -2129961541
+      home exteriors, half-timber v4_248: -1330662157
+      home exteriors, half-timber v4_249: -2127140719
+      home exteriors, half-timber v4_25: -1481704587
+      home exteriors, half-timber v4_250: -1781877608
+      home exteriors, half-timber v4_251: -852152183
+      home exteriors, half-timber v4_252: -1882521762
+      home exteriors, half-timber v4_253: 515912625
+      home exteriors, half-timber v4_254: 693743630
+      home exteriors, half-timber v4_255: -1076679497
+      home exteriors, half-timber v4_256: 1150186537
+      home exteriors, half-timber v4_257: 880611352
+      home exteriors, half-timber v4_258: -544633913
+      home exteriors, half-timber v4_259: -2089878936
+      home exteriors, half-timber v4_26: 126843604
+      home exteriors, half-timber v4_260: -1219627034
+      home exteriors, half-timber v4_261: -1971343862
+      home exteriors, half-timber v4_262: -1135597222
+      home exteriors, half-timber v4_263: -191455669
+      home exteriors, half-timber v4_264: -1014949969
+      home exteriors, half-timber v4_265: 42810296
+      home exteriors, half-timber v4_266: 1996118840
+      home exteriors, half-timber v4_267: 906817441
+      home exteriors, half-timber v4_268: -1934242796
+      home exteriors, half-timber v4_269: 402032143
+      home exteriors, half-timber v4_27: 2083744521
+      home exteriors, half-timber v4_270: -1657436813
+      home exteriors, half-timber v4_271: 28561057
+      home exteriors, half-timber v4_272: -1108886174
+      home exteriors, half-timber v4_273: -989896930
+      home exteriors, half-timber v4_274: 1151601798
+      home exteriors, half-timber v4_275: -1772217168
+      home exteriors, half-timber v4_276: -967613816
+      home exteriors, half-timber v4_277: -627883152
+      home exteriors, half-timber v4_278: 722582805
+      home exteriors, half-timber v4_279: -195718918
+      home exteriors, half-timber v4_28: -655366362
+      home exteriors, half-timber v4_280: 1613827661
+      home exteriors, half-timber v4_281: -304908702
+      home exteriors, half-timber v4_282: -1128751585
+      home exteriors, half-timber v4_283: 1540921332
+      home exteriors, half-timber v4_284: -1704645582
+      home exteriors, half-timber v4_285: 128938212
+      home exteriors, half-timber v4_286: 921209481
+      home exteriors, half-timber v4_287: 799713564
+      home exteriors, half-timber v4_288: 1415456146
+      home exteriors, half-timber v4_289: -1851120119
+      home exteriors, half-timber v4_29: -1230610936
+      home exteriors, half-timber v4_290: -957721587
+      home exteriors, half-timber v4_291: -1194911448
+      home exteriors, half-timber v4_292: 1475030183
+      home exteriors, half-timber v4_293: -870996003
+      home exteriors, half-timber v4_294: 736015561
+      home exteriors, half-timber v4_295: -1034934983
+      home exteriors, half-timber v4_296: -400054294
+      home exteriors, half-timber v4_297: 1129154319
+      home exteriors, half-timber v4_298: 671005146
+      home exteriors, half-timber v4_299: -1775672289
+      home exteriors, half-timber v4_3: -1937611448
+      home exteriors, half-timber v4_30: -896734449
+      home exteriors, half-timber v4_300: -66667742
+      home exteriors, half-timber v4_301: -957807607
+      home exteriors, half-timber v4_302: 1093814196
+      home exteriors, half-timber v4_303: -368227362
+      home exteriors, half-timber v4_31: 1907343121
+      home exteriors, half-timber v4_32: -885909125
+      home exteriors, half-timber v4_33: -1835465112
+      home exteriors, half-timber v4_34: -1259722488
+      home exteriors, half-timber v4_35: 1309247971
+      home exteriors, half-timber v4_36: -1056001305
+      home exteriors, half-timber v4_37: -1990289300
+      home exteriors, half-timber v4_38: 700434986
+      home exteriors, half-timber v4_39: -225476211
+      home exteriors, half-timber v4_4: 8521858
+      home exteriors, half-timber v4_40: 1682237342
+      home exteriors, half-timber v4_41: 1746357073
+      home exteriors, half-timber v4_42: -784205790
+      home exteriors, half-timber v4_43: -905868871
+      home exteriors, half-timber v4_44: -1733793297
+      home exteriors, half-timber v4_45: 418120828
+      home exteriors, half-timber v4_46: 1020879132
+      home exteriors, half-timber v4_47: -1745247928
+      home exteriors, half-timber v4_48: 39869474
+      home exteriors, half-timber v4_49: -849798909
+      home exteriors, half-timber v4_5: -1986833169
+      home exteriors, half-timber v4_50: -671220661
+      home exteriors, half-timber v4_51: -168380832
+      home exteriors, half-timber v4_52: -278839745
+      home exteriors, half-timber v4_53: -1714344037
+      home exteriors, half-timber v4_54: -854283911
+      home exteriors, half-timber v4_55: 1931538897
+      home exteriors, half-timber v4_56: 343561151
+      home exteriors, half-timber v4_57: -1964566023
+      home exteriors, half-timber v4_58: -1403464888
+      home exteriors, half-timber v4_59: 484349329
+      home exteriors, half-timber v4_6: 1160599646
+      home exteriors, half-timber v4_60: -287637056
+      home exteriors, half-timber v4_61: 23387194
+      home exteriors, half-timber v4_62: 878929571
+      home exteriors, half-timber v4_63: -715356147
+      home exteriors, half-timber v4_64: -413774032
+      home exteriors, half-timber v4_65: -1250353794
+      home exteriors, half-timber v4_66: 66089354
+      home exteriors, half-timber v4_67: -752303208
+      home exteriors, half-timber v4_68: 1132403933
+      home exteriors, half-timber v4_69: 1201937786
+      home exteriors, half-timber v4_7: -740140136
+      home exteriors, half-timber v4_70: -407304544
+      home exteriors, half-timber v4_71: -839210992
+      home exteriors, half-timber v4_72: 1882927699
+      home exteriors, half-timber v4_73: 124766011
+      home exteriors, half-timber v4_74: -1656963613
+      home exteriors, half-timber v4_75: -1999701740
+      home exteriors, half-timber v4_76: 1188211724
+      home exteriors, half-timber v4_77: -1798822614
+      home exteriors, half-timber v4_78: 429546073
+      home exteriors, half-timber v4_79: -311759120
+      home exteriors, half-timber v4_8: 1158131857
+      home exteriors, half-timber v4_80: -55677659
+      home exteriors, half-timber v4_81: 75114072
+      home exteriors, half-timber v4_82: -250924006
+      home exteriors, half-timber v4_83: 2075173878
+      home exteriors, half-timber v4_84: 1190662337
+      home exteriors, half-timber v4_85: -665165390
+      home exteriors, half-timber v4_86: 1480922402
+      home exteriors, half-timber v4_87: 202055161
+      home exteriors, half-timber v4_88: 1582596206
+      home exteriors, half-timber v4_89: 217757470
+      home exteriors, half-timber v4_9: 23339810
+      home exteriors, half-timber v4_90: -209507504
+      home exteriors, half-timber v4_91: 1260320797
+      home exteriors, half-timber v4_92: 861189876
+      home exteriors, half-timber v4_93: 173998352
+      home exteriors, half-timber v4_94: -1971079820
+      home exteriors, half-timber v4_95: -436276760
+      home exteriors, half-timber v4_96: 36401112
+      home exteriors, half-timber v4_97: -1345849868
+      home exteriors, half-timber v4_98: 187631830
+      home exteriors, half-timber v4_99: -478991587
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

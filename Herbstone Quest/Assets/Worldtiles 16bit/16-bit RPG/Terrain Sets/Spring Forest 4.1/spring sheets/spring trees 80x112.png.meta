@@ -1,0 +1,301 @@
+fileFormatVersion: 2
+guid: f9e35c407dbb9de429cd01f1ec3b21ed
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: spring trees 80x112_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 80
+        height: 112
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21ac97c00b30c3d48992963c1cd27e6d
+      internalID: 1656490563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spring trees 80x112_10
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 0
+        width: 80
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38da29f4c6d51a54f898b7c14dbdc9a1
+      internalID: 155849236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spring trees 80x112_13
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 0
+        width: 48
+        height: 96
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c47437246f18f094f82dfae86c6299e6
+      internalID: -204157297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      spring trees 80x112_0: 1656490563
+      spring trees 80x112_1: -1624853863
+      spring trees 80x112_10: 155849236
+      spring trees 80x112_11: 1255928076
+      spring trees 80x112_12: -679963328
+      spring trees 80x112_13: -204157297
+      spring trees 80x112_14: -430066334
+      spring trees 80x112_15: 1493627423
+      spring trees 80x112_16: 1853288805
+      spring trees 80x112_17: -1825247526
+      spring trees 80x112_18: 1412223524
+      spring trees 80x112_19: 60978408
+      spring trees 80x112_2: -13237702
+      spring trees 80x112_20: -462080993
+      spring trees 80x112_21: -1221311938
+      spring trees 80x112_22: -1296911487
+      spring trees 80x112_23: 1887950445
+      spring trees 80x112_24: -370479728
+      spring trees 80x112_25: -81417852
+      spring trees 80x112_26: 133757582
+      spring trees 80x112_27: -1339726448
+      spring trees 80x112_28: -1443629580
+      spring trees 80x112_29: 1975833036
+      spring trees 80x112_3: -1855192315
+      spring trees 80x112_30: 1077446885
+      spring trees 80x112_31: 1409247976
+      spring trees 80x112_32: 1709799523
+      spring trees 80x112_33: -76869049
+      spring trees 80x112_34: -1611572378
+      spring trees 80x112_35: 1079535631
+      spring trees 80x112_36: -411019256
+      spring trees 80x112_37: 2041752975
+      spring trees 80x112_38: -1523588961
+      spring trees 80x112_39: -994571883
+      spring trees 80x112_4: 1805934471
+      spring trees 80x112_40: -880636207
+      spring trees 80x112_41: 1994342246
+      spring trees 80x112_42: 1898161073
+      spring trees 80x112_43: 2146961410
+      spring trees 80x112_44: -392035496
+      spring trees 80x112_45: 416335130
+      spring trees 80x112_46: -1161659016
+      spring trees 80x112_47: -185889712
+      spring trees 80x112_48: 1972633302
+      spring trees 80x112_49: -703937539
+      spring trees 80x112_5: -1793673834
+      spring trees 80x112_50: -90645867
+      spring trees 80x112_51: 493331744
+      spring trees 80x112_52: -1403569999
+      spring trees 80x112_53: -1286425847
+      spring trees 80x112_54: 1391277790
+      spring trees 80x112_55: -741633723
+      spring trees 80x112_56: -917920576
+      spring trees 80x112_57: -1840202124
+      spring trees 80x112_58: -579072755
+      spring trees 80x112_59: 1624106458
+      spring trees 80x112_6: 185500267
+      spring trees 80x112_60: -868246456
+      spring trees 80x112_61: -828764199
+      spring trees 80x112_62: -156700771
+      spring trees 80x112_63: 884965103
+      spring trees 80x112_64: 326353594
+      spring trees 80x112_65: 1320527595
+      spring trees 80x112_66: -788552061
+      spring trees 80x112_67: -1309416606
+      spring trees 80x112_68: 1235437934
+      spring trees 80x112_69: -1380972812
+      spring trees 80x112_7: 1897897839
+      spring trees 80x112_70: 1294501647
+      spring trees 80x112_71: 539084189
+      spring trees 80x112_8: 776107277
+      spring trees 80x112_9: -1331026667
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

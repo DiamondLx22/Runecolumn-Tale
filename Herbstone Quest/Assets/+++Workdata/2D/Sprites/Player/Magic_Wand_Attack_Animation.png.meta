@@ -1,0 +1,619 @@
+fileFormatVersion: 2
+guid: d5ac977cf53692e42ad88f0c7d1282ec
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 0
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Magic_Wand_Attack_Animation_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 72
+        width: 20
+        height: 24
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1666667}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca74dabfa6edc9e4ea47b05b0ceb900a
+      internalID: -1574032016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magic_Wand_Attack_Animation_1
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 72
+        width: 20
+        height: 24
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1666667}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e2ef0166eb436646982f6768cf5b270
+      internalID: -1401241936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magic_Wand_Attack_Animation_2
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 72
+        width: 20
+        height: 24
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1666667}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3ecc9d3cbad54f42bb9395119993349
+      internalID: 428444972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magic_Wand_Attack_Animation_3
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 72
+        width: 20
+        height: 24
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1666667}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd272d94d0e1bcb4f93ed7700f692c41
+      internalID: -1513338111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magic_Wand_Attack_Animation_4
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 72
+        width: 20
+        height: 24
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1666667}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6932e71a8ad95c149af89bbeb8bbd109
+      internalID: -865372640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magic_Wand_Attack_Animation_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 48
+        width: 20
+        height: 24
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1666667}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ee6c6f6fd0870e4587e7e2be937a2cf
+      internalID: -1978236089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magic_Wand_Attack_Animation_6
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 48
+        width: 20
+        height: 24
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1666667}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2e686f998255f448882a2c08eeaec41
+      internalID: -1904686912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magic_Wand_Attack_Animation_7
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 48
+        width: 20
+        height: 24
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1666667}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b45bb782aaf1f7f499c87a5cf4247d81
+      internalID: -707141609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magic_Wand_Attack_Animation_8
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 48
+        width: 20
+        height: 24
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1666667}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25464cf083c79d84885b045b51871a03
+      internalID: -4137233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magic_Wand_Attack_Animation_9
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 48
+        width: 20
+        height: 24
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1666667}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1034af368cb093543ad68318f4e14cec
+      internalID: 298651765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magic_Wand_Attack_Animation_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 24
+        width: 20
+        height: 24
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1666667}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1288044747276f0468ec6ba1b1e0830c
+      internalID: 244557372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magic_Wand_Attack_Animation_11
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 24
+        width: 20
+        height: 24
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1666667}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5c596d9c6ed744468decaa34fd64b51
+      internalID: 220222240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magic_Wand_Attack_Animation_12
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 24
+        width: 20
+        height: 24
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1666667}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 966772968ca5fed4287f6e203d199971
+      internalID: 1892401772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magic_Wand_Attack_Animation_13
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 24
+        width: 20
+        height: 24
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1666667}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b757e1bc4e558fa429b67ff284a427d9
+      internalID: -1314532127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magic_Wand_Attack_Animation_14
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 24
+        width: 20
+        height: 24
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1666667}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f144c8f72cd6a4a4e92b2578be7c7b3a
+      internalID: 1845353932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magic_Wand_Attack_Animation_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 20
+        height: 24
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1666667}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bba57a5b27b43fd44bcbfd2d64823fec
+      internalID: 1195543231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magic_Wand_Attack_Animation_16
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 0
+        width: 20
+        height: 24
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1666667}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dda9c1332feacbb448dc4191473d1970
+      internalID: -165466437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magic_Wand_Attack_Animation_17
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 0
+        width: 20
+        height: 24
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1666667}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4391e7850f1f27546a1c1887690d622b
+      internalID: 934549996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magic_Wand_Attack_Animation_18
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 0
+        width: 20
+        height: 24
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1666667}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1b5307356f79a84abab50bc5e15f52b
+      internalID: 1046480017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magic_Wand_Attack_Animation_19
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 0
+        width: 20
+        height: 24
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1666667}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63eb6f15c71f93a42b6ac8ae1784b141
+      internalID: 1439392569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Magic_Wand_Attack_Animation_0: -1574032016
+      Magic_Wand_Attack_Animation_1: -1401241936
+      Magic_Wand_Attack_Animation_10: 244557372
+      Magic_Wand_Attack_Animation_11: 220222240
+      Magic_Wand_Attack_Animation_12: 1892401772
+      Magic_Wand_Attack_Animation_13: -1314532127
+      Magic_Wand_Attack_Animation_14: 1845353932
+      Magic_Wand_Attack_Animation_15: 1195543231
+      Magic_Wand_Attack_Animation_16: -165466437
+      Magic_Wand_Attack_Animation_17: 934549996
+      Magic_Wand_Attack_Animation_18: 1046480017
+      Magic_Wand_Attack_Animation_19: 1439392569
+      Magic_Wand_Attack_Animation_2: 428444972
+      Magic_Wand_Attack_Animation_3: -1513338111
+      Magic_Wand_Attack_Animation_4: -865372640
+      Magic_Wand_Attack_Animation_5: -1978236089
+      Magic_Wand_Attack_Animation_6: -1904686912
+      Magic_Wand_Attack_Animation_7: -707141609
+      Magic_Wand_Attack_Animation_8: -4137233
+      Magic_Wand_Attack_Animation_9: 298651765
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
