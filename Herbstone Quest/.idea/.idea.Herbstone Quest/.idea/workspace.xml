@@ -5,46 +5,64 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4ef570e0-b276-4285-bb32-adae7e4c8a99" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/+++Workdata/2D/Animations/Player/Body.controller" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/+++Workdata/2D/Animations/Player/Body.controller.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/+++Workdata/2D/Animations/Player/Player_Body_Attack_Staff_Default-DOWN.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/+++Workdata/2D/Animations/Player/Player_Body_Attack_Staff_Default-DOWN.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/+++Workdata/2D/Animations/Player/Player_Body_Attack_Staff_Default-LEFT.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/+++Workdata/2D/Animations/Player/Player_Body_Attack_Staff_Default-LEFT.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/+++Workdata/2D/Animations/Player/Player_Body_Attack_Staff_Default-RIGHT.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/+++Workdata/2D/Animations/Player/Player_Body_Attack_Staff_Default-RIGHT.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/+++Workdata/2D/Animations/Player/Player_Body_Attack_Staff_Default-UP.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/+++Workdata/2D/Animations/Player/Player_Body_Attack_Staff_Default-UP.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/+++Workdata/2D/Animations/Player/Player_Body_Idle-DOWN.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/+++Workdata/2D/Animations/Player/Player_Body_Idle-DOWN.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/+++Workdata/2D/Animations/Player/Player_Body_Idle-LEFT.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/+++Workdata/2D/Animations/Player/Player_Body_Idle-LEFT.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/+++Workdata/2D/Animations/Player/Player_Body_Idle-RIGHT.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/+++Workdata/2D/Animations/Player/Player_Body_Idle-RIGHT.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/+++Workdata/2D/Animations/Player/Player_Body_Idle-UP.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/+++Workdata/2D/Animations/Player/Player_Body_Idle-UP.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/+++Workdata/2D/Animations/Player/Player_Body_Walk-DOWN.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/+++Workdata/2D/Animations/Player/Player_Body_Walk-DOWN.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/+++Workdata/2D/Animations/Player/Player_Body_Walk-LEFT.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/+++Workdata/2D/Animations/Player/Player_Body_Walk-LEFT.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/+++Workdata/2D/Animations/Player/Player_Body_Walk-RIGHT.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/+++Workdata/2D/Animations/Player/Player_Body_Walk-RIGHT.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/+++Workdata/2D/Animations/Player/Player_Body_Walk-UP.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/+++Workdata/2D/Animations/Player/Player_Body_Walk-UP.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/+++Workdata/2D/Animations/Player/Player_Weapon_Attack_Staff_Default-DOWN.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/+++Workdata/2D/Animations/Player/Player_Weapon_Attack_Staff_Default-DOWN.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/+++Workdata/2D/Animations/Player/Player_Weapon_Attack_Staff_Default-LEFT.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/+++Workdata/2D/Animations/Player/Player_Weapon_Attack_Staff_Default-LEFT.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/+++Workdata/2D/Animations/Player/Player_Weapon_Attack_Staff_Default-RIGHT.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/+++Workdata/2D/Animations/Player/Player_Weapon_Attack_Staff_Default-RIGHT.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/+++Workdata/2D/Animations/Player/Player_Weapon_Attack_Staff_Default-UP.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/+++Workdata/2D/Animations/Player/Player_Weapon_Attack_Staff_Default-UP.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/+++Workdata/2D/Animations/Player/Staff.controller" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/+++Workdata/2D/Animations/Player/Staff.controller.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/+++Workdata/2D/Tiles/Mascines House.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/+++Workdata/2D/Tiles/Mascines House.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/+++Workdata/2D/Tiles/Mascines_House.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/+++Workdata/2D/Tiles/Mascines_House.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/+++Workdata/Scenes/Scene1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/+++Workdata/Scenes/Scene1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Demigiant.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Demigiant/DOTween.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Demigiant/DOTween/DOTween.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Demigiant/DOTween/DOTween.dll.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Demigiant/DOTween/Editor.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Demigiant/DOTween/Editor/DOTweenEditor.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Demigiant/DOTween/Editor/DOTweenEditor.dll.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Demigiant/DOTween/Modules.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleAudio.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleAudio.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleEPOOutline.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleEPOOutline.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModulePhysics.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModulePhysics.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModulePhysics2D.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModulePhysics2D.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleSprite.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleSprite.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleUI.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleUI.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleUnityVersion.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleUnityVersion.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleUtils.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Demigiant/DOTween/Modules/DOTweenModuleUtils.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Demigiant/DOTweenPro.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Demigiant/DOTweenPro/DOTweenAnimation.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Demigiant/DOTweenPro/DOTweenAnimation.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Demigiant/DOTweenPro/DOTweenDeAudio.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Demigiant/DOTweenPro/DOTweenDeAudio.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Demigiant/DOTweenPro/DOTweenDeUnityExtended.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Demigiant/DOTweenPro/DOTweenDeUnityExtended.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Demigiant/DOTweenPro/DOTweenPro.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Demigiant/DOTweenPro/DOTweenPro.dll.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Demigiant/DOTweenPro/DOTweenProShortcuts.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Demigiant/DOTweenPro/DOTweenProShortcuts.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Demigiant/DOTweenPro/DOTweenTextMeshPro.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Demigiant/DOTweenPro/DOTweenTextMeshPro.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Demigiant/DOTweenPro/DOTweenTk2d.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Demigiant/DOTweenPro/DOTweenTk2d.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Demigiant/DOTweenPro/Editor.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Demigiant/DOTweenPro/Editor/DOTweenAnimationInspector.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Demigiant/DOTweenPro/Editor/DOTweenAnimationInspector.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Demigiant/DOTweenPro/Editor/DOTweenPreviewManager.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Demigiant/DOTweenPro/Editor/DOTweenPreviewManager.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Demigiant/DOTweenPro/Editor/DOTweenProEditor.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Demigiant/DOTweenPro/Editor/DOTweenProEditor.dll.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Demigiant/DemiLib.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Demigiant/DemiLib/Core.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Demigiant/DemiLib/Core/DemiLib.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Demigiant/DemiLib/Core/DemiLib.dll.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Demigiant/DemiLib/Core/Editor.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Demigiant/DemiLib/Core/Editor/DemiEditor.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Demigiant/DemiLib/Core/Editor/DemiEditor.dll.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -142,6 +160,7 @@
       <workItem from="1718449644345" duration="18000" />
       <workItem from="1718805743750" duration="219000" />
       <workItem from="1724235687287" duration="1279000" />
+      <workItem from="1724600359403" duration="470000" />
     </task>
     <servers />
   </component>
