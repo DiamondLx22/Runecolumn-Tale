@@ -27,6 +27,7 @@ public class PlayerMovement : MonoBehaviour
         inputActions = new Player_InputActions();
         moveAction = inputActions.Player.Move;
         interactAction = inputActions.Player.Interact;
+        meleeAttack = inputActions.Player.MeleeAttack;
     }
       
     private void OnEnable()
@@ -34,7 +35,11 @@ public class PlayerMovement : MonoBehaviour
         inputActions.Enable();
         moveAction.performed += Move;
         moveAction.canceled += Move;
-        
+
+        meleeAttack.performed += Move;
+        meleeAttack.canceled += Move;
+
+
         //interactAction.performed += Interact;
         StartCoroutine(routine: DelaySubscribe());
     }
@@ -52,7 +57,12 @@ public class PlayerMovement : MonoBehaviour
         inputActions.Disable();
         moveAction.performed -= Move;
         moveAction.canceled -= Move;
-       // interactAction.performed -= Interact;
+
+        meleeAttack.performed += Move;
+        meleeAttack.canceled += Move;
+
+
+        // interactAction.performed -= Interact;
     }
 
     public void EnableInput() 
@@ -70,6 +80,7 @@ public class PlayerMovement : MonoBehaviour
         moveInput = context.ReadValue<Vector2>();
 
 
+
         if (context.performed)
         {
 
@@ -80,6 +91,16 @@ public class PlayerMovement : MonoBehaviour
         
         }
         
+    }
+    private void MeleeAttack(InputAction.CallbackContext context)
+    {
+        if (context.performed)
+        {
+            for (int i = 0; i < anim.Length; i++)
+            {
+                anim[i].SetTrigger("meleeAttack");
+            }
+        }
     }
 
     private void Update()
