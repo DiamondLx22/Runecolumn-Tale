@@ -9,6 +9,7 @@ public class PlayerMovement : MonoBehaviour
 {
     public Player_InputActions inputActions;
     private InputAction moveAction;
+    private InputAction meleeAttack;
     private InputAction interactAction;
     public Rigidbody2D rb;
     
@@ -38,8 +39,8 @@ public class PlayerMovement : MonoBehaviour
         moveAction.performed += Move;
         moveAction.canceled += Move;
 
-        meleeAttack.performed += Move;
-        meleeAttack.canceled += Move;
+        meleeAttack.performed += MeleeAttack;
+        meleeAttack.canceled += MeleeAttack;
 
 
         //interactAction.performed += Interact;
@@ -60,8 +61,8 @@ public class PlayerMovement : MonoBehaviour
         moveAction.performed -= Move;
         moveAction.canceled -= Move;
 
-        meleeAttack.performed += Move;
-        meleeAttack.canceled += Move;
+        meleeAttack.performed += MeleeAttack;
+        meleeAttack.canceled += MeleeAttack;
 
 
         // interactAction.performed -= Interact;
