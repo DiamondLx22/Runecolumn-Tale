@@ -11,6 +11,8 @@ public class PlayerMovement : MonoBehaviour
     private InputAction moveAction;
     private InputAction interactAction;
     public Rigidbody2D rb;
+    
+    public Animator[] weaponanim;
     public Animator[] anim;
     private Vector2 moveInput;
     public float movespeed;
