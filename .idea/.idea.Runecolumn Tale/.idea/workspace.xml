@@ -1,51 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="a6d1feb8-2b4a-4ee4-8043-c8ffe95ee9d3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Runecolumn Tale/Assets/+++Workdata/Scripts/Player/.idea/.idea.Player.dir/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Runecolumn Tale/Assets/+++Workdata/Scripts/Player/.idea/.idea.Player.dir/.idea/indexLayout.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Runecolumn Tale/Assets/+++Workdata/Scripts/Player/.idea/.idea.Player.dir/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Runecolumn Tale/Assets/+++Workdata/Scripts/Player/.idea/.idea.Player.dir/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Runecolumn Tale/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Runecolumn Tale/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/+++Workdata/2D/Animations/Player/Body.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/+++Workdata/2D/Animations/Player/Body.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/+++Workdata/2D/Animations/Player/Body.controller.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/+++Workdata/2D/Animations/Player/Body.controller.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/+++Workdata/2D/Animations/Player/MeleeWeapons.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/+++Workdata/2D/Animations/Player/MeleeWeapons.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/+++Workdata/2D/Animations/Player/MeleeWeapons/Sword1.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/+++Workdata/2D/Animations/Player/MeleeWeapons/Sword1.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/+++Workdata/2D/Animations/Player/MeleeWeapons/Sword1/Player_Sword1_Attack-Down.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/+++Workdata/2D/Animations/Player/MeleeWeapons/Sword1/Player_Sword1_Attack-Down.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/+++Workdata/2D/Animations/Player/MeleeWeapons/Sword1/Player_Sword1_Attack-Down.anim.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/+++Workdata/2D/Animations/Player/MeleeWeapons/Sword1/Player_Sword1_Attack-Down.anim.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/+++Workdata/2D/Animations/Player/MeleeWeapons/SwordEffects.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/+++Workdata/2D/Animations/Player/MeleeWeapons/SwordEffects.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/+++Workdata/2D/Animations/Player/MeleeWeapons/SwordEffects/Player_Sword1_AttackEffect-Down.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/+++Workdata/2D/Animations/Player/MeleeWeapons/SwordEffects/Player_Sword1_AttackEffect-Down.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/+++Workdata/2D/Animations/Player/MeleeWeapons/SwordEffects/Player_Sword1_AttackEffect-Down.anim.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/+++Workdata/2D/Animations/Player/MeleeWeapons/SwordEffects/Player_Sword1_AttackEffect-Down.anim.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/+++Workdata/2D/Animations/Player/MeleeWeapons/Sword1/Weapon_Sword1_Attack-Down.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/+++Workdata/2D/Animations/Player/MeleeWeapons/Sword1/Weapon_Sword1_Attack-Down.anim" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/+++Workdata/2D/Animations/Player/MeleeWeapons/SwordEffects/Sword.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/+++Workdata/2D/Animations/Player/MeleeWeapons/SwordEffects/Sword.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/+++Workdata/2D/Animations/Player/MeleeWeapons/SwordEffects/Sword.controller.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/+++Workdata/2D/Animations/Player/MeleeWeapons/SwordEffects/Sword.controller.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/+++Workdata/2D/Animations/Player/Player_Default_Idle-Down.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/+++Workdata/2D/Animations/Player/Player_Default_Idle-Down.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/+++Workdata/2D/Animations/Player/Player_Default_Idle-Down.anim.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/+++Workdata/2D/Animations/Player/Player_Default_Idle-Down.anim.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/+++Workdata/2D/Animations/Player/Player_Default_Idle-Left.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/+++Workdata/2D/Animations/Player/Player_Default_Idle-Left.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/+++Workdata/2D/Animations/Player/Player_Default_Idle-Left.anim.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/+++Workdata/2D/Animations/Player/Player_Default_Idle-Left.anim.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/+++Workdata/2D/Animations/Player/Player_Default_Idle-Right.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/+++Workdata/2D/Animations/Player/Player_Default_Idle-Right.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/+++Workdata/2D/Animations/Player/Player_Default_Idle-Right.anim.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/+++Workdata/2D/Animations/Player/Player_Default_Idle-Right.anim.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/+++Workdata/2D/Animations/Player/Player_Default_Idle-Up.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/+++Workdata/2D/Animations/Player/Player_Default_Idle-Up.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/+++Workdata/2D/Animations/Player/Player_Default_Idle-Up.anim.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/+++Workdata/2D/Animations/Player/Player_Default_Idle-Up.anim.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/+++Workdata/2D/Animations/Player/Player_Default_Walk-Down.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/+++Workdata/2D/Animations/Player/Player_Default_Walk-Down.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/+++Workdata/2D/Animations/Player/Player_Default_Walk-Down.anim.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/+++Workdata/2D/Animations/Player/Player_Default_Walk-Down.anim.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/+++Workdata/2D/Animations/Player/Player_Default_Walk-Left.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/+++Workdata/2D/Animations/Player/Player_Default_Walk-Left.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/+++Workdata/2D/Animations/Player/Player_Default_Walk-Left.anim.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/+++Workdata/2D/Animations/Player/Player_Default_Walk-Left.anim.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/+++Workdata/2D/Animations/Player/Player_Default_Walk-Right.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/+++Workdata/2D/Animations/Player/Player_Default_Walk-Right.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/+++Workdata/2D/Animations/Player/Player_Default_Walk-Right.anim.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/+++Workdata/2D/Animations/Player/Player_Default_Walk-Right.anim.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/+++Workdata/2D/Animations/Player/Player_Default_Walk-Up.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/+++Workdata/2D/Animations/Player/Player_Default_Walk-Up.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/+++Workdata/2D/Animations/Player/Player_Default_Walk-Up.anim.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/+++Workdata/2D/Animations/Player/Player_Default_Walk-Up.anim.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/+++Workdata/2D/Animations/Player/test.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/+++Workdata/2D/Animations/Player/test.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/+++Workdata/2D/Animations/Player/test.controller.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/+++Workdata/2D/Animations/Player/test.controller.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/+++Workdata/2D/Sprites/Player/M_Attack_Swordswipe_Animation.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/+++Workdata/2D/Sprites/Player/M_Attack_Swordswipe_Animation.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/+++Workdata/2D/Sprites/Player/M_Attack_Swordswipe_Animation.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/+++Workdata/2D/Sprites/Player/M_Attack_Swordswipe_Animation.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/+++Workdata/2D/Sprites/Player/Mascine_M_Character_and_Sword.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/+++Workdata/2D/Sprites/Player/Mascine_M_Character_and_Sword.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/+++Workdata/2D/Sprites/Player/Mascine_M_Character_and_Sword.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/+++Workdata/2D/Sprites/Player/Mascine_M_Character_and_Sword.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/+++Workdata/Scenes/Scene1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/+++Workdata/Scenes/Scene1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/+++Workdata/Scripts/Player/PlayerMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/+++Workdata/Scripts/Player/PlayerMovement.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/InkSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/InkSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Runecolumn Tale/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Runecolumn Tale/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Runecolumn Tale/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Runecolumn Tale/Packages/packages-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/+++Workdata/Input/Player_InputActions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/+++Workdata/Input/Player_InputActions.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/+++Workdata/Input/Player_InputActions.inputactions" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/+++Workdata/Input/Player_InputActions.inputactions" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,9 +20,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 6
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
   <component name="ProjectId" id="2lCg78tjTds2LuwR2YoQ7kUL5fq" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -68,6 +33,10 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   },
@@ -126,6 +95,7 @@
       <option name="presentableId" value="Default" />
       <updated>1724689301840</updated>
       <workItem from="1724689303233" duration="230000" />
+      <workItem from="1724764898578" duration="1113000" />
     </task>
     <servers />
   </component>
