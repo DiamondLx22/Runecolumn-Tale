@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 0e588920bdf348c4691366fd1d72401f
+guid: 68d1e20ad94336b4698c1f96df59612f
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -162,421 +162,421 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Mascine_M_Character_and_Sword_0
+      name: Mascine_M_Attack_Animation_0
       rect:
         serializedVersion: 2
         x: 0
         y: 66
         width: 32
         height: 20
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 06eb9a244c62829478b06ffef51daa4c
-      internalID: -1121920536
+      spriteID: 5accfece1cab1a4479816589ab2519ff
+      internalID: -1765477903
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mascine_M_Character_and_Sword_1
+      name: Mascine_M_Attack_Animation_1
       rect:
         serializedVersion: 2
         x: 32
         y: 66
         width: 32
         height: 20
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 131f7d1ddf818794e9bc8fe0ede759c6
-      internalID: 2040441560
+      spriteID: 9ebcfa4ed31a0f34685653a5f1f3b0c2
+      internalID: 1747343721
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mascine_M_Character_and_Sword_2
+      name: Mascine_M_Attack_Animation_2
       rect:
         serializedVersion: 2
         x: 64
         y: 66
         width: 32
         height: 20
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 58247d40e2af2b14bbf2b918cbb369b8
-      internalID: 457419524
+      spriteID: 910f48ce580439a4ca33d489162ca54c
+      internalID: 1590408605
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mascine_M_Character_and_Sword_3
+      name: Mascine_M_Attack_Animation_3
       rect:
         serializedVersion: 2
         x: 96
         y: 66
         width: 32
         height: 20
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d0564c6fdcf3ef645805d9b51bd8a089
-      internalID: -462045972
+      spriteID: efdd6ca7d0433b04a911436031c76ad4
+      internalID: 1610565346
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mascine_M_Character_and_Sword_4
+      name: Mascine_M_Attack_Animation_4
       rect:
         serializedVersion: 2
         x: 128
         y: 66
         width: 32
         height: 20
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6a164f8ce6813564c8a057ad8bed0bc4
-      internalID: 276489124
+      spriteID: 424cb1f977dbc5841a42acc84cb20190
+      internalID: -174493718
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mascine_M_Character_and_Sword_5
+      name: Mascine_M_Attack_Animation_5
       rect:
         serializedVersion: 2
         x: 0
         y: 46
         width: 32
         height: 20
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4fbedf8cc70c80f40b95f1a955e5b9e4
-      internalID: 1922664381
+      spriteID: 8b8c985e136d1a449aaa1669f02d9277
+      internalID: 1809974595
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mascine_M_Character_and_Sword_6
+      name: Mascine_M_Attack_Animation_6
       rect:
         serializedVersion: 2
         x: 32
         y: 46
         width: 32
         height: 20
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9d4fed8f5499f374ca2738df7a700001
-      internalID: 1361715419
+      spriteID: 6f4e28d8a2c1509458db472b0b21f675
+      internalID: 1484020733
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mascine_M_Character_and_Sword_7
+      name: Mascine_M_Attack_Animation_7
       rect:
         serializedVersion: 2
         x: 64
         y: 46
         width: 32
         height: 20
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4d107c4f232e3e24a9846a6bfc0c69e0
-      internalID: -1097916069
+      spriteID: 68bf8063ab6adff43ba77620f8dea854
+      internalID: -3228060
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mascine_M_Character_and_Sword_8
+      name: Mascine_M_Attack_Animation_8
       rect:
         serializedVersion: 2
         x: 96
         y: 46
         width: 32
         height: 20
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: de7bc5ca7d9ba6f44a4607d89044c3cc
-      internalID: 670271475
+      spriteID: 3cffd2ed7d010364fa492f30e0e37509
+      internalID: 534931037
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mascine_M_Character_and_Sword_9
+      name: Mascine_M_Attack_Animation_9
       rect:
         serializedVersion: 2
         x: 128
         y: 46
         width: 32
         height: 20
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fae1e3f1e6827de48953c9669181c4d1
-      internalID: -366914972
+      spriteID: 948a7d420367a8848af00970f86fccbb
+      internalID: 1040504154
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mascine_M_Character_and_Sword_10
+      name: Mascine_M_Attack_Animation_10
       rect:
         serializedVersion: 2
         x: 0
         y: 26
         width: 32
         height: 20
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 121c730ab7c6bd841b2c4ea77e15c164
-      internalID: -264501180
+      spriteID: 199dd7220180d784b91ba283356e6f11
+      internalID: -1203479143
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mascine_M_Character_and_Sword_11
+      name: Mascine_M_Attack_Animation_11
       rect:
         serializedVersion: 2
         x: 32
         y: 26
         width: 32
         height: 20
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9a8b43c6984791e4292bed7f4da02f73
-      internalID: 1012890290
+      spriteID: 9145b823cf5a56344816a4d59782d0be
+      internalID: 879978132
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mascine_M_Character_and_Sword_12
+      name: Mascine_M_Attack_Animation_12
       rect:
         serializedVersion: 2
         x: 64
         y: 26
         width: 32
         height: 20
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aaa07122cf95a6d46bd53347cde6c706
-      internalID: 235640684
+      spriteID: 67d9c29dd69e5434fab0c9cc464bf86f
+      internalID: 1708363292
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mascine_M_Character_and_Sword_13
+      name: Mascine_M_Attack_Animation_13
       rect:
         serializedVersion: 2
         x: 96
         y: 26
         width: 32
         height: 20
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cd6b9711b65e3ff40ac67b969147d35d
-      internalID: 2057000422
+      spriteID: 545879a3df6bcac4e9c8abf4e5e73f13
+      internalID: 2117188980
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mascine_M_Character_and_Sword_14
+      name: Mascine_M_Attack_Animation_14
       rect:
         serializedVersion: 2
         x: 128
         y: 26
         width: 32
         height: 20
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a9cb7f427335f3248a216669e28501e7
-      internalID: 460975707
+      spriteID: 8946b477e3a0cd549910ddc73a8ac99c
+      internalID: -1342538936
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mascine_M_Character_and_Sword_15
+      name: Mascine_M_Attack_Animation_15
       rect:
         serializedVersion: 2
         x: 0
         y: 6
         width: 32
         height: 20
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 55bb1d50c1e29a74f98354449d9e654b
-      internalID: 226421287
+      spriteID: 8eff78998eda4e34096f8fe355aa61ca
+      internalID: 578332197
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mascine_M_Character_and_Sword_16
+      name: Mascine_M_Attack_Animation_16
       rect:
         serializedVersion: 2
         x: 32
         y: 6
         width: 32
         height: 20
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 78327a6843341d94bb434ddf122281ff
-      internalID: 2060745881
+      spriteID: 05e8f80cbf85cfd41bceb733c1cc5ac9
+      internalID: -784245158
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mascine_M_Character_and_Sword_17
+      name: Mascine_M_Attack_Animation_17
       rect:
         serializedVersion: 2
         x: 64
         y: 6
         width: 32
         height: 20
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: abab3652fc1a7f740844b92c5b1e5eb6
-      internalID: 2071389424
+      spriteID: 340d3e13846273144a2790c6cf10b76f
+      internalID: 213384039
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mascine_M_Character_and_Sword_18
+      name: Mascine_M_Attack_Animation_18
       rect:
         serializedVersion: 2
         x: 96
         y: 6
         width: 32
         height: 20
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 62ea63950e54f1545b0a1a30a7a2129e
-      internalID: -211109667
+      spriteID: b4bc7cbffc66f0d49b80ba49e7da3a67
+      internalID: 988714523
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mascine_M_Character_and_Sword_19
+      name: Mascine_M_Attack_Animation_19
       rect:
         serializedVersion: 2
         x: 128
         y: 6
         width: 32
         height: 20
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bcdf8925a36be1a4fac641c4d51680ad
-      internalID: -1268850533
+      spriteID: e3d96d98c304d754aadb600944c194ca
+      internalID: 1609436380
       vertices: []
       indices: 
       edges: []
@@ -592,26 +592,26 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Mascine_M_Character_and_Sword_0: -1121920536
-      Mascine_M_Character_and_Sword_1: 2040441560
-      Mascine_M_Character_and_Sword_10: -264501180
-      Mascine_M_Character_and_Sword_11: 1012890290
-      Mascine_M_Character_and_Sword_12: 235640684
-      Mascine_M_Character_and_Sword_13: 2057000422
-      Mascine_M_Character_and_Sword_14: 460975707
-      Mascine_M_Character_and_Sword_15: 226421287
-      Mascine_M_Character_and_Sword_16: 2060745881
-      Mascine_M_Character_and_Sword_17: 2071389424
-      Mascine_M_Character_and_Sword_18: -211109667
-      Mascine_M_Character_and_Sword_19: -1268850533
-      Mascine_M_Character_and_Sword_2: 457419524
-      Mascine_M_Character_and_Sword_3: -462045972
-      Mascine_M_Character_and_Sword_4: 276489124
-      Mascine_M_Character_and_Sword_5: 1922664381
-      Mascine_M_Character_and_Sword_6: 1361715419
-      Mascine_M_Character_and_Sword_7: -1097916069
-      Mascine_M_Character_and_Sword_8: 670271475
-      Mascine_M_Character_and_Sword_9: -366914972
+      Mascine_M_Attack_Animation_0: -1765477903
+      Mascine_M_Attack_Animation_1: 1747343721
+      Mascine_M_Attack_Animation_10: -1203479143
+      Mascine_M_Attack_Animation_11: 879978132
+      Mascine_M_Attack_Animation_12: 1708363292
+      Mascine_M_Attack_Animation_13: 2117188980
+      Mascine_M_Attack_Animation_14: -1342538936
+      Mascine_M_Attack_Animation_15: 578332197
+      Mascine_M_Attack_Animation_16: -784245158
+      Mascine_M_Attack_Animation_17: 213384039
+      Mascine_M_Attack_Animation_18: 988714523
+      Mascine_M_Attack_Animation_19: 1609436380
+      Mascine_M_Attack_Animation_2: 1590408605
+      Mascine_M_Attack_Animation_3: 1610565346
+      Mascine_M_Attack_Animation_4: -174493718
+      Mascine_M_Attack_Animation_5: 1809974595
+      Mascine_M_Attack_Animation_6: 1484020733
+      Mascine_M_Attack_Animation_7: -3228060
+      Mascine_M_Attack_Animation_8: 534931037
+      Mascine_M_Attack_Animation_9: 1040504154
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
