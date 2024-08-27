@@ -17,6 +17,7 @@ public class PlayerMovement : MonoBehaviour
     public Rigidbody2D rb;
     
     public Animator[] weaponanim;
+    public Animator[] rangeAttackAnims;
     public Animator[] anim;
     private Vector2 moveInput;
     public float movespeed;
@@ -24,8 +25,10 @@ public class PlayerMovement : MonoBehaviour
 
     public static event Action SubscribeAction;
     public static event Action UnsubscribeAction;
-    
-    
+
+    public float timerMax;
+    private float timer;
+    private bool attacked = false;
 
 
     private void Awake()
@@ -115,8 +118,18 @@ public class PlayerMovement : MonoBehaviour
         {
             for (int i = 0; i < weaponanim.Length; i++)
             {
-                weaponanim[i].SetBool("meleeAttack",true);
+                //weaponanim[i].SetBool("meleeAttack",true);
+                SpriteRenderer renderer = weaponanim[i].GetComponent<SpriteRenderer>();
+                renderer.enabled = true;
+                weaponanim[i].enabled = true;
+                print(moveInput.x + "  " + moveInput.y);
             }
+
+            for (int i = 0; i < anim.Length; i++)
+            {
+                anim[i].SetTrigger("meleeAttack");
+            }
+            attacked = true;
         }
     }
 
@@ -125,15 +138,53 @@ public class PlayerMovement : MonoBehaviour
     {
         if (context.performed)
         {
-            for (int i = 0; i < weaponanim.Length; i++)
+            for (int i = 0; i < rangeAttackAnims.Length; i++)
             {
-                weaponanim[i].SetBool("rangeAttack",true);
+                //weaponanim[i].SetBool("meleeAttack",true);
+                SpriteRenderer renderer = rangeAttackAnims[i].GetComponent<SpriteRenderer>();
+                renderer.enabled = true;
+                rangeAttackAnims[i].enabled = true;
+                rangeAttackAnims[i].SetTrigger("rangeAttack");
+                //print(moveInput.x + "  " + moveInput.y);
             }
+
+            for (int i = 0; i < anim.Length; i++)
+            {
+                anim[i].SetTrigger("rangeAttack");
+            }
+            attacked = true;
         }
     }
     private void Update()
     {
         UpdateAnimations();
+
+        if (attacked)
+        {
+            timer += Time.deltaTime;
+            if (timer > timerMax)
+            {
+                for (int i = 0; i < weaponanim.Length; i++)
+                {
+                    //weaponanim[i].SetBool("meleeAttack",true);
+                    //weaponanim[i].enabled = false;
+                    SpriteRenderer renderer = weaponanim[i].GetComponent<SpriteRenderer>();
+                    renderer.enabled = false;
+                }
+                
+                for (int i = 0; i < rangeAttackAnims.Length; i++)
+                {
+                    //weaponanim[i].SetBool("meleeAttack",true);
+                    //weaponanim[i].enabled = false;
+                    SpriteRenderer renderer = rangeAttackAnims[i].GetComponent<SpriteRenderer>();
+                    renderer.enabled = false;
+                }
+                
+                attacked = false;
+                timer = 0;
+            }
+
+        }
     }
 
     
@@ -156,10 +207,16 @@ public class PlayerMovement : MonoBehaviour
 
         if (moveInput != Vector2.zero)
         {
-            for (int i = 0; i < anim.Length; i++)
+            for (int i = 0; i < weaponanim.Length; i++)
             {
                 weaponanim[i].SetFloat("dirX", moveInput.x);
                 weaponanim[i].SetFloat("dirY", moveInput.y);
+            }
+            
+            for (int i = 0; i < rangeAttackAnims.Length; i++)
+            {
+                rangeAttackAnims[i].SetFloat("dirX", moveInput.x);
+                rangeAttackAnims[i].SetFloat("dirY", moveInput.y);
             }
 
         }
