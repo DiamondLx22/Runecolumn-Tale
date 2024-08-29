@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 68d1e20ad94336b4698c1f96df59612f
+guid: 53df7247a6e8a9549a529551b796d131
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -81,59 +81,7 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
     buildTarget: Standalone
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: iPhone
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Windows Store Apps
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -162,13 +110,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Mascine_M_Attack_Animation_0
+      name: Mascine_R_Attack_Animation_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 66
-        width: 32
-        height: 20
+        y: 72
+        width: 20
+        height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -176,20 +124,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5accfece1cab1a4479816589ab2519ff
-      internalID: -1765477903
+      spriteID: 18c9b9f63990a1a498212f5a20e2a9d3
+      internalID: -367171647
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mascine_M_Attack_Animation_1
+      name: Mascine_R_Attack_Animation_1
       rect:
         serializedVersion: 2
-        x: 32
-        y: 66
-        width: 32
-        height: 20
+        x: 20
+        y: 72
+        width: 20
+        height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -197,20 +145,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9ebcfa4ed31a0f34685653a5f1f3b0c2
-      internalID: 1747343721
+      spriteID: 37b4b4991eaac1c48bb81ac6d4a6d50a
+      internalID: 1722401667
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mascine_M_Attack_Animation_2
+      name: Mascine_R_Attack_Animation_2
       rect:
         serializedVersion: 2
-        x: 64
-        y: 66
-        width: 32
-        height: 20
+        x: 40
+        y: 72
+        width: 20
+        height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -218,20 +166,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 910f48ce580439a4ca33d489162ca54c
-      internalID: 1590408605
+      spriteID: 1bc1dbdc22121ce48a2863dca9118431
+      internalID: 2089912485
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mascine_M_Attack_Animation_3
+      name: Mascine_R_Attack_Animation_3
       rect:
         serializedVersion: 2
-        x: 96
-        y: 66
-        width: 32
-        height: 20
+        x: 60
+        y: 72
+        width: 20
+        height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -239,20 +187,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: efdd6ca7d0433b04a911436031c76ad4
-      internalID: 1610565346
+      spriteID: 1cd9416eb4ec4674badf119a40257bd2
+      internalID: 742413093
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mascine_M_Attack_Animation_4
+      name: Mascine_R_Attack_Animation_4
       rect:
         serializedVersion: 2
-        x: 128
-        y: 66
-        width: 32
-        height: 20
+        x: 80
+        y: 72
+        width: 20
+        height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -260,125 +208,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 424cb1f977dbc5841a42acc84cb20190
-      internalID: -174493718
+      spriteID: a786bb7c66be14444ae94cd515a043ee
+      internalID: -1565547727
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mascine_M_Attack_Animation_5
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 46
-        width: 32
-        height: 20
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8b8c985e136d1a449aaa1669f02d9277
-      internalID: 1809974595
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mascine_M_Attack_Animation_6
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 46
-        width: 32
-        height: 20
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6f4e28d8a2c1509458db472b0b21f675
-      internalID: 1484020733
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mascine_M_Attack_Animation_7
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 46
-        width: 32
-        height: 20
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 68bf8063ab6adff43ba77620f8dea854
-      internalID: -3228060
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mascine_M_Attack_Animation_8
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 46
-        width: 32
-        height: 20
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3cffd2ed7d010364fa492f30e0e37509
-      internalID: 534931037
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mascine_M_Attack_Animation_9
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 46
-        width: 32
-        height: 20
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 948a7d420367a8848af00970f86fccbb
-      internalID: 1040504154
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Mascine_M_Attack_Animation_10
+      name: Mascine_R_Attack_Animation_5
       rect:
         serializedVersion: 2
         x: 0
-        y: 26
-        width: 32
-        height: 20
+        y: 48
+        width: 20
+        height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -386,20 +229,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 199dd7220180d784b91ba283356e6f11
-      internalID: -1203479143
+      spriteID: 6450b3d6319539f44805acbd76c77430
+      internalID: 1104912190
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mascine_M_Attack_Animation_11
+      name: Mascine_R_Attack_Animation_6
       rect:
         serializedVersion: 2
-        x: 32
-        y: 26
-        width: 32
-        height: 20
+        x: 20
+        y: 48
+        width: 20
+        height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -407,20 +250,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9145b823cf5a56344816a4d59782d0be
-      internalID: 879978132
+      spriteID: 01996da0cfb31c44db62e73279c41a77
+      internalID: -118996838
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mascine_M_Attack_Animation_12
+      name: Mascine_R_Attack_Animation_7
       rect:
         serializedVersion: 2
-        x: 64
-        y: 26
-        width: 32
-        height: 20
+        x: 40
+        y: 48
+        width: 20
+        height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -428,20 +271,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 67d9c29dd69e5434fab0c9cc464bf86f
-      internalID: 1708363292
+      spriteID: f1d7c33ea5e814a4c92e02cce590704b
+      internalID: 460019019
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mascine_M_Attack_Animation_13
+      name: Mascine_R_Attack_Animation_8
       rect:
         serializedVersion: 2
-        x: 96
-        y: 26
-        width: 32
-        height: 20
+        x: 60
+        y: 48
+        width: 20
+        height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -449,20 +292,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 545879a3df6bcac4e9c8abf4e5e73f13
-      internalID: 2117188980
+      spriteID: 7032fc5cfe21299418364be536276803
+      internalID: 1951338242
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mascine_M_Attack_Animation_14
+      name: Mascine_R_Attack_Animation_9
       rect:
         serializedVersion: 2
-        x: 128
-        y: 26
-        width: 32
-        height: 20
+        x: 80
+        y: 48
+        width: 20
+        height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -470,20 +313,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8946b477e3a0cd549910ddc73a8ac99c
-      internalID: -1342538936
+      spriteID: 6cd2e9bff7f78fb48af612faa33992d9
+      internalID: -1128505557
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mascine_M_Attack_Animation_15
+      name: Mascine_R_Attack_Animation_10
       rect:
         serializedVersion: 2
         x: 0
-        y: 6
-        width: 32
-        height: 20
+        y: 24
+        width: 20
+        height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -491,20 +334,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8eff78998eda4e34096f8fe355aa61ca
-      internalID: 578332197
+      spriteID: 7cec067e7adcabd45a71224c0cfcfc59
+      internalID: 451380949
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mascine_M_Attack_Animation_16
+      name: Mascine_R_Attack_Animation_11
       rect:
         serializedVersion: 2
-        x: 32
-        y: 6
-        width: 32
-        height: 20
+        x: 20
+        y: 24
+        width: 20
+        height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -512,20 +355,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 05e8f80cbf85cfd41bceb733c1cc5ac9
-      internalID: -784245158
+      spriteID: ad400ba5d4f7a1f438ab8d26ab9ce48b
+      internalID: 1198888234
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mascine_M_Attack_Animation_17
+      name: Mascine_R_Attack_Animation_12
       rect:
         serializedVersion: 2
-        x: 64
-        y: 6
-        width: 32
-        height: 20
+        x: 40
+        y: 24
+        width: 20
+        height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -533,20 +376,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 340d3e13846273144a2790c6cf10b76f
-      internalID: 213384039
+      spriteID: 0fb660c7928e49b45b6f87a88cb3729a
+      internalID: 559132536
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mascine_M_Attack_Animation_18
+      name: Mascine_R_Attack_Animation_13
       rect:
         serializedVersion: 2
-        x: 96
-        y: 6
-        width: 32
-        height: 20
+        x: 60
+        y: 24
+        width: 20
+        height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -554,20 +397,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b4bc7cbffc66f0d49b80ba49e7da3a67
-      internalID: 988714523
+      spriteID: d0e007e35186b744488d8134f97aa3db
+      internalID: -1051004297
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Mascine_M_Attack_Animation_19
+      name: Mascine_R_Attack_Animation_14
       rect:
         serializedVersion: 2
-        x: 128
-        y: 6
-        width: 32
-        height: 20
+        x: 80
+        y: 24
+        width: 20
+        height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -575,8 +418,113 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e3d96d98c304d754aadb600944c194ca
-      internalID: 1609436380
+      spriteID: 5df3aa03324a452428b3f7b9bdb75643
+      internalID: 1620631155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mascine_R_Attack_Animation_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 20
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f4a38127cf3e4c46a1c6e2b5e800f90
+      internalID: 1708171351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mascine_R_Attack_Animation_16
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 0
+        width: 20
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e04cd02626a487144af68680fa71bfb2
+      internalID: -1666006193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mascine_R_Attack_Animation_17
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 0
+        width: 20
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69c7106aa7d8c9948a3a4bad8afe5238
+      internalID: -2098425436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mascine_R_Attack_Animation_18
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 0
+        width: 20
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d4db1bf7892dcc4cb32ffa1d4d67fea
+      internalID: -1257680728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mascine_R_Attack_Animation_19
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 0
+        width: 20
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1323f1229e19214096e488355f1113e
+      internalID: 730311980
       vertices: []
       indices: 
       edges: []
@@ -592,26 +540,26 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Mascine_M_Attack_Animation_0: -1765477903
-      Mascine_M_Attack_Animation_1: 1747343721
-      Mascine_M_Attack_Animation_10: -1203479143
-      Mascine_M_Attack_Animation_11: 879978132
-      Mascine_M_Attack_Animation_12: 1708363292
-      Mascine_M_Attack_Animation_13: 2117188980
-      Mascine_M_Attack_Animation_14: -1342538936
-      Mascine_M_Attack_Animation_15: 578332197
-      Mascine_M_Attack_Animation_16: -784245158
-      Mascine_M_Attack_Animation_17: 213384039
-      Mascine_M_Attack_Animation_18: 988714523
-      Mascine_M_Attack_Animation_19: 1609436380
-      Mascine_M_Attack_Animation_2: 1590408605
-      Mascine_M_Attack_Animation_3: 1610565346
-      Mascine_M_Attack_Animation_4: -174493718
-      Mascine_M_Attack_Animation_5: 1809974595
-      Mascine_M_Attack_Animation_6: 1484020733
-      Mascine_M_Attack_Animation_7: -3228060
-      Mascine_M_Attack_Animation_8: 534931037
-      Mascine_M_Attack_Animation_9: 1040504154
+      Mascine_R_Attack_Animation_0: -367171647
+      Mascine_R_Attack_Animation_1: 1722401667
+      Mascine_R_Attack_Animation_10: 451380949
+      Mascine_R_Attack_Animation_11: 1198888234
+      Mascine_R_Attack_Animation_12: 559132536
+      Mascine_R_Attack_Animation_13: -1051004297
+      Mascine_R_Attack_Animation_14: 1620631155
+      Mascine_R_Attack_Animation_15: 1708171351
+      Mascine_R_Attack_Animation_16: -1666006193
+      Mascine_R_Attack_Animation_17: -2098425436
+      Mascine_R_Attack_Animation_18: -1257680728
+      Mascine_R_Attack_Animation_19: 730311980
+      Mascine_R_Attack_Animation_2: 2089912485
+      Mascine_R_Attack_Animation_3: 742413093
+      Mascine_R_Attack_Animation_4: -1565547727
+      Mascine_R_Attack_Animation_5: 1104912190
+      Mascine_R_Attack_Animation_6: -118996838
+      Mascine_R_Attack_Animation_7: 460019019
+      Mascine_R_Attack_Animation_8: 1951338242
+      Mascine_R_Attack_Animation_9: -1128505557
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
