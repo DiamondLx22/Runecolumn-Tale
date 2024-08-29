@@ -37,7 +37,7 @@ public class PlayerMovement : MonoBehaviour
         moveAction = inputActions.Player.Move;
         interactAction = inputActions.Player.Interact;
         meleeAttack = inputActions.Player.MeleeAttack;
-        rangeAttack = inputActions.Player.RangeAttack;
+        //rangeAttack = inputActions.Player.RangeAttack;
     }
       
     private void OnEnable()
