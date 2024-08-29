@@ -25,12 +25,11 @@ public class PlayerMovement : MonoBehaviour
 
     public static event Action SubscribeAction;
     public static event Action UnsubscribeAction;
-
-    public float timerMax;
-    private float timer;
-    private bool attacked = false;
-
-
+    
+    
+    
+    //--- Awake ---
+    #region Awake
     private void Awake()
     {
         inputActions = new Player_InputActions();
@@ -39,7 +38,12 @@ public class PlayerMovement : MonoBehaviour
         meleeAttack = inputActions.Player.MeleeAttack;
         rangeAttack = inputActions.Player.RangeAttack;
     }
-      
+    #endregion
+    
+    
+    
+    //--- OnEnable ---
+    #region OnEnable
     private void OnEnable()
     {
         inputActions.Enable();
@@ -47,10 +51,8 @@ public class PlayerMovement : MonoBehaviour
         moveAction.canceled += Move;
 
         meleeAttack.performed += MeleeAttack;
-        meleeAttack.canceled += MeleeAttack;
-
         rangeAttack.performed += RangeAttack;
-        rangeAttack.canceled += RangeAttack;
+   
 
         //interactAction.performed += Interact;
         StartCoroutine(routine: DelaySubscribe());
@@ -61,9 +63,12 @@ public class PlayerMovement : MonoBehaviour
         yield return null;
         SubscribeAction?.Invoke();
     }
+    #endregion
     
     
-
+    
+    //--- OnDisable ---
+    #region OnDisable
     private void OnDisable()
     {
         inputActions.Disable();
@@ -71,10 +76,7 @@ public class PlayerMovement : MonoBehaviour
         moveAction.canceled -= Move;
 
         meleeAttack.performed -= MeleeAttack;
-        meleeAttack.canceled -= MeleeAttack;
-
         rangeAttack.performed -= RangeAttack;
-        rangeAttack.canceled -= RangeAttack;
 
 
         // interactAction.performed -= Interact;
@@ -89,7 +91,11 @@ public class PlayerMovement : MonoBehaviour
     { 
         inputActions.Disable();
     }
+    #endregion
 
+    
+    
+    //--- Movement ---
     #region Movement
     
     void Move(InputAction.CallbackContext context) 
@@ -110,8 +116,10 @@ public class PlayerMovement : MonoBehaviour
 
     #endregion
 
+    
 
-    //Cancel Melee Weapon Animation
+    //--- MeleeAttack CancelAnimation ---
+    #region MeleeAttack CancelAnimation
     private void MeleeAttack(InputAction.CallbackContext context)
     {
         if (context.performed)
@@ -127,65 +135,48 @@ public class PlayerMovement : MonoBehaviour
             {
                 anim[i].SetTrigger("meleeAttack");
             }
-            attacked = true;
         }
     }
+    #endregion
 
-
+    
+    
+    //--- RangeAttack CancelAnimation ---
+    #region RangeAttack CancelAnimation
+    
     private void RangeAttack(InputAction.CallbackContext context)
     {
         if (context.performed)
         {
-            for (int i = 0; i < rangeAttackAnims.Length; i++)
+            for (int i = 0; i < weaponanim.Length; i++)
             {
-                //weaponanim[i].SetBool("meleeAttack",true);
-                SpriteRenderer renderer = rangeAttackAnims[i].GetComponent<SpriteRenderer>();
-                renderer.enabled = true;
-                rangeAttackAnims[i].enabled = true;
-                rangeAttackAnims[i].SetTrigger("rangeAttack");
-                //print(moveInput.x + "  " + moveInput.y);
+                weaponanim[i].gameObject.SetActive(true);
+                weaponanim[i].SetFloat("dirX", anim[0].GetFloat("dirX"));
+                weaponanim[i].SetFloat("dirY", anim[0].GetFloat("dirY"));
             }
 
             for (int i = 0; i < anim.Length; i++)
             {
                 anim[i].SetTrigger("rangeAttack");
             }
-            attacked = true;
         }
     }
+    #endregion
+    
+    
+    
+    //--- Update ---
+    #region Update
     private void Update()
     {
         UpdateAnimations();
-
-        if (attacked)
-        {
-            timer += Time.deltaTime;
-            if (timer > timerMax)
-            {
-                for (int i = 0; i < weaponanim.Length; i++)
-                {
-                    //weaponanim[i].SetBool("meleeAttack",true);
-                    //weaponanim[i].enabled = false;
-                    SpriteRenderer renderer = weaponanim[i].GetComponent<SpriteRenderer>();
-                    renderer.enabled = false;
-                }
-                
-                for (int i = 0; i < rangeAttackAnims.Length; i++)
-                {
-                    //weaponanim[i].SetBool("meleeAttack",true);
-                    //weaponanim[i].enabled = false;
-                    SpriteRenderer renderer = rangeAttackAnims[i].GetComponent<SpriteRenderer>();
-                    renderer.enabled = false;
-                }
-                
-                attacked = false;
-                timer = 0;
-            }
-
-        }
     }
-
+    #endregion
     
+    
+    
+    //--- UpdateAnimations ---
+    #region UpdateAnimations
     public void UpdateAnimations()
     {
         if (moveInput != Vector2.zero)
@@ -224,6 +215,7 @@ public class PlayerMovement : MonoBehaviour
         }
 
     }
+    #endregion
 
 
 
