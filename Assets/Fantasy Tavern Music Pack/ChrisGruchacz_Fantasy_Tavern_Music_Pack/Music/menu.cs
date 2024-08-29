@@ -37,7 +37,7 @@ public class menu : MonoBehaviour{
 
     public void StartGame()
     {
-        SceneManager.LoadScene("ggg");
+        SceneManager.LoadScene("MainWorld");
      
 
     }
