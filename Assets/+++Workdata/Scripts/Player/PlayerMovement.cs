@@ -111,18 +111,16 @@ public class PlayerMovement : MonoBehaviour
     #endregion
 
 
- 
+    //Cancel Melee Weapon Animation
     private void MeleeAttack(InputAction.CallbackContext context)
     {
         if (context.performed)
         {
             for (int i = 0; i < weaponanim.Length; i++)
             {
-                //weaponanim[i].SetBool("meleeAttack",true);
-                SpriteRenderer renderer = weaponanim[i].GetComponent<SpriteRenderer>();
-                renderer.enabled = true;
-                weaponanim[i].enabled = true;
-                print(moveInput.x + "  " + moveInput.y);
+               weaponanim[i].gameObject.SetActive(true);
+               weaponanim[i].SetFloat("dirX", anim[0].GetFloat("dirX"));
+               weaponanim[i].SetFloat("dirY", anim[0].GetFloat("dirY"));
             }
 
             for (int i = 0; i < anim.Length; i++)
