@@ -49,15 +49,6 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
-                },
-                {
-                    "name": "RangeAttack",
-                    "type": "Button",
-                    "id": "8c025051-c7f8-4c5e-a9b7-40f309b6efe6",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -300,17 +291,6 @@
                     "processors": "",
                     "groups": "Keyboard&Mouse",
                     "action": "MeleeAttack",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "1d2e5ad6-514e-4856-9349-4cad0159dc0d",
-                    "path": "<Mouse>/rightButton",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "Keyboard&Mouse",
-                    "action": "RangeAttack",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
