@@ -16,8 +16,8 @@ public class PlayerMovement : MonoBehaviour
     private InputAction interactAction;
     public Rigidbody2D rb;
     
-    public Animator[] weaponanim;
-    public Animator[] rangeAttackAnims;
+    public Animator[] meleeAnim;
+    public Animator[] rangeAnim;
     public Animator[] anim;
     private Vector2 moveInput;
     public float movespeed;
@@ -26,12 +26,11 @@ public class PlayerMovement : MonoBehaviour
     public static event Action SubscribeAction;
     public static event Action UnsubscribeAction;
     
-    
-    
     //--- Awake ---
     #region Awake
     private void Awake()
     {
+      
         inputActions = new Player_InputActions();
         moveAction = inputActions.Player.Move;
         interactAction = inputActions.Player.Interact;
@@ -120,21 +119,25 @@ public class PlayerMovement : MonoBehaviour
 
     //--- MeleeAttack CancelAnimation ---
     #region MeleeAttack CancelAnimation
+
+    public bool canMeleeAttack = true;
     private void MeleeAttack(InputAction.CallbackContext context)
     {
-        if (context.performed)
+        if (context.performed && canMeleeAttack)
         {
-            for (int i = 0; i < weaponanim.Length; i++)
+            for (int i = 0; i < meleeAnim.Length; i++)
             {
-               weaponanim[i].gameObject.SetActive(true);
-               weaponanim[i].SetFloat("dirX", anim[0].GetFloat("dirX"));
-               weaponanim[i].SetFloat("dirY", anim[0].GetFloat("dirY"));
+                meleeAnim[i].gameObject.SetActive(true);
+                meleeAnim[i].SetFloat("dirX", anim[0].GetFloat("dirX"));
+                meleeAnim[i].SetFloat("dirY", anim[0].GetFloat("dirY"));
             }
 
             for (int i = 0; i < anim.Length; i++)
             {
                 anim[i].SetTrigger("meleeAttack");
             }
+
+            canMeleeAttack = false;
         }
     }
     #endregion
@@ -143,22 +146,25 @@ public class PlayerMovement : MonoBehaviour
     
     //--- RangeAttack CancelAnimation ---
     #region RangeAttack CancelAnimation
-    
+
+    public bool canRangeAttack = true;
     private void RangeAttack(InputAction.CallbackContext context)
     {
-        if (context.performed)
+        if (context.performed && canRangeAttack)
         {
-            for (int i = 0; i < weaponanim.Length; i++)
+            for (int i = 0; i < rangeAnim.Length; i++)
             {
-                weaponanim[i].gameObject.SetActive(true);
-                weaponanim[i].SetFloat("dirX", anim[0].GetFloat("dirX"));
-                weaponanim[i].SetFloat("dirY", anim[0].GetFloat("dirY"));
+                rangeAnim[i].gameObject.SetActive(true);
+                rangeAnim[i].SetFloat("dirX", anim[0].GetFloat("dirX"));
+                rangeAnim[i].SetFloat("dirY", anim[0].GetFloat("dirY"));
             }
 
             for (int i = 0; i < anim.Length; i++)
             {
                 anim[i].SetTrigger("rangeAttack");
             }
+
+            canRangeAttack = false;
         }
     }
     #endregion
@@ -196,22 +202,18 @@ public class PlayerMovement : MonoBehaviour
 
         if (moveInput != Vector2.zero)
         {
-            for (int i = 0; i < weaponanim.Length; i++)
+            for (int i = 0; i < rangeAnim.Length; i++)
             {
-                weaponanim[i].SetFloat("dirX", moveInput.x);
-                weaponanim[i].SetFloat("dirY", moveInput.y);
+                rangeAnim[i].SetFloat("dirX", moveInput.x);
+                rangeAnim[i].SetFloat("dirY", moveInput.y);
             }
             
-            for (int i = 0; i < rangeAttackAnims.Length; i++)
+            for (int i = 0; i < meleeAnim.Length; i++)
             {
-                rangeAttackAnims[i].SetFloat("dirX", moveInput.x);
-                rangeAttackAnims[i].SetFloat("dirY", moveInput.y);
+                meleeAnim[i].SetFloat("dirX", moveInput.x);
+                meleeAnim[i].SetFloat("dirY", moveInput.y);
             }
 
-        }
-        for (int i = 0; i < anim.Length; i++)
-        {
-            weaponanim[i].SetBool("meleeAttack", moveInput != Vector2.zero);
         }
 
     }

@@ -198,6 +198,7 @@ GameObject:
   - component: {fileID: 387009138}
   - component: {fileID: 387009140}
   - component: {fileID: 387009139}
+  - component: {fileID: 387009141}
   m_Layer: 0
   m_Name: Sword1Effect
   m_TagString: Untagged
@@ -293,6 +294,20 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &387009141
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 387009137}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 928ac23c609c0de408bea76517042eb3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim:
+  - {fileID: 387009140}
 --- !u!1 &435047801
 GameObject:
   m_ObjectHideFlags: 0
@@ -52399,7 +52414,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 480201052}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: c260de20d66101548b0c052febca8f7f, type: 2}
   m_CullingMode: 0
@@ -52537,18 +52552,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 489119951}
-  weaponanim:
+  meleeAnim:
   - {fileID: 579109958}
   - {fileID: 387009140}
-  - {fileID: 480201055}
+  rangeAnim:
   - {fileID: 442055014}
   - {fileID: 435047803}
-  - {fileID: 1935151020}
-  rangeAttackAnims:
-  - {fileID: 442055014}
   anim:
   - {fileID: 1077615751}
   movespeed: 5
+  canMeleeAttack: 1
+  canRangeAttack: 1
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -52717,7 +52731,7 @@ Transform:
   m_GameObject: {fileID: 579109955}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.5, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -52810,7 +52824,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   anim:
   - {fileID: 579109958}
-  - {fileID: 387009140}
 --- !u!1 &594130356
 GameObject:
   m_ObjectHideFlags: 0
@@ -53599,15 +53612,15 @@ SpriteRenderer:
   m_SortingLayerID: -1608967117
   m_SortingLayer: 3
   m_SortingOrder: 0
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: -1765477903, guid: 68d1e20ad94336b4698c1f96df59612f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1.25, y: 1.25}
+  m_Size: {x: 2, y: 1.25}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &1248289836
@@ -54110,6 +54123,6 @@ SceneRoots:
   m_Roots:
   - {fileID: 1248289837}
   - {fileID: 1659207495}
-  - {fileID: 489119947}
   - {fileID: 1497240063}
   - {fileID: 177461008}
+  - {fileID: 489119947}
