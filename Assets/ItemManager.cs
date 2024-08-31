@@ -2,22 +2,22 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class StateManager : MonoBehaviour
+public class ItemManager : MonoBehaviour
 {
 
     private GameController gameController;
-    public StateInfo[] stateInfos;
-    //  public List<StateInfo> stateInfos;
-    [SerializeField] TextMeshProUGUI text_header, text_description;
-    [SerializeField] private GameObject stateContainer;
+    //public StateInfo[] stateInfos;
+    public List<StateInfo> stateInfos;
+    [SerializeField] TextMeshProUGUI ItemPopUpHeader, ItemPopUpDescription, ItemPopUpAmount;
+    [SerializeField] private GameObject ItemPopUpCollected;
     [SerializeField] private Image image;
-    [SerializeField] private Button button;
+    
 
+    public bool isStateContainerShown = false;
     private void Awake()
     {
         gameController = FindObjectOfType<GameController>();
@@ -40,35 +40,35 @@ public class StateManager : MonoBehaviour
         {
             if (stateInfo.id == id)
             {
-                text_header.SetText(stateInfo.itemName);
-                text_description.SetText(stateInfo.description);
+                ItemPopUpHeader.SetText(stateInfo.itemName);
+                ItemPopUpDescription.SetText(stateInfo.description);
                 image.sprite = stateInfo.icon;
             }
-        }
+            }
 
-        //print($"new Item collected with the id: {id} with the amount of");
+        print($"new Item collected with the id: {id} with the amount of");
         StartCoroutine(DelayOpenPanel());
-
-
     }
 
     IEnumerator DelayOpenPanel()
     {
         yield return null;
-        stateContainer.SetActive(true);
+        ItemPopUpCollected.SetActive(true);
         Selectable newSelection;
-        newSelection = button;
 
-        yield return null; // Wait for next Update() / next frame
 
-        newSelection.Select();
+        yield return null; //Wait for next Update() / next frame
+
+
+        isStateContainerShown = true;
         //gameController.StartStatePopUp();
     }
 
     public void CloseStatePopUp()
     {
-        stateContainer.SetActive(false);
-        //EventSystem.current.SetSelectedGameObject(null);
+        ItemPopUpCollected.SetActive(false);
+        EventSystem.current.SetSelectedGameObject(null);
+        isStateContainerShown = false;
         //gameController.EndStatePopUpMode();
     }
 

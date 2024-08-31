@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class InventoryManager : MonoBehaviour
 {
     private GameState gameState;
-    private StateManager stateManager;
+    private ItemManager itemManager;
 
     [SerializeField]
     private InventorySlot[] InventorySlots;
@@ -21,7 +21,7 @@ public class InventoryManager : MonoBehaviour
     private void Awake()
     {
         gameState = FindObjectOfType<GameState>();
-        stateManager = FindObjectOfType<StateManager>();
+        itemManager = FindObjectOfType<ItemManager>();
     }
 
     public void RefreshInventory()
@@ -39,7 +39,7 @@ public class InventoryManager : MonoBehaviour
 
             if (i < currentStateList.Count)
             {
-                StateInfo newStateInfo = stateManager.GetStateById(currentStateList[i].id);
+                StateInfo newStateInfo = itemManager.GetStateById(currentStateList[i].id);
                 newStateInfo.amount = currentStateList[i].amount;
                 InventorySlots[i].SetStateInfo(newStateInfo);
             }
