@@ -12,7 +12,8 @@ public class ItemManager : MonoBehaviour
     private GameController gameController;
     //public StateInfo[] stateInfos;
     public List<StateInfo> stateInfos;
-    [SerializeField] TextMeshProUGUI ItemPopUpHeader, ItemPopUpDescription, ItemPopUpAmount;
+
+    [SerializeField] private TextMeshProUGUI ItemPopUpHeader, ItemPopUpDescription, ItemPopUpAmount;
     [SerializeField] private GameObject ItemPopUpCollected;
     [SerializeField] private Image image;
     
@@ -42,9 +43,11 @@ public class ItemManager : MonoBehaviour
             {
                 ItemPopUpHeader.SetText(stateInfo.itemName);
                 ItemPopUpDescription.SetText(stateInfo.description);
+                
                 image.sprite = stateInfo.icon;
             }
-            }
+
+        }
 
         print($"new Item collected with the id: {id} with the amount of");
         StartCoroutine(DelayOpenPanel());
