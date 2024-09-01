@@ -53,7 +53,7 @@ public class PlayerMovement : MonoBehaviour
         rangeAttack.performed += RangeAttack;
    
 
-        //interactAction.performed += Interact;
+        interactAction.performed += Interact;
         StartCoroutine(routine: DelaySubscribe());
     }
 
@@ -78,7 +78,7 @@ public class PlayerMovement : MonoBehaviour
         rangeAttack.performed -= RangeAttack;
 
 
-        // interactAction.performed -= Interact;
+        interactAction.performed -= Interact;
     }
 
     public void EnableInput() 

@@ -52,6 +52,7 @@ public class InventorySlot : MonoBehaviour
 
     IEnumerator InitiateTurnOffBorder()
     {
+       
         yield return null;
         slotBorder.SetActive(false);
     }
