@@ -21,7 +21,7 @@ public class PlayerMovement : MonoBehaviour
     public Animator[] anim;
     private Vector2 moveInput;
     public float movespeed;
-    //private Interactable selectedInteractable;
+    private Interactable selectedInteractable;
 
     public static event Action SubscribeAction;
     public static event Action UnsubscribeAction;
@@ -228,9 +228,9 @@ public class PlayerMovement : MonoBehaviour
 
    private void Interact(InputAction.CallbackContext context)
     {
-       // if (selectedInteractable != null)
+        if (selectedInteractable != null)
         {
-           // selectedInteractable.Interact();
+            selectedInteractable.Interact();
         }
     }
 
@@ -247,26 +247,26 @@ public class PlayerMovement : MonoBehaviour
 
     private void TrySelectInteractable(Collider2D col)
     {
-      //  Interactable interactable = col.GetComponent<Interactable>();
-        //if (interactable == null) return;
+        Interactable interactable = col.GetComponent<Interactable>();
+        if (interactable == null) return;
 
-       // if (selectedInteractable != null)
+        if (selectedInteractable != null)
         {
-        //    selectedInteractable.Deselect();
+            selectedInteractable.Deselect();
         }
-       // selectedInteractable = interactable;
-       // selectedInteractable.Select();
+        selectedInteractable = interactable;
+        selectedInteractable.Select();
     }
 
     private void TryDeselectInteractable(Collider2D col)
     {
-       // Interactable interactable = col.GetComponent<Interactable>();
-        //if (interactable == null) return;
+        Interactable interactable = col.GetComponent<Interactable>();
+        if (interactable == null) return;
 
-      //  if (interactable == selectedInteractable)
+        if (interactable == selectedInteractable)
         {
-       //     selectedInteractable.Deselect();
-       //     selectedInteractable = null;
+            selectedInteractable.Deselect();
+            selectedInteractable = null;
         }
     }
 
