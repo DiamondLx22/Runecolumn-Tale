@@ -4,9 +4,9 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.InputSystem; // Importiert das neue Input System
 
-public class Pausemenu : MonoBehaviour
+public class PauseManager : MonoBehaviour
 {
-    public GameObject pausemenu;
+    public GameObject pauseMenu;
     public static bool isPaused;
 
     // Reference to the Input Action Asset
@@ -14,20 +14,20 @@ public class Pausemenu : MonoBehaviour
 
     void Start()
     {
-        pausemenu.SetActive(false);
+        pauseMenu.SetActive(false);
 
         // Initialisieren Sie die Input Actions
         var inputActionAsset = new PauseMenuInputActions();
         pauseAction = inputActionAsset.UI.Pause;
         pauseAction.Enable();
 
-        // Fügen Sie den Callback für die Pause-Funktion hinzu
+        // FÃ¼gen Sie den Callback fÃ¼r die Pause-Funktion hinzu
         pauseAction.performed += OnPause;
     }
 
     private void OnDestroy()
     {
-        // Entfernen Sie den Callback, wenn das Objekt zerstört wird
+        // Entfernen Sie den Callback, wenn das Objekt zerstÃ¶rt wird
         pauseAction.performed -= OnPause;
     }
 
@@ -45,14 +45,14 @@ public class Pausemenu : MonoBehaviour
 
     public void PauseGame()
     {
-        pausemenu.SetActive(true);
+        pauseMenu.SetActive(true);
         Time.timeScale = 0f;
         isPaused = true;
     }
 
     public void ResumeGame()
     {
-        pausemenu.SetActive(false);
+        pauseMenu.SetActive(false);
         Time.timeScale = 1f;
         isPaused = false;
     }
