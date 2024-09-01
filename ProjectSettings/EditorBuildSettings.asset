@@ -6,9 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: "Assets/+++Workdata/Scenes/UnitySemesterMen\xFCPackage.unity"
-    guid: d43f6016e1550bc439b25948515c005b
+    path: Assets/+++Workdata/Scenes/PreloadMenu.unity
+    guid: c8584ca49923b3744894d05f5a6c4cb2
+  - enabled: 1
+    path: Assets/+++Workdata/Scenes/MainMenu.unity
+    guid: 7aa0e749027925b438d354fa6da47ed1
   - enabled: 1
     path: Assets/+++Workdata/Scenes/MainWorld.unity
-    guid: 1e36a4d57af6319448960a694f1345c4
+    guid: 3bb6af5cda80ffb43bf6903bac60dc5e
   m_configObjects: {}
