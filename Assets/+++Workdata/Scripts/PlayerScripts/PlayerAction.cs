@@ -56,16 +56,16 @@ public class PlayerAction : MonoBehaviour
             case ActionType.Attack:
                 if (context.performed)
                 {
-                    playerMovement.anim.SetTrigger("actionTrigger");
-                    playerMovement.anim.SetInteger("actionId", actionId); 
+                    playerMovement.anim[0].SetTrigger("actionTrigger");
+                    playerMovement.anim[0].SetInteger("actionId", actionId); 
                     print("action");
                 }
                 
                 weaponAnim.SetTrigger("actionTrigger");
                 weaponAnim.SetInteger("weaponId", weaponId);
                 weaponAnim.SetInteger("attackId", attackId);
-                float dirX = playerMovement.anim.GetFloat("dirX");
-                float dirY = playerMovement.anim.GetFloat("dirY");
+                float dirX = playerMovement.anim[0].GetFloat("dirX");
+                float dirY = playerMovement.anim[0].GetFloat("dirY");
                 weaponAnim.SetFloat("dirX", dirX);
                 weaponAnim.SetFloat("dirY", dirY);
                 //Player: 
