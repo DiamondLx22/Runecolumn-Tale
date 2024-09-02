@@ -51,6 +51,9 @@ TagManager:
   - name: Player
     uniqueID: 2686000179
     locked: 0
+  - name: Stonecircle
+    uniqueID: 303224181
+    locked: 0
   - name: Buildings
     uniqueID: 162020785
     locked: 0
