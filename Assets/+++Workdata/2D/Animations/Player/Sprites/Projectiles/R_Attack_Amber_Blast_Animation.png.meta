@@ -81,59 +81,7 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
     buildTarget: Standalone
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: iPhone
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Windows Store Apps
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -166,18 +114,18 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 48
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        y: 72
+        width: 20
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 67c9696d9a3247d4ca30716b9c23eee5
-      internalID: 1103138002
+      spriteID: 01c66c0a53efdc847b66cbf318c2d2af
+      internalID: -1968733409
       vertices: []
       indices: 
       edges: []
@@ -186,19 +134,19 @@ TextureImporter:
       name: R_Attack_Amber_Blast_Animation_1
       rect:
         serializedVersion: 2
-        x: 16
-        y: 48
-        width: 16
-        height: 16
+        x: 20
+        y: 72
+        width: 20
+        height: 24
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 45e4342fd7efba442a807bace43fd172
-      internalID: -1303545387
+      spriteID: f3f7cd8912a4b6c43b536c4a3ef0b025
+      internalID: 1059554918
       vertices: []
       indices: 
       edges: []
@@ -207,19 +155,19 @@ TextureImporter:
       name: R_Attack_Amber_Blast_Animation_2
       rect:
         serializedVersion: 2
-        x: 32
-        y: 48
-        width: 16
-        height: 16
+        x: 40
+        y: 72
+        width: 20
+        height: 24
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d7c02db55aa5cc742a064ef8d4764c79
-      internalID: 646371163
+      spriteID: 9d9cf38cd91b7a847b6045a3eb20d215
+      internalID: -299343235
       vertices: []
       indices: 
       edges: []
@@ -228,19 +176,19 @@ TextureImporter:
       name: R_Attack_Amber_Blast_Animation_3
       rect:
         serializedVersion: 2
-        x: 48
-        y: 48
-        width: 16
-        height: 16
+        x: 60
+        y: 72
+        width: 20
+        height: 24
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 57a028f30b68d52418854b4096720760
-      internalID: 1164397365
+      spriteID: 710e9599b5f50484f99abab46bb78c6b
+      internalID: -1954512939
       vertices: []
       indices: 
       edges: []
@@ -250,18 +198,18 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 32
-        width: 16
-        height: 16
+        y: 48
+        width: 20
+        height: 24
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: efedc4c74c9e9ba4f96cd468ee654608
-      internalID: -774399089
+      spriteID: b00fd75c5282883478d9820852af2dea
+      internalID: 312898756
       vertices: []
       indices: 
       edges: []
@@ -270,19 +218,19 @@ TextureImporter:
       name: R_Attack_Amber_Blast_Animation_5
       rect:
         serializedVersion: 2
-        x: 16
-        y: 32
-        width: 16
-        height: 16
+        x: 20
+        y: 48
+        width: 20
+        height: 24
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8ebcc3c603b464547b5bdb38e5049a6a
-      internalID: -171244355
+      spriteID: 6e2ca4ccff6e3ca4595a129793ffcb04
+      internalID: 2011259729
       vertices: []
       indices: 
       edges: []
@@ -291,19 +239,19 @@ TextureImporter:
       name: R_Attack_Amber_Blast_Animation_6
       rect:
         serializedVersion: 2
-        x: 32
-        y: 32
-        width: 16
-        height: 16
+        x: 40
+        y: 48
+        width: 20
+        height: 24
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bd326aa62e18ee0418502c01e7f27548
-      internalID: -710392314
+      spriteID: 818a140b0ed69b74993aec165f32013f
+      internalID: 1547041944
       vertices: []
       indices: 
       edges: []
@@ -312,19 +260,19 @@ TextureImporter:
       name: R_Attack_Amber_Blast_Animation_7
       rect:
         serializedVersion: 2
-        x: 48
-        y: 32
-        width: 16
-        height: 16
+        x: 60
+        y: 48
+        width: 20
+        height: 24
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5e18acd28c332b54c87a12407823f450
-      internalID: -940807934
+      spriteID: d5b728cc1c2ca3e4b83e1910f1283115
+      internalID: 781245800
       vertices: []
       indices: 
       edges: []
@@ -334,18 +282,18 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 16
-        width: 16
-        height: 16
+        y: 24
+        width: 20
+        height: 24
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: de48f8de1ce7a5645926c8a12799db6c
-      internalID: -724747797
+      spriteID: 72a30738c122e124492642dbea5d9e8b
+      internalID: -498558899
       vertices: []
       indices: 
       edges: []
@@ -354,19 +302,19 @@ TextureImporter:
       name: R_Attack_Amber_Blast_Animation_9
       rect:
         serializedVersion: 2
-        x: 16
-        y: 16
-        width: 16
-        height: 16
+        x: 20
+        y: 24
+        width: 20
+        height: 24
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d81543e60cc17cc4b8c26b4b8b48121a
-      internalID: 1061367422
+      spriteID: b85607e871d41a244ae1f6b412a91358
+      internalID: -644686003
       vertices: []
       indices: 
       edges: []
@@ -375,19 +323,19 @@ TextureImporter:
       name: R_Attack_Amber_Blast_Animation_10
       rect:
         serializedVersion: 2
-        x: 32
-        y: 16
-        width: 16
-        height: 16
+        x: 40
+        y: 24
+        width: 20
+        height: 24
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 85be0a5321a959a48a13b7d1bf7b0161
-      internalID: 1704235705
+      spriteID: 4d4778923fc31bc4281d6a14add10624
+      internalID: -1455716753
       vertices: []
       indices: 
       edges: []
@@ -396,19 +344,19 @@ TextureImporter:
       name: R_Attack_Amber_Blast_Animation_11
       rect:
         serializedVersion: 2
-        x: 48
-        y: 16
-        width: 16
-        height: 16
+        x: 60
+        y: 24
+        width: 20
+        height: 24
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 52341a294266f8d4b831ba022476f953
-      internalID: 165928768
+      spriteID: f5baad688f9a0d74daa7d83b8c76966f
+      internalID: 1695220818
       vertices: []
       indices: 
       edges: []
@@ -419,17 +367,17 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 16
-        height: 16
+        width: 20
+        height: 24
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: da20c5bc79cc50c47a046968781c7d10
-      internalID: -1801826454
+      spriteID: eac01e4a7bf687d4f8178dcc44d9280e
+      internalID: -725601730
       vertices: []
       indices: 
       edges: []
@@ -438,19 +386,19 @@ TextureImporter:
       name: R_Attack_Amber_Blast_Animation_13
       rect:
         serializedVersion: 2
-        x: 16
+        x: 20
         y: 0
-        width: 16
-        height: 16
+        width: 20
+        height: 24
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 74c8cd2feed629042993eb4f59e489b7
-      internalID: 58855954
+      spriteID: c9137462584856145aac5e38f43a09f1
+      internalID: 1614971135
       vertices: []
       indices: 
       edges: []
@@ -459,19 +407,19 @@ TextureImporter:
       name: R_Attack_Amber_Blast_Animation_14
       rect:
         serializedVersion: 2
-        x: 32
+        x: 40
         y: 0
-        width: 16
-        height: 16
+        width: 20
+        height: 24
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dd91d81ce5c7a7b4cbab53e9b154daf7
-      internalID: 1019180352
+      spriteID: b7908d427b7f0e542bfda42ec599f602
+      internalID: -308134834
       vertices: []
       indices: 
       edges: []
@@ -480,19 +428,19 @@ TextureImporter:
       name: R_Attack_Amber_Blast_Animation_15
       rect:
         serializedVersion: 2
-        x: 48
+        x: 60
         y: 0
-        width: 16
-        height: 16
+        width: 20
+        height: 24
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e38ebf4a7e6b2294494dcf51f1287aae
-      internalID: -1718291558
+      spriteID: 709377a59744be64eaf3fa264b178066
+      internalID: 789808944
       vertices: []
       indices: 
       edges: []
@@ -508,22 +456,22 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      R_Attack_Amber_Blast_Animation_0: 1103138002
-      R_Attack_Amber_Blast_Animation_1: -1303545387
-      R_Attack_Amber_Blast_Animation_10: 1704235705
-      R_Attack_Amber_Blast_Animation_11: 165928768
-      R_Attack_Amber_Blast_Animation_12: -1801826454
-      R_Attack_Amber_Blast_Animation_13: 58855954
-      R_Attack_Amber_Blast_Animation_14: 1019180352
-      R_Attack_Amber_Blast_Animation_15: -1718291558
-      R_Attack_Amber_Blast_Animation_2: 646371163
-      R_Attack_Amber_Blast_Animation_3: 1164397365
-      R_Attack_Amber_Blast_Animation_4: -774399089
-      R_Attack_Amber_Blast_Animation_5: -171244355
-      R_Attack_Amber_Blast_Animation_6: -710392314
-      R_Attack_Amber_Blast_Animation_7: -940807934
-      R_Attack_Amber_Blast_Animation_8: -724747797
-      R_Attack_Amber_Blast_Animation_9: 1061367422
+      R_Attack_Amber_Blast_Animation_0: -1968733409
+      R_Attack_Amber_Blast_Animation_1: 1059554918
+      R_Attack_Amber_Blast_Animation_10: -1455716753
+      R_Attack_Amber_Blast_Animation_11: 1695220818
+      R_Attack_Amber_Blast_Animation_12: -725601730
+      R_Attack_Amber_Blast_Animation_13: 1614971135
+      R_Attack_Amber_Blast_Animation_14: -308134834
+      R_Attack_Amber_Blast_Animation_15: 789808944
+      R_Attack_Amber_Blast_Animation_2: -299343235
+      R_Attack_Amber_Blast_Animation_3: -1954512939
+      R_Attack_Amber_Blast_Animation_4: 312898756
+      R_Attack_Amber_Blast_Animation_5: 2011259729
+      R_Attack_Amber_Blast_Animation_6: 1547041944
+      R_Attack_Amber_Blast_Animation_7: 781245800
+      R_Attack_Amber_Blast_Animation_8: -498558899
+      R_Attack_Amber_Blast_Animation_9: -644686003
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
