@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 290bebe2ff7fa8944b2563e90b24be22
+guid: bdbbb3f374c2f8843b7f928aba87f509
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -43,12 +43,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -72,7 +72,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -162,13 +162,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Stonehenge_Pillars_Active_0
+      name: Stonehenge_Ground_Active_0
       rect:
         serializedVersion: 2
-        x: 54
-        y: 95
-        width: 16
-        height: 33
+        x: 0
+        y: 0
+        width: 160
+        height: 160
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -176,134 +176,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8ab5f256679f0e14695907b4c8ccc591
-      internalID: -334844100
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Stonehenge_Pillars_Active_1
-      rect:
-        serializedVersion: 2
-        x: 68
-        y: 64
-        width: 24
-        height: 41
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6baa14487e5a56e47b044ab5f360f99e
-      internalID: -158394187
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Stonehenge_Pillars_Active_2
-      rect:
-        serializedVersion: 2
-        x: 90
-        y: 96
-        width: 16
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8b1e55d789da2b54996e9d90f0d6c53e
-      internalID: -220395254
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Stonehenge_Pillars_Active_3
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 63
-        width: 16
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 212a966627dc34b41ac9327fce2baea4
-      internalID: -1110742231
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Stonehenge_Pillars_Active_4
-      rect:
-        serializedVersion: 2
-        x: 112
-        y: 64
-        width: 16
-        height: 31
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ef88e3d95a5f8e3428810b4366f34e0e
-      internalID: -66814777
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Stonehenge_Pillars_Active_5
-      rect:
-        serializedVersion: 2
-        x: 54
-        y: 32
-        width: 16
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1289250e74f541c4e8136e8e2372342e
-      internalID: 664712654
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Stonehenge_Pillars_Active_6
-      rect:
-        serializedVersion: 2
-        x: 90
-        y: 32
-        width: 16
-        height: 31
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 614f03e8350e3a24d9d34b1cd870e344
-      internalID: 563492329
+      spriteID: 986b1b1a63b446d43b39520850f55328
+      internalID: 567781953
       vertices: []
       indices: 
       edges: []
@@ -319,13 +193,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Stonehenge_Pillars_Active_0: -334844100
-      Stonehenge_Pillars_Active_1: -158394187
-      Stonehenge_Pillars_Active_2: -220395254
-      Stonehenge_Pillars_Active_3: -1110742231
-      Stonehenge_Pillars_Active_4: -66814777
-      Stonehenge_Pillars_Active_5: 664712654
-      Stonehenge_Pillars_Active_6: 563492329
+      Stonehenge_Ground_Active_0: 567781953
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
