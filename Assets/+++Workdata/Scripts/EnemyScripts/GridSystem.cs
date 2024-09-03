@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class GridSystem : MonoBehaviour
 {
-       public Vector2Int gridSize; 
+    public Vector2Int gridSize; 
     public float cellSize;      
     public LayerMask unwalkableMask; 
 
