@@ -19,7 +19,8 @@ public class PlayerMovement : MonoBehaviour
     public Animator[] meleeAnim;
     public Animator[] rangeAnim;
     public Animator[] anim;
-    private Vector2 moveInput;
+    public Vector2 moveInput;
+    
     public float movespeed;
     private Interactable selectedInteractable;
 
