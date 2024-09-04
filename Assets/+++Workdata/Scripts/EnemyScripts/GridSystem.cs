@@ -8,7 +8,7 @@ public class GridSystem : MonoBehaviour
     public float cellSize;      
     public LayerMask unwalkableMask; 
 
-    private GridNode[,] grid;   
+    private GridNode grid;   
 
     void Start()
     {
@@ -17,7 +17,6 @@ public class GridSystem : MonoBehaviour
 
     void CreateGrid()
     {
-        grid = new GridNode[gridSize.x, gridSize.y];
         Vector3 worldBottomLeft = transform.position - Vector3.right * gridSize.x / 2 - Vector3.up * gridSize.y / 2;
 
         for (int x = 0; x < gridSize.x; x++)
@@ -26,7 +25,7 @@ public class GridSystem : MonoBehaviour
             {
                 Vector3 worldPoint = worldBottomLeft + Vector3.right * (x * cellSize + cellSize / 2) + Vector3.up * (y * cellSize + cellSize / 2);
                 bool walkable = !Physics2D.OverlapCircle(worldPoint, cellSize / 2, unwalkableMask);
-                grid[x, y] = new GridNode(new Vector2Int(x, y), worldPoint, walkable);
+                grid = new GridNode(new Vector2Int(x, y), worldPoint, walkable);
             }
         }
     }
@@ -37,7 +36,7 @@ public class GridSystem : MonoBehaviour
         int y = Mathf.RoundToInt((worldPosition.y + gridSize.y * cellSize / 2) / cellSize);
         x = Mathf.Clamp(x, 0, gridSize.x - 1);
         y = Mathf.Clamp(y, 0, gridSize.y - 1);
-        return grid[x, y];
+        return new GridNode(new Vector2Int(x,y), worldPosition, true);
     }
 
     public Vector3 GetWorldPositionFromNode(GridNode node)
@@ -46,17 +45,17 @@ public class GridSystem : MonoBehaviour
     }
 
     
-    void OnDrawGizmos()
-    {
-        if (grid != null)
-        {
-            foreach (GridNode node in grid)
-            {
-                Gizmos.color = (node.isWalkable) ? Color.white : Color.red;
-                Gizmos.DrawCube(node.worldPosition, Vector3.one * (cellSize - 0.1f));
-            }
-        }
-    }
+    //void OnDrawGizmos()
+    //{
+    //    if (grid != null)
+    //    {
+    //        foreach (GridNode node in grid)
+    //        {
+    //            Gizmos.color = (node.isWalkable) ? Color.white : Color.red;
+    //            Gizmos.DrawCube(node.worldPosition, Vector3.one * (cellSize - 0.1f));
+    //        }
+    //    }
+    //}
 }
 
 /*public class GridNode

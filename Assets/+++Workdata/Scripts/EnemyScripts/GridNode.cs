@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GridNode : MonoBehaviour
+public class GridNode
 {
     public Vector2Int gridPosition;
     public Vector3 worldPosition; 
