@@ -88,16 +88,16 @@ public class WeaponBehaviour : MonoBehaviour
             Debug.Log("Hit Succesfull");
         }
 
-        IDamageable damageableObject = collider.GetComponent<IDamageable>();
-        
-        if (damageableObject != null)
-        {
-            Vector3 parentPosition = transform.parent.position;
+       //IDamageable damageableObject = collider.GetComponent<IDamageable>();
+       //
+       //if (damageableObject != null)
+       //{
+       //    Vector3 parentPosition = transform.parent.position;
 
-            Vector2 direction = (collider.transform.position - parentPosition).normalized;
+       //    Vector2 direction = (collider.transform.position - parentPosition).normalized;
 
-            Vector2 knockback = direction * knockbackForce;
-        }
+       //    Vector2 knockback = direction * knockbackForce;
+       //}
     }
     
 }
