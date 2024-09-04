@@ -411,7 +411,7 @@ MonoBehaviour:
   hitColor:
     serializedVersion: 2
     rgba: 4278190335
-  slimelinDetect: {fileID: 767847528}
+  slimelinDetect: {fileID: 767847530}
   moveSpeed: 2
   healthBar: {fileID: 1938658635}
   meleeAnim: []
@@ -491,6 +491,73 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 104950892}
   m_CullTransparentMesh: 1
+--- !u!1 &253353593
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 253353594}
+  - component: {fileID: 253353595}
+  m_Layer: 0
+  m_Name: AttackRange
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &253353594
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 253353593}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 767847529}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!58 &253353595
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 253353593}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.45}
+  serializedVersion: 2
+  m_Radius: 1
 --- !u!224 &264044402 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 2028826732007292093, guid: 0468d696e8aa2664e87349df9ca3c536, type: 3}
@@ -4971,12 +5038,12 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 2022555886776706203, guid: 92f3884fc9651e248b4aacbb11030e46, type: 3}
   m_PrefabInstance: {fileID: 2613540857956873210}
   m_PrefabAsset: {fileID: 0}
---- !u!58 &767847527 stripped
-CircleCollider2D:
-  m_CorrespondingSourceObject: {fileID: 7998363069385354599, guid: 92f3884fc9651e248b4aacbb11030e46, type: 3}
+--- !u!4 &767847529 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1659072657587543221, guid: 92f3884fc9651e248b4aacbb11030e46, type: 3}
   m_PrefabInstance: {fileID: 2613540857956873210}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &767847528
+--- !u!114 &767847530
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4991,8 +5058,9 @@ MonoBehaviour:
   tagTargets:
   - Player
   - AlphaSlimelin
-  detectObjects: []
-  col: {fileID: 767847527}
+  col: {fileID: 0}
+  attackRangeCollider: {fileID: 253353595}
+  constantDistance: 2.5
 --- !u!1 &843547740
 GameObject:
   m_ObjectHideFlags: 0
@@ -7029,11 +7097,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1059171888231982229, guid: 92f3884fc9651e248b4aacbb11030e46, type: 3}
       propertyPath: m_Radius
-      value: 0.82
+      value: 0.8
       objectReference: {fileID: 0}
     - target: {fileID: 1059171888231982229, guid: 92f3884fc9651e248b4aacbb11030e46, type: 3}
       propertyPath: m_Offset.y
-      value: 0.39
+      value: 0.45
       objectReference: {fileID: 0}
     - target: {fileID: 1059171888231982229, guid: 92f3884fc9651e248b4aacbb11030e46, type: 3}
       propertyPath: m_IsTrigger
@@ -7098,6 +7166,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6270125296419910224, guid: 92f3884fc9651e248b4aacbb11030e46, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1567494659}
+    - targetCorrespondingSourceObject: {fileID: 1659072657587543221, guid: 92f3884fc9651e248b4aacbb11030e46, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 253353594}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 1733610192637460819, guid: 92f3884fc9651e248b4aacbb11030e46, type: 3}
       insertIndex: -1
@@ -7113,7 +7184,7 @@ PrefabInstance:
       addedObject: {fileID: 1697714228}
     - targetCorrespondingSourceObject: {fileID: 2022555886776706203, guid: 92f3884fc9651e248b4aacbb11030e46, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 767847528}
+      addedObject: {fileID: 767847530}
   m_SourcePrefab: {fileID: 100100000, guid: 92f3884fc9651e248b4aacbb11030e46, type: 3}
 --- !u!1001 &8846418347122381822
 PrefabInstance:

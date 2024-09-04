@@ -51,13 +51,11 @@ public class EnemyAttackBehaviour : MonoBehaviour
     {
         for (int i = 0; i < anim.Length; i++)
         {
-            anim[i].gameObject.SetActive(false);
+            anim[i].SetTrigger("StopAttack");
         }
 
         hitboxColliderRightLeft.enabled = false;
         hitboxColliderTopDown.enabled = false;
-
-        //slimelin.canMeleeAttack = true;
     }
 
     public void ColliderHit(Collider2D collider)

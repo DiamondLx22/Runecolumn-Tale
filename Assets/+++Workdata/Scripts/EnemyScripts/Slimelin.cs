@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -24,7 +25,54 @@ public class Slimelin : MonoBehaviour
   public Image healthBar;
   public Animator[] meleeAnim;
   public Animator[] anim;
+
+  private bool canMeleeAttack;
   
+  public void Start()
+  {
+    currentHealth = maxHealth;
+    rb = GetComponent<Rigidbody2D>();
+    spriteRenderer = GetComponent<SpriteRenderer>();
+    
+    animator = GetComponent<Animator>();
+
+    slimelinDetect.OnTargetEnterAttackRange += HandleTargetEnterAttackRange;
+    slimelinDetect.OnTargetEnterAttackRange += HandleTargetExitAttackRange;
+  }
+
+  private void HandleTargetEnterAttackRange(Collider2D target)
+  {
+    canMeleeAttack = true;
+    HandleMeleeAttack(target);
+  }
+
+  private void HandleTargetExitAttackRange(Collider2D target)
+  {
+    canMeleeAttack = false;
+  }
+  
+  private void HandleMeleeAttack(Collider2D target)
+  {
+    if (canMeleeAttack)
+    {
+      for (int i = 0; i < meleeAnim.Length; i++)
+      {
+        meleeAnim[i].gameObject.SetActive(true);
+        EnemyAttackBehaviour enemyAttackBehaviour = meleeAnim[i].GetComponent<EnemyAttackBehaviour>();
+        if (enemyAttackBehaviour != null)
+        {
+          enemyAttackBehaviour.StartAttack();
+        }
+        meleeAnim[i].SetFloat("dirX", anim[0].GetFloat("dirX"));
+        meleeAnim[i].SetFloat("dirY", anim[0].GetFloat("dirY"));
+      }
+
+      for (int i = 0; i < anim.Length; i++)
+      {
+        anim[i].SetTrigger("meleeAttack");
+      }
+    }
+  }
 
   public void ApplyDamage(float damage)
   {
@@ -40,17 +88,30 @@ public class Slimelin : MonoBehaviour
     }
   }
   
-
-  public void Start()
+  public void ApplyKnockback(Vector2 knockback)
   {
-    currentHealth = maxHealth;
-    rb = GetComponent<Rigidbody2D>();
-    spriteRenderer = GetComponent<SpriteRenderer>();
-    
-    animator = GetComponent<Animator>();
+    //Rigidbody2D rb = GetComponent<Rigidbody2D>();
+    if (rb != null)
+    {
+      rb.AddForce(knockback, ForceMode2D.Impulse);
+    }
   }
   
+  private void ResetColor()
+  {
+    spriteRenderer.color = normalColor;
+  }
 
+  void Die()
+  {
+    Destroy(gameObject);
+  }
+
+  private void OnDestroy()
+  {
+    slimelinDetect.OnTargetEnterAttackRange -= HandleTargetEnterAttackRange;
+    slimelinDetect.OnTargetEnterAttackRange -= HandleTargetExitAttackRange;
+  }
   /* public void OnHit(float damage)
    {
      currentHealth -= this.damage;
@@ -62,50 +123,32 @@ public class Slimelin : MonoBehaviour
        Die();
      }
    }*/
-  
-  //public bool canMeleeAttack = true;
-  //{
-  //  if (context.performed && canMeleeAttack)
-  //  {
-  //    for (int i = 0; i < meleeAnim.Length; i++)
-  //    {
-  //      meleeAnim[i].gameObject.SetActive(true);
-  //      EnemyAttackBehaviour enemyAttackBehaviour = meleeAnim[i].GetComponent<EnemyAttackBehaviour>();
-  //      if (enemyAttackBehaviour != null)
-  //      {
-  //        enemyAttackBehaviour.StartAttack();
-  //      }
-  //      meleeAnim[i].SetFloat("dirX", anim[0].GetFloat("dirX"));
-  //      meleeAnim[i].SetFloat("dirY", anim[0].GetFloat("dirY"));
-  //    }
+
+//public bool canMeleeAttack = true;
+//{
+//  if (context.performed && canMeleeAttack)
+//  {
+//    for (int i = 0; i < meleeAnim.Length; i++)
+//    {
+//      meleeAnim[i].gameObject.SetActive(true);
+//      EnemyAttackBehaviour enemyAttackBehaviour = meleeAnim[i].GetComponent<EnemyAttackBehaviour>();
+//      if (enemyAttackBehaviour != null)
+//      {
+//        enemyAttackBehaviour.StartAttack();
+//      }
+//      meleeAnim[i].SetFloat("dirX", anim[0].GetFloat("dirX"));
+//      meleeAnim[i].SetFloat("dirY", anim[0].GetFloat("dirY"));
+//    }
 //
-  //    for (int i = 0; i < anim.Length; i++)
-  //    {
-  //      anim[i].SetTrigger("meleeAttack");
-  //    }
+//    for (int i = 0; i < anim.Length; i++)
+//    {
+//      anim[i].SetTrigger("meleeAttack");
+//    }
 //
-  //    canMeleeAttack = false;
-  //  }
-  //}
+//    canMeleeAttack = false;
+//  }
+//}
 
-   public void ApplyKnockback(Vector2 knockback)
-   {
-     Rigidbody2D rb = GetComponent<Rigidbody2D>();
-     if (rb != null)
-     {
-       rb.AddForce(knockback, ForceMode2D.Impulse);
-     }
-   }
-
-   private void ResetColor()
-   {
-     spriteRenderer.color = normalColor;
-   }
-
-   void Die()
-   {
-     Destroy(gameObject);
-   }
 
    private void OnCollisionEnter2D(Collision2D collision)
    {
@@ -125,9 +168,9 @@ public class Slimelin : MonoBehaviour
     if (slimelinDetect.detectObjects.Count > 0)
     {
       //Vector2 direction = (slimelinDetect.detectObjects[0].transform.position - transform.position).normalized;
-      Vector2 direction = Vector2.MoveTowards(transform.position, slimelinDetect.detectObjects[0].transform.position, moveSpeed * Time.deltaTime);
+      Vector2 direction = Vector2.MoveTowards(transform.position, slimelinDetect.detectObjects.First().transform.position, moveSpeed * Time.deltaTime);
 
-      if (Vector2.Distance(direction, slimelinDetect.detectObjects[0].transform.position) < 1f)
+      if (Vector2.Distance(direction, slimelinDetect.detectObjects.First().transform.position) < 1f)
       {
         return;
       }
@@ -141,16 +184,5 @@ public class Slimelin : MonoBehaviour
     return currentHealth / maxHealth;
   }
 
-  //e void OnTriggerEnter2D(Collider2D col)
-  //
-  //ageable damageable = col.GetComponent<IDamageable>();
 
-  //damageable != null)
-  //
-  //ctor2 direction = (col.transform.position - transform.position).normalized;
-  //ctor2 knockback = direction * knockbackForce;
-
-  //mageable.OnHit(damage, knockback);
-  //
-  //
 }

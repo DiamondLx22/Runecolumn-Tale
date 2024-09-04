@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: SlimelinNormal_Attack-Leftt
+  m_Name: SlimelinNormal_Attack-Left
   serializedVersion: 7
   m_Legacy: 0
   m_Compressed: 0
