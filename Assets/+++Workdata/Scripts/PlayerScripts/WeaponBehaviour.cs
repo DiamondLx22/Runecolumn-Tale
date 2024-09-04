@@ -66,38 +66,27 @@ public class WeaponBehaviour : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collider)
     {
-        IDamageable damageableObject = collider.GetComponent<IDamageable>();
+        Slimelin slimelin = collider.GetComponent<Slimelin>();
 
-        if (damageableObject != null)
+        if (slimelin != null)
         {
-            Vector3 parentPosition = gameObject.GetComponentInParent<Transform>().position;
-
-            Vector2 direction = (Vector2)(parentPosition - collider.gameObject.transform.position).normalized;
+            Vector3 parentPosition = transform.parent.position;
+            Vector2 direction = collider.transform.position - parentPosition.normalized;
             Vector2 knockback = direction * knockbackForce;
-            
-            //collider.SendMessage("OnHit", WeaponBehaviour, knockback);
-            damageableObject.OnHit(swordDamage, knockback);
+
+            slimelin.ApplyDamage(swordDamage);
+            slimelin.ApplyKnockback(knockback);
         }
+
         else
         {
-            Debug.LogWarning("Collider doesnt implement IDamageable");
+            Debug.LogWarning("Collider hat keine HealthComponent");
         }
-        
+
+        // Überprüfen, ob das kollidierte Objekt das Tag "Enemy" hat
         if (collider.gameObject.CompareTag("Enemy"))
         {
-            Debug.Log("Hit Succesfull");
+            Debug.Log("Treffer erfolgreich");
         }
-
-       //IDamageable damageableObject = collider.GetComponent<IDamageable>();
-       //
-       //if (damageableObject != null)
-       //{
-       //    Vector3 parentPosition = transform.parent.position;
-
-       //    Vector2 direction = (collider.transform.position - parentPosition).normalized;
-
-       //    Vector2 knockback = direction * knockbackForce;
-       //}
     }
-    
 }

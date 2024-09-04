@@ -9,6 +9,17 @@ public class SlimelinDetector : MonoBehaviour
 
     public List<Collider2D> detectObjects = new List<Collider2D>();
     public Collider2D col;
+    
+    void Start()
+    {
+        // Initialize col to be the Collider2D component attached to the same GameObject
+        col = GetComponent<Collider2D>();
+
+        if (col == null)
+        {
+            Debug.LogError("Collider2D component not found on the GameObject.");
+        }
+    }
 
     void OnTriggerEnter2D(Collider2D collider)
     {
