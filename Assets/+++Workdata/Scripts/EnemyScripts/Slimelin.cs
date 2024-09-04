@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Slimelin : MonoBehaviour
 {
@@ -20,9 +21,19 @@ public class Slimelin : MonoBehaviour
   private Animator animator;
   public float moveSpeed;
 
+  public Image healthBar;
+  public Animator[] meleeAnim;
+  public Animator[] anim;
+  
+
   public void ApplyDamage(float damage)
   {
     currentHealth -= damage;
+    spriteRenderer.color = hitColor;
+    Invoke("ResetColor", hitColorTime);
+    
+    healthBar.fillAmount = GetHealthNormalized();
+    
     if (currentHealth <= 0f)
     {
       Die();
@@ -40,17 +51,42 @@ public class Slimelin : MonoBehaviour
   }
   
 
-   public void OnHit(float damage)
+  /* public void OnHit(float damage)
    {
      currentHealth -= this.damage;
      spriteRenderer.color = hitColor;
      Invoke("ResetColor", hitColorTime);
-
+     
      if (currentHealth <= 0)
      {
        Die();
      }
-   }
+   }*/
+  
+  //public bool canMeleeAttack = true;
+  //{
+  //  if (context.performed && canMeleeAttack)
+  //  {
+  //    for (int i = 0; i < meleeAnim.Length; i++)
+  //    {
+  //      meleeAnim[i].gameObject.SetActive(true);
+  //      EnemyAttackBehaviour enemyAttackBehaviour = meleeAnim[i].GetComponent<EnemyAttackBehaviour>();
+  //      if (enemyAttackBehaviour != null)
+  //      {
+  //        enemyAttackBehaviour.StartAttack();
+  //      }
+  //      meleeAnim[i].SetFloat("dirX", anim[0].GetFloat("dirX"));
+  //      meleeAnim[i].SetFloat("dirY", anim[0].GetFloat("dirY"));
+  //    }
+//
+  //    for (int i = 0; i < anim.Length; i++)
+  //    {
+  //      anim[i].SetTrigger("meleeAttack");
+  //    }
+//
+  //    canMeleeAttack = false;
+  //  }
+  //}
 
    public void ApplyKnockback(Vector2 knockback)
    {
@@ -90,11 +126,19 @@ public class Slimelin : MonoBehaviour
     {
       //Vector2 direction = (slimelinDetect.detectObjects[0].transform.position - transform.position).normalized;
       Vector2 direction = Vector2.MoveTowards(transform.position, slimelinDetect.detectObjects[0].transform.position, moveSpeed * Time.deltaTime);
+
+      if (Vector2.Distance(direction, slimelinDetect.detectObjects[0].transform.position) < 1f)
+      {
+        return;
+      }
       
       transform.position = direction;
-      
-      
     }
+  }
+
+  private float GetHealthNormalized()
+  {
+    return currentHealth / maxHealth;
   }
 
   //e void OnTriggerEnter2D(Collider2D col)

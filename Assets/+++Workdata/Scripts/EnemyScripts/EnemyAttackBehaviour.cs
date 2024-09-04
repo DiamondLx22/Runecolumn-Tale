@@ -1,10 +1,8 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
-using System.Runtime.InteropServices.ComTypes;
 using UnityEngine;
 
-public class WeaponBehaviour : MonoBehaviour
+public class EnemyAttackBehaviour : MonoBehaviour
 {
     public float swordDamage = 10f;
     public float knockbackForce = 10f;
@@ -12,14 +10,14 @@ public class WeaponBehaviour : MonoBehaviour
     public Collider2D hitboxColliderTopDown;
     public Collider2D hitboxColliderRightLeft;
 
-    private PlayerMovement playerMovement;
+    private Slimelin slimelin;
 
     public float dirX;
     public float dirY;
     
     public void Start()
     {
-        playerMovement = FindObjectOfType<PlayerMovement>();
+        slimelin = FindObjectOfType<Slimelin>();
         
         hitboxColliderTopDown.enabled = false;
         hitboxColliderRightLeft.enabled = false;
@@ -59,8 +57,7 @@ public class WeaponBehaviour : MonoBehaviour
         hitboxColliderRightLeft.enabled = false;
         hitboxColliderTopDown.enabled = false;
 
-        playerMovement.canMeleeAttack = true;
-        playerMovement.canRangeAttack = true;
+        //slimelin.canMeleeAttack = true;
     }
 
     public void ColliderHit(Collider2D collider)
@@ -81,11 +78,12 @@ public class WeaponBehaviour : MonoBehaviour
             Debug.LogWarning("Collider hat keine HealthComponent");
         }
 
-        // Überprüfen, ob das kollidierte Objekt das Tag "Enemy" hat
-        if (collider.gameObject.CompareTag("Enemy"))
+        // Überprüfen, ob das kollidierte Objekt das Tag "Player" hat
+        if (collider.gameObject.CompareTag("Player"))
         {
-            Debug.Log("Treffer erfolgreich");
+            Debug.Log("Gegner Treffer erfolgreich");
         }
     }
     
 }
+

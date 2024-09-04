@@ -121,26 +121,31 @@ public class PlayerMovement : MonoBehaviour
     //--- MeleeAttack CancelAnimation ---
     #region MeleeAttack CancelAnimation
 
-    public bool canMeleeAttack = true;
-    private void MeleeAttack(InputAction.CallbackContext context)
-    {
-        if (context.performed && canMeleeAttack)
-        {
-            for (int i = 0; i < meleeAnim.Length; i++)
-            {
-                meleeAnim[i].gameObject.SetActive(true);
-                meleeAnim[i].SetFloat("dirX", anim[0].GetFloat("dirX"));
-                meleeAnim[i].SetFloat("dirY", anim[0].GetFloat("dirY"));
-            }
+   public bool canMeleeAttack = true;
+   private void MeleeAttack(InputAction.CallbackContext context)
+   {
+       if (context.performed && canMeleeAttack)
+       {
+           for (int i = 0; i < meleeAnim.Length; i++)
+           {
+               meleeAnim[i].gameObject.SetActive(true);
+               WeaponBehaviour weaponBehaviour = meleeAnim[i].GetComponent<WeaponBehaviour>();
+               if (weaponBehaviour != null)
+               {
+                   weaponBehaviour.StartAttack();
+               }
+               meleeAnim[i].SetFloat("dirX", anim[0].GetFloat("dirX"));
+               meleeAnim[i].SetFloat("dirY", anim[0].GetFloat("dirY"));
+           }
 
-            for (int i = 0; i < anim.Length; i++)
-            {
-                anim[i].SetTrigger("meleeAttack");
-            }
+           for (int i = 0; i < anim.Length; i++)
+           {
+               anim[i].SetTrigger("meleeAttack");
+           }
 
-            canMeleeAttack = false;
-        }
-    }
+           canMeleeAttack = false;
+       }
+   }
     #endregion
 
     
@@ -213,6 +218,12 @@ public class PlayerMovement : MonoBehaviour
             {
                 meleeAnim[i].SetFloat("dirX", moveInput.x);
                 meleeAnim[i].SetFloat("dirY", moveInput.y);
+                WeaponBehaviour weaponBehaviour = meleeAnim[i].GetComponent<WeaponBehaviour>();
+                if (weaponBehaviour != null)
+                {
+                    weaponBehaviour.dirX = moveInput.x;
+                    weaponBehaviour.dirY = moveInput.y;
+                }
             }
 
         }
@@ -270,8 +281,7 @@ public class PlayerMovement : MonoBehaviour
             selectedInteractable = null;
         }
     }
-
-
+    
 }
 
 

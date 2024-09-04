@@ -52,6 +52,9 @@ TagManager:
   - name: Player
     uniqueID: 2686000179
     locked: 0
+  - name: Enemy
+    uniqueID: 181343565
+    locked: 0
   - name: Stonecircle
     uniqueID: 303224181
     locked: 0
