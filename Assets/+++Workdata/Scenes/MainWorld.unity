@@ -6883,10 +6883,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1059171888231982229, guid: 92f3884fc9651e248b4aacbb11030e46, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3236482640970834686, guid: 92f3884fc9651e248b4aacbb11030e46, type: 3}
+      propertyPath: m_GravityScale
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4445183008476926838, guid: 92f3884fc9651e248b4aacbb11030e46, type: 3}
       propertyPath: m_Name
       value: EnemyContainer
       objectReference: {fileID: 0}
+    - target: {fileID: 5834123369933766610, guid: 92f3884fc9651e248b4aacbb11030e46, type: 3}
+      propertyPath: enemy
+      value: 
+      objectReference: {fileID: 92430058}
+    - target: {fileID: 5834123369933766610, guid: 92f3884fc9651e248b4aacbb11030e46, type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 167075180}
     - target: {fileID: 7929083660087814815, guid: 92f3884fc9651e248b4aacbb11030e46, type: 3}
       propertyPath: m_Color.b
       value: 1
@@ -6899,7 +6915,12 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 7998363069385354599, guid: 92f3884fc9651e248b4aacbb11030e46, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 5834123369933766610, guid: 92f3884fc9651e248b4aacbb11030e46, type: 3}
     m_RemovedGameObjects:
     - {fileID: 4150311525638071025, guid: 92f3884fc9651e248b4aacbb11030e46, type: 3}
     m_AddedGameObjects:
