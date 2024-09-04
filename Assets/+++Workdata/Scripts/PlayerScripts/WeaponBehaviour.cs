@@ -6,6 +6,8 @@ using UnityEngine;
 
 public class WeaponBehaviour : MonoBehaviour
 {
+    public float swordDamage = 10f;
+    public float knockbackForce = 10f;
     public Animator[] anim;
     public Collider2D hitboxColliderTopDown;
     public Collider2D hitboxColliderRightLeft;
@@ -62,11 +64,40 @@ public class WeaponBehaviour : MonoBehaviour
         playerMovement.canRangeAttack = true;
     }
 
-    private void OnTriggerEnter2D(Collider2D collider)
+    void OnTriggerEnter2D(Collider2D collider)
     {
+        IDamageable damageableObject = collider.GetComponent<IDamageable>();
+
+        if (damageableObject != null)
+        {
+            Vector3 parentPosition = gameObject.GetComponentInParent<Transform>().position;
+
+            Vector2 direction = (Vector2)(parentPosition - collider.gameObject.transform.position).normalized;
+            Vector2 knockback = direction * knockbackForce;
+            
+            //collider.SendMessage("OnHit", WeaponBehaviour, knockback);
+            damageableObject.OnHit(swordDamage, knockback);
+        }
+        else
+        {
+            Debug.LogWarning("Collider doesnt implement IDamageable");
+        }
+        
         if (collider.gameObject.CompareTag("Enemy"))
         {
             Debug.Log("Hit Succesfull");
         }
+
+        IDamageable damageableObject = collider.GetComponent<IDamageable>();
+        
+        if (damageableObject != null)
+        {
+            Vector3 parentPosition = transform.parent.position;
+
+            Vector2 direction = (collider.transform.position - parentPosition).normalized;
+
+            Vector2 knockback = direction * knockbackForce;
+        }
     }
+    
 }
