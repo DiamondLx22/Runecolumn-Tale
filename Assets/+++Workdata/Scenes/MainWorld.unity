@@ -4968,6 +4968,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 2022555886776706203, guid: 92f3884fc9651e248b4aacbb11030e46, type: 3}
   m_PrefabInstance: {fileID: 2613540857956873210}
   m_PrefabAsset: {fileID: 0}
+--- !u!58 &767847527 stripped
+CircleCollider2D:
+  m_CorrespondingSourceObject: {fileID: 7998363069385354599, guid: 92f3884fc9651e248b4aacbb11030e46, type: 3}
+  m_PrefabInstance: {fileID: 2613540857956873210}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &767847528
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4984,7 +4989,7 @@ MonoBehaviour:
   - Player
   - AlphaSlimelin
   detectObjects: []
-  col: {fileID: 0}
+  col: {fileID: 767847527}
 --- !u!1 &843547740
 GameObject:
   m_ObjectHideFlags: 0
@@ -6876,6 +6881,14 @@ PrefabInstance:
     - target: {fileID: 1059171888231982229, guid: 92f3884fc9651e248b4aacbb11030e46, type: 3}
       propertyPath: m_IsTrigger
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1733610192637460819, guid: 92f3884fc9651e248b4aacbb11030e46, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 2022555886776706203, guid: 92f3884fc9651e248b4aacbb11030e46, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 3236482640970834686, guid: 92f3884fc9651e248b4aacbb11030e46, type: 3}
       propertyPath: m_Constraints
