@@ -88,7 +88,7 @@ public class WeaponBehaviour : MonoBehaviour
             Debug.Log("Hit Succesfull");
         }
 
-        IDamageable damageableObject = collider.GetComponent<IDamageable>();
+        //IDamageable damageableObject = collider.GetComponent<IDamageable>();
         
         if (damageableObject != null)
         {

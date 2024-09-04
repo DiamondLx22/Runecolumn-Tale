@@ -61,16 +61,15 @@ public class Slimelin : MonoBehaviour, IDamageable
     }
   }
 
-  void OnCollisionEnter2D(Collider2D col)
-    {
-      IDamageable damageable = col.GetComponent<IDamageable>();
+  //void OnCollisionEnter2D(Collider2D col)
+    //{
+     // IDamageable damageable = col.GetComponent<IDamageable>();
 
-      if (damageable != null)
-      {
-        Vector2 direction = (col.transform.position - transform.position).normalized;
-        Vector2 knockback = direction * knockbackForce;
+      //if (damageable != null)
+     // {
+       ////  Vector2 knockback = direction * knockbackForce;
 
-        damageable.OnHit(damage, knockback);
-      }
-    }
+       // damageable.OnHit(damage, knockback);
+      //}
+   // }
 }
