@@ -8,8 +8,12 @@ public class PlayerHealth : MonoBehaviour
 
     public Image healthBarImage;
 
+    private Rigidbody2D rb;
+    
     void Start()
     {
+        rb =  GetComponent<Rigidbody2D>();
+        
         currentHealth = maxHealth;
         UpdateHealthBar();
     }
@@ -31,6 +35,22 @@ public class PlayerHealth : MonoBehaviour
             Debug.Log("Player ist tot!");
 
         }
+    }
+    
+    public void ApplyKnockback(Vector2 knockback)
+    {
+        if (rb != null)
+        {
+            rb.isKinematic = false;
+            rb.AddForce(knockback, ForceMode2D.Impulse);
+            rb.isKinematic = true;
+            Invoke("ResetVelocity", 1);
+        }
+    }
+
+    private void ResetVelocity()
+    {
+        rb.velocity = Vector2.zero;
     }
 
 

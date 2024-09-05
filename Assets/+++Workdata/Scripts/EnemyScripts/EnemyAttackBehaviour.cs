@@ -60,15 +60,15 @@ public class EnemyAttackBehaviour : MonoBehaviour
 
     public void ColliderHit(Collider2D collider)
     {
-        Slimelin slimelin = collider.GetComponent<Slimelin>();
-        if (slimelin != null)
+        PlayerHealth playerHealth = collider.GetComponent<PlayerHealth>();
+        if (playerHealth != null)
         {
             Vector3 parentPosition = transform.parent.position;
             Vector2 direction = collider.transform.position - parentPosition.normalized;
             Vector2 knockback = direction * knockbackForce;
 
-            slimelin.ApplyDamage(swordDamage);
-            slimelin.ApplyKnockback(knockback);
+            playerHealth.TakeDamage((int)swordDamage);
+            playerHealth.ApplyKnockback(knockback);
         }
 
         else

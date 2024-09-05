@@ -63,7 +63,7 @@ public class Slimelin : MonoBehaviour
         {
           enemyAttackBehaviour.StartAttack();
         }
-
+        
         Vector2 moveDirection = target.transform.position - transform.position;
         meleeAnim[i].SetFloat("dirX", moveDirection.x); //anim[0].GetFloat("dirX"));
         meleeAnim[i].SetFloat("dirY", moveDirection.y); //anim[0].GetFloat("dirY"));
@@ -95,8 +95,16 @@ public class Slimelin : MonoBehaviour
     //Rigidbody2D rb = GetComponent<Rigidbody2D>();
     if (rb != null)
     {
+      rb.isKinematic = false;
       rb.AddForce(knockback, ForceMode2D.Impulse);
+      rb.isKinematic = true;
+      Invoke("ResetVelocity", 1);
     }
+  }
+
+  private void ResetVelocity()
+  {
+    rb.velocity = Vector2.zero;
   }
   
   private void ResetColor()
@@ -182,7 +190,7 @@ public class Slimelin : MonoBehaviour
          Vector2 direction = Vector2.MoveTowards(transform.position,
            slimelinDetect.detectObjects.First().transform.position, moveSpeed * Time.deltaTime);
 
-         if (Vector2.Distance(direction, slimelinDetect.detectObjects.First().transform.position) < 1f)
+         if (Vector2.Distance(direction, slimelinDetect.detectObjects.First().transform.position) < 1.2f)
          {
            return;
          }

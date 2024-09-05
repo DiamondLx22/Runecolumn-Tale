@@ -19,9 +19,13 @@ public class SlimelinDetector : MonoBehaviour
     public event Action<Collider2D> OnTargetExitAttackRange;
 
     public float constantDistance = 2.0f;
+
+    public GameObject enemyCanvas;
     
     void Start()
     {
+        enemyCanvas.SetActive(false);
+        
         // Initialize col to be the Collider2D component attached to the same GameObject
         col = GetComponent<Collider2D>();
 
@@ -52,7 +56,7 @@ public class SlimelinDetector : MonoBehaviour
         }
         
         // Überprüfe jedes erfasste Objekt
-        foreach (var target in detectObjects)
+        /*foreach (var target in detectObjects)
         {
             if (target != null)
             {
@@ -67,16 +71,24 @@ public class SlimelinDetector : MonoBehaviour
                     transform.position = newPosition;
                 }
             }
-        }
+        }*/
     }
 
+    public void TriggerOnTargetEnterAttackRangeEvent(Collider2D collider)
+    {
+        OnTargetEnterAttackRange?.Invoke(collider);
+    }
+    public void TriggerOnTargetExitAttackRangeEvent(Collider2D collider)
+    {
+        OnTargetExitAttackRange?.Invoke((collider));
+    }
+    
     void OnTriggerEnter2D(Collider2D collider)
     {
         if (collider != null && tagTargets.Contains(collider.gameObject.tag))
         {
             detectObjects.Add(collider);
-            
-            OnTargetEnterAttackRange?.Invoke(collider);
+            enemyCanvas.SetActive(true);
         }
     }
 
@@ -85,8 +97,7 @@ public class SlimelinDetector : MonoBehaviour
         if (collider != null && tagTargets.Contains(collider.gameObject.tag))
         {
             detectObjects.Remove(collider);
-            
-            OnTargetExitAttackRange?.Invoke((collider));
+            enemyCanvas.SetActive(false);
         }
     }
 }
