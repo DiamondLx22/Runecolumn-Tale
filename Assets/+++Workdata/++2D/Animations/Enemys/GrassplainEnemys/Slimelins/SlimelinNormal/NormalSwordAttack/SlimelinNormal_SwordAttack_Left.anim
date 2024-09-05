@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: SlimelinNormal_Idle-Right
+  m_Name: SlimelinNormal_SwordAttack_Left
   serializedVersion: 7
   m_Legacy: 0
   m_Compressed: 0
@@ -21,7 +21,15 @@ AnimationClip:
   - serializedVersion: 2
     curve:
     - time: 0
-      value: {fileID: 269187253, guid: a0755c5af36a7ba45bc97c9b31a8705a, type: 3}
+      value: {fileID: -1413466359, guid: 4734e95cc1cc05c4ab6c4cc607e2c05e, type: 3}
+    - time: 0.2
+      value: {fileID: -1814212945, guid: 4734e95cc1cc05c4ab6c4cc607e2c05e, type: 3}
+    - time: 0.4
+      value: {fileID: 2019974371, guid: 4734e95cc1cc05c4ab6c4cc607e2c05e, type: 3}
+    - time: 0.6
+      value: {fileID: -1828795005, guid: 4734e95cc1cc05c4ab6c4cc607e2c05e, type: 3}
+    - time: 0.8
+      value: {fileID: 1286716984, guid: 4734e95cc1cc05c4ab6c4cc607e2c05e, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -44,13 +52,17 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     pptrCurveMapping:
-    - {fileID: 269187253, guid: a0755c5af36a7ba45bc97c9b31a8705a, type: 3}
+    - {fileID: -1413466359, guid: 4734e95cc1cc05c4ab6c4cc607e2c05e, type: 3}
+    - {fileID: -1814212945, guid: 4734e95cc1cc05c4ab6c4cc607e2c05e, type: 3}
+    - {fileID: 2019974371, guid: 4734e95cc1cc05c4ab6c4cc607e2c05e, type: 3}
+    - {fileID: -1828795005, guid: 4734e95cc1cc05c4ab6c4cc607e2c05e, type: 3}
+    - {fileID: 1286716984, guid: 4734e95cc1cc05c4ab6c4cc607e2c05e, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.1
+    m_StopTime: 0.90000004
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0

@@ -6576,10 +6576,50 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1733610192637460819, guid: 92f3884fc9651e248b4aacbb11030e46, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3027918655947039668, guid: 92f3884fc9651e248b4aacbb11030e46, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3124870819321864785, guid: 92f3884fc9651e248b4aacbb11030e46, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3288678937408188764, guid: 92f3884fc9651e248b4aacbb11030e46, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4445183008476926838, guid: 92f3884fc9651e248b4aacbb11030e46, type: 3}
       propertyPath: m_Name
       value: EnemyContainer
       objectReference: {fileID: 0}
+    - target: {fileID: 5083886867101052404, guid: 92f3884fc9651e248b4aacbb11030e46, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5538536562261368072, guid: 92f3884fc9651e248b4aacbb11030e46, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: ce5739660378e184780b2eb6f103f64a, type: 2}
+    - target: {fileID: 7027255933175604312, guid: 92f3884fc9651e248b4aacbb11030e46, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7092894199480610677, guid: 92f3884fc9651e248b4aacbb11030e46, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -1293358402, guid: 4734e95cc1cc05c4ab6c4cc607e2c05e, type: 3}
+    - target: {fileID: 7092894199480610677, guid: 92f3884fc9651e248b4aacbb11030e46, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8156985728282992882, guid: 92f3884fc9651e248b4aacbb11030e46, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 00b8cf7780a9a66459d8d8828e8ba2e0, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

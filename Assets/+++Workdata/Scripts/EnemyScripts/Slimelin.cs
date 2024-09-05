@@ -63,8 +63,10 @@ public class Slimelin : MonoBehaviour
         {
           enemyAttackBehaviour.StartAttack();
         }
-        meleeAnim[i].SetFloat("dirX", anim[0].GetFloat("dirX"));
-        meleeAnim[i].SetFloat("dirY", anim[0].GetFloat("dirY"));
+
+        Vector2 moveDirection = target.transform.position - transform.position;
+        meleeAnim[i].SetFloat("dirX", moveDirection.x); //anim[0].GetFloat("dirX"));
+        meleeAnim[i].SetFloat("dirY", moveDirection.y); //anim[0].GetFloat("dirY"));
       }
 
       for (int i = 0; i < anim.Length; i++)
@@ -164,25 +166,37 @@ public class Slimelin : MonoBehaviour
 
 
    void FixedUpdate()
-  {
-    if (slimelinDetect.detectObjects.Count > 0)
-    {
-      //Vector2 direction = (slimelinDetect.detectObjects[0].transform.position - transform.position).normalized;
-      Vector2 direction = Vector2.MoveTowards(transform.position, slimelinDetect.detectObjects.First().transform.position, moveSpeed * Time.deltaTime);
+   {
+     if (slimelinDetect.detectObjects.Count > 0)
+     {
+       Collider2D target = null;
+       foreach (var obj in slimelinDetect.detectObjects)
+       {
+         target = obj;
+         break;
+       }
 
-      if (Vector2.Distance(direction, slimelinDetect.detectObjects.First().transform.position) < 1f)
-      {
-        return;
-      }
-      
-      transform.position = direction;
-    }
-  }
+       if (target != null)
+       {
 
-  private float GetHealthNormalized()
+         Vector2 direction = Vector2.MoveTowards(transform.position,
+           slimelinDetect.detectObjects.First().transform.position, moveSpeed * Time.deltaTime);
+
+         if (Vector2.Distance(direction, slimelinDetect.detectObjects.First().transform.position) < 1f)
+         {
+           return;
+         }
+
+         Vector2 moveDirection = target.transform.position - transform.position;
+         animator.SetFloat("dirX", moveDirection.x);
+         animator.SetFloat("dirY", moveDirection.y);
+         transform.position = direction;
+       }
+     }
+   }
+
+   private float GetHealthNormalized()
   {
     return currentHealth / maxHealth;
   }
-
-
 }
