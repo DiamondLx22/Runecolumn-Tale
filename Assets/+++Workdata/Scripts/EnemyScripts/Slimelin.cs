@@ -37,7 +37,7 @@ public class Slimelin : MonoBehaviour
     animator = GetComponent<Animator>();
 
     slimelinDetect.OnTargetEnterAttackRange += HandleTargetEnterAttackRange;
-    slimelinDetect.OnTargetEnterAttackRange += HandleTargetExitAttackRange;
+    slimelinDetect.OnTargetExitAttackRange += HandleTargetExitAttackRange;
   }
 
   private void HandleTargetEnterAttackRange(Collider2D target)

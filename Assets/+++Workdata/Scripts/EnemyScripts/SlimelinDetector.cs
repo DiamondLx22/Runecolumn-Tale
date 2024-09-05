@@ -13,6 +13,8 @@ public class SlimelinDetector : MonoBehaviour
 
     public Collider2D attackRangeCollider;
 
+    private Transform parentTransform;
+
     public event Action<Collider2D> OnTargetEnterAttackRange;
     public event Action<Collider2D> OnTargetExitAttackRange;
 
@@ -32,10 +34,23 @@ public class SlimelinDetector : MonoBehaviour
         {
             Debug.LogError("AttackRangeCollider nicht Verknüpft");
         }
+
+        parentTransform = transform.parent;
+
+        if (parentTransform == null)
+        {
+            
+            Debug.LogError(("Parent Transform fehlt"));
+        }
     }
     
     void Update()
     {
+        if (parentTransform != null)
+        {
+            transform.position = parentTransform.position;
+        }
+        
         // Überprüfe jedes erfasste Objekt
         foreach (var target in detectObjects)
         {
