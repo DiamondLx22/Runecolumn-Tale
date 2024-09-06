@@ -3,39 +3,45 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class SoundManager: MonoBehaviour
-{ [SerializeField] Slider volumeSlider;
+public class SoundManager : MonoBehaviour
+{
+    public Slider Volumeslider;
+    public AudioSource audioSource;  // Die spezifische AudioSource für die Musik
 
-    
     // Start is called before the first frame update
-    private void Start()
-    { 
-        if (!PlayerPrefs.HasKey("musicVolume"))
+    void Start()
     {
-            PlayerPrefs.SetFloat("musicVolume", 1);
-            Load();
-    }
-        else
-    {
-            Load();
-
-        }
-    }
-
-    public void ChangeVolume()
-    {
-        AudioListener.volume = volumeSlider.value;
-        Save();
-    }
-    private void Load()
-    {
-        volumeSlider.value = PlayerPrefs.GetFloat("musicVolume");
+        if (PlayerPrefs.HasKey("soundVolume"))
         {
-            PlayerPrefs.GetFloat("musicVolume");
+            LoadVolume();
         }
+        else
+        {
+            PlayerPrefs.SetFloat("soundVolume", 1);
+            LoadVolume();
+        }
+
+        // Registriere den Slider-Event-Hörer
+        Volumeslider.onValueChanged.AddListener(SetVolume);
     }
-    private void Save()
+
+    // Setze die Lautstärke der spezifischen AudioSource
+    public void SetVolume(float volume)
     {
-        PlayerPrefs.SetFloat("musicVolume", volumeSlider.value);
+        Debug.Log("Slider Value: " + volume);  // Ausgabe des aktuellen Slider-Wertes
+        audioSource.volume = volume;  // Lautstärke der AudioSource anpassen
+        SaveVolume(volume);
+    }
+
+    public void SaveVolume(float volume)
+    {
+        PlayerPrefs.SetFloat("soundVolume", volume);
+    }
+
+    public void LoadVolume()
+    {
+        float volume = PlayerPrefs.GetFloat("soundVolume");
+        Volumeslider.value = volume;
+        audioSource.volume = volume;  // Stelle sicher, dass die AudioSource den gespeicherten Wert verwendet
     }
 }

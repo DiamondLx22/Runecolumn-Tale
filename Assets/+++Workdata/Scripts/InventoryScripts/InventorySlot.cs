@@ -54,7 +54,7 @@ public class InventorySlot : MonoBehaviour
     {
        
         yield return null;
-        slotBorder.SetActive(false);
+        slotBorder.SetActive(false); 
     }
 
     public void ShowDescription()
