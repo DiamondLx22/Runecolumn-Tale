@@ -20,7 +20,8 @@ public class menu : MonoBehaviour{
     void CheckOptionScreen(){
         if (option_menu==true){
             option_screen.SetActive(true);
-        }else{
+        }else
+        {
             option_screen.SetActive(false);
         }
 
