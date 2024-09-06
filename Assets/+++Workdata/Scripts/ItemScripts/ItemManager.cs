@@ -44,6 +44,7 @@ public class ItemManager : MonoBehaviour
                 ItemPopUpHeader.SetText(stateInfo.itemName);
                 ItemPopUpDescription.SetText(stateInfo.description);
                 
+                
                 image.sprite = stateInfo.icon;
             }
 

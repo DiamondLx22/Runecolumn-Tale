@@ -4727,6 +4727,34 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 7211609694608900072, guid: 92f3884fc9651e248b4aacbb11030e46, type: 3}
   m_PrefabInstance: {fileID: 2613540857956873210}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &865334373 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2558963132945713734, guid: 0468d696e8aa2664e87349df9ca3c536, type: 3}
+  m_PrefabInstance: {fileID: 1670768991343552657}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &865334377
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 865334373}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 355487269007bbd499928a11d41256ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stateInfo:
+    id: 
+    itemName: 
+    description: 
+    icon: {fileID: 0}
+    amount: 0
+  equipmentManager: {fileID: 0}
+  equipmentImage: {fileID: 0}
+  equipmentAmount: {fileID: 0}
+  slotToggle: {fileID: 0}
+  slotBorder: {fileID: 0}
 --- !u!1 &930907771
 GameObject:
   m_ObjectHideFlags: 0
@@ -4839,6 +4867,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f14821ddf5734b94cb0946580c4583f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1146401526 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7373100432138046030, guid: 0468d696e8aa2664e87349df9ca3c536, type: 3}
+  m_PrefabInstance: {fileID: 1670768991343552657}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1146401530
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1146401526}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 355487269007bbd499928a11d41256ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stateInfo:
+    id: 
+    itemName: 
+    description: 
+    icon: {fileID: 0}
+    amount: 0
+  equipmentManager: {fileID: 0}
+  equipmentImage: {fileID: 0}
+  equipmentAmount: {fileID: 0}
+  slotToggle: {fileID: 0}
+  slotBorder: {fileID: 0}
 --- !u!1 &1166825812
 GameObject:
   m_ObjectHideFlags: 0
@@ -4979,6 +5035,34 @@ Animator:
   m_CorrespondingSourceObject: {fileID: 7027255933175604312, guid: 92f3884fc9651e248b4aacbb11030e46, type: 3}
   m_PrefabInstance: {fileID: 2613540857956873210}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1348554910 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8365959215197802644, guid: 0468d696e8aa2664e87349df9ca3c536, type: 3}
+  m_PrefabInstance: {fileID: 1670768991343552657}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1348554914
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1348554910}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 355487269007bbd499928a11d41256ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stateInfo:
+    id: 
+    itemName: 
+    description: 
+    icon: {fileID: 0}
+    amount: 0
+  equipmentManager: {fileID: 0}
+  equipmentImage: {fileID: 0}
+  equipmentAmount: {fileID: 0}
+  slotToggle: {fileID: 0}
+  slotBorder: {fileID: 0}
 --- !u!1 &1397238569 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8515006815733532285, guid: 0468d696e8aa2664e87349df9ca3c536, type: 3}
@@ -5511,6 +5595,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3513000077036010171, guid: 0468d696e8aa2664e87349df9ca3c536, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3902747687286717215, guid: 0468d696e8aa2664e87349df9ca3c536, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -5710,6 +5798,30 @@ PrefabInstance:
     - target: {fileID: 5295363828332936839, guid: 0468d696e8aa2664e87349df9ca3c536, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5493496347667531292, guid: 0468d696e8aa2664e87349df9ca3c536, type: 3}
+      propertyPath: stateInfos.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5493496347667531292, guid: 0468d696e8aa2664e87349df9ca3c536, type: 3}
+      propertyPath: stateInfos.Array.data[1].id
+      value: item_sword1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5493496347667531292, guid: 0468d696e8aa2664e87349df9ca3c536, type: 3}
+      propertyPath: stateInfos.Array.data[1].icon
+      value: 
+      objectReference: {fileID: 1716892929, guid: be5c338092737ef41bf4a56b2fb87194, type: 3}
+    - target: {fileID: 5493496347667531292, guid: 0468d696e8aa2664e87349df9ca3c536, type: 3}
+      propertyPath: stateInfos.Array.data[1].amount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5493496347667531292, guid: 0468d696e8aa2664e87349df9ca3c536, type: 3}
+      propertyPath: stateInfos.Array.data[1].itemName
+      value: Sword1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5493496347667531292, guid: 0468d696e8aa2664e87349df9ca3c536, type: 3}
+      propertyPath: stateInfos.Array.data[1].description
+      value: A Basic Sword
       objectReference: {fileID: 0}
     - target: {fileID: 5511491685965995253, guid: 0468d696e8aa2664e87349df9ca3c536, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6055,6 +6167,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7590687619038177771, guid: 0468d696e8aa2664e87349df9ca3c536, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8114469491522432507, guid: 0468d696e8aa2664e87349df9ca3c536, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -6302,6 +6418,15 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 8515006815733532285, guid: 0468d696e8aa2664e87349df9ca3c536, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1397238572}
+    - targetCorrespondingSourceObject: {fileID: 2558963132945713734, guid: 0468d696e8aa2664e87349df9ca3c536, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 865334377}
+    - targetCorrespondingSourceObject: {fileID: 8365959215197802644, guid: 0468d696e8aa2664e87349df9ca3c536, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1348554914}
+    - targetCorrespondingSourceObject: {fileID: 7373100432138046030, guid: 0468d696e8aa2664e87349df9ca3c536, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1146401530}
   m_SourcePrefab: {fileID: 100100000, guid: 0468d696e8aa2664e87349df9ca3c536, type: 3}
 --- !u!1001 &2613540857956873210
 PrefabInstance:
