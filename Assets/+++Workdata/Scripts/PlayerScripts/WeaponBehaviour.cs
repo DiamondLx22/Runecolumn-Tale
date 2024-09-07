@@ -56,11 +56,16 @@ public class WeaponBehaviour : MonoBehaviour
             anim[i].gameObject.SetActive(false);
         }
 
-        hitboxColliderRightLeft.enabled = false;
-        hitboxColliderTopDown.enabled = false;
-
         playerMovement.canMeleeAttack = true;
         playerMovement.canRangeAttack = true;
+        
+        hitboxColliderRightLeft.enabled = false;
+        hitboxColliderTopDown.enabled = false;
+    }
+
+    public void ShootStaff1Projectile()
+    {
+        playerMovement.SpawnStaff1Projectile();
     }
 
     public void ColliderHit(Collider2D collider)
