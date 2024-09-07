@@ -13,6 +13,7 @@ public class WeaponBehaviour : MonoBehaviour
     public Collider2D hitboxColliderRightLeft;
 
     private PlayerMovement playerMovement;
+    private ProjectileSpawner projectileSpawner;
 
     public float dirX;
     public float dirY;
@@ -65,7 +66,16 @@ public class WeaponBehaviour : MonoBehaviour
 
     public void ShootStaff1Projectile()
     {
-        playerMovement.SpawnStaff1Projectile();
+        if (projectileSpawner != null)
+        {
+            projectileSpawner.SpawnProjectile(); 
+        }
+        else
+        {
+            Debug.LogError("ProjectileSpawner wurde nicht gefunden!");
+        }
+        
+        
     }
 
     public void ColliderHit(Collider2D collider)

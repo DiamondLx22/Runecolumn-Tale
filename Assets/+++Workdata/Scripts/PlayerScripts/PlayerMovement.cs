@@ -193,29 +193,6 @@ public class PlayerMovement : MonoBehaviour
 
     #endregion
     
-    
-    
-    // Projectile Spawn
-
-    #region Projectile Spawn
-
-     public void SpawnStaff1Projectile()
-    {
-        GameObject newObject = Instantiate(staff1Projectile);
-        newObject.transform.position = transform.position;
-        
-        Projektil projScript = newObject.GetComponent<Projektil>();
-        if (projScript != null)
-        {
-            projScript.dirX = moveInput.x;  // Pass player movement direction to projectile
-            projScript.dirY = moveInput.y;
-        }
-        
-    }
-
-    #endregion
-
-
 
     //--- Update ---
 
