@@ -248,6 +248,8 @@ public class PlayerMovement : MonoBehaviour
                     weaponBehaviour.dirY = moveInput.y;
                 }
             }
+            
+            
 
         }
 
