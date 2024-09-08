@@ -80,16 +80,15 @@ public class WeaponBehaviour : MonoBehaviour
 
     public void ColliderHit(Collider2D collider)
     {
-        Slimelin slimelin = collider.GetComponent<Slimelin>();
-        print(collider.gameObject.name);
-        if (slimelin != null)
+        EnemyHealth enemy = collider.GetComponent<EnemyHealth>();
+        print(enemy.gameObject.name);
+        if (enemy != null)
         {
             Vector3 parentPosition = transform.parent.position;
             Vector2 direction = new Vector2(dirX, dirY);
             Vector2 knockback = direction * knockbackForce;
 
-            slimelin.ApplyDamage(swordDamage);
-            slimelin.ApplyKnockback(knockback);
+            enemy.OnHit(swordDamage, knockback);
         }
 
         else

@@ -7,8 +7,6 @@ using UnityEngine.UI;
 
 public class Slimelin : MonoBehaviour
 {
-  public float maxHealth = 100f;
-  private float currentHealth;
   public float damage = 10f;
   public float knockbackForce = 5f;
   private Rigidbody2D rb;
@@ -30,7 +28,6 @@ public class Slimelin : MonoBehaviour
   
   public void Start()
   {
-    currentHealth = maxHealth;
     rb = GetComponent<Rigidbody2D>();
     spriteRenderer = GetComponent<SpriteRenderer>();
     
@@ -76,9 +73,9 @@ public class Slimelin : MonoBehaviour
     }
   }
 
-  public void ApplyDamage(float damage)
+ /* public void ApplyDamage(float damage)
   {
-    currentHealth -= damage;
+   
     spriteRenderer.color = hitColor;
     Invoke("ResetColor", hitColorTime);
     
@@ -88,7 +85,7 @@ public class Slimelin : MonoBehaviour
     {
       Die();
     }
-  }
+  }*/
   
   public void ApplyKnockback(Vector2 knockback)
   {
@@ -203,8 +200,5 @@ public class Slimelin : MonoBehaviour
      }
    }
 
-   private float GetHealthNormalized()
-  {
-    return currentHealth / maxHealth;
-  }
+  
 }

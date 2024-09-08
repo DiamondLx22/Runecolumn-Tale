@@ -21,6 +21,7 @@ public class PlayerMovement : MonoBehaviour
 
     public Animator[] meleeAnim;
     public Animator[] rangeAnim;
+    public ProjectileSpawner[] projectileSpawners;
     public Animator[] anim;
     public Vector2 moveInput;
 
@@ -248,8 +249,11 @@ public class PlayerMovement : MonoBehaviour
                     weaponBehaviour.dirY = moveInput.y;
                 }
             }
-            
-            
+
+            for (int i = 0; i < projectileSpawners.Length; i++)
+            {
+                projectileSpawners[i].targetDirection = new Vector2(moveInput.x, moveInput.y);
+            }
 
         }
 
