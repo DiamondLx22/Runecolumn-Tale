@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Hunin_Movement-Right
+  m_Name: Hugin_Movement-Down
   serializedVersion: 7
   m_Legacy: 0
   m_Compressed: 0
@@ -21,11 +21,11 @@ AnimationClip:
   - serializedVersion: 2
     curve:
     - time: 0
-      value: {fileID: -2044253301, guid: b7fad9f5d24a9514bbe21ab84345bff5, type: 3}
+      value: {fileID: -2064218941, guid: b7fad9f5d24a9514bbe21ab84345bff5, type: 3}
     - time: 0.2
-      value: {fileID: -790998958, guid: b7fad9f5d24a9514bbe21ab84345bff5, type: 3}
+      value: {fileID: 1128474790, guid: b7fad9f5d24a9514bbe21ab84345bff5, type: 3}
     - time: 0.4
-      value: {fileID: -1266908348, guid: b7fad9f5d24a9514bbe21ab84345bff5, type: 3}
+      value: {fileID: 538990363, guid: b7fad9f5d24a9514bbe21ab84345bff5, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -48,9 +48,9 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     pptrCurveMapping:
-    - {fileID: -2044253301, guid: b7fad9f5d24a9514bbe21ab84345bff5, type: 3}
-    - {fileID: -790998958, guid: b7fad9f5d24a9514bbe21ab84345bff5, type: 3}
-    - {fileID: -1266908348, guid: b7fad9f5d24a9514bbe21ab84345bff5, type: 3}
+    - {fileID: -2064218941, guid: b7fad9f5d24a9514bbe21ab84345bff5, type: 3}
+    - {fileID: 1128474790, guid: b7fad9f5d24a9514bbe21ab84345bff5, type: 3}
+    - {fileID: 538990363, guid: b7fad9f5d24a9514bbe21ab84345bff5, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}

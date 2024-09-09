@@ -681,7 +681,7 @@ GameObject:
   - component: {fileID: 228595210}
   - component: {fileID: 228595209}
   m_Layer: 0
-  m_Name: Hunin
+  m_Name: Hugin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7670,7 +7670,7 @@ GameObject:
   - component: {fileID: 1629228252}
   - component: {fileID: 1629228251}
   m_Layer: 0
-  m_Name: Mugin
+  m_Name: Munin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
