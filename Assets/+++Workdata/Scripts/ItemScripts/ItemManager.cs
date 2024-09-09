@@ -5,6 +5,8 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
+using UnityEngine.UIElements;
+using Image = UnityEngine.UI.Image;
 
 public class ItemManager : MonoBehaviour
 {
@@ -13,15 +15,47 @@ public class ItemManager : MonoBehaviour
     //public StateInfo[] stateInfos;
     public List<StateInfo> stateInfos;
 
+    public InventorySlot[] inventorySlots;
+
     [SerializeField] private TextMeshProUGUI ItemPopUpHeader, ItemPopUpDescription, ItemPopUpAmount;
     [SerializeField] private GameObject ItemPopUpCollected;
     [SerializeField] private Image image;
     
 
     public bool isStateContainerShown = false;
-    private void Awake()
+    //private void Awake()
+    //{
+    //    gameController = FindObjectOfType<GameController>();
+    //}
+
+    private void Start()
     {
-        gameController = FindObjectOfType<GameController>();
+        InitializeInventory();
+    }
+
+    private void InitializeInventory()
+    {
+        for (int i = 0; 1 < inventorySlots.Length; i++)
+        {
+            if (i < stateInfos.Count)
+            {
+                Item newItem = new Item(stateInfos[i], 1);
+                inventorySlots[i].SetItem(newItem);
+            }
+        }
+    }
+
+    public Item GetItemById(string id)
+    {
+        foreach (StateInfo stateInfo in stateInfos)
+        {
+            if (stateInfo.id == id)
+            {
+                return new Item(stateInfo, 1);
+            } 
+        }
+
+        return null;
     }
 
     private void OnEnable()

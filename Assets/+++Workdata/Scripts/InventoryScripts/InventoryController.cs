@@ -50,7 +50,7 @@ public class InventoryController : MonoBehaviour
         if (inventoryContainer.activeSelf)
         {
             playerMovement.DisableInput();
-            inventoryManager.RefreshInventory();
+            //inventoryManager.RefreshInventory();
         }
 
         else 

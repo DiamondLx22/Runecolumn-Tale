@@ -15,4 +15,15 @@ public class StateInfo
     public Sprite icon;
 
     public int amount;
+
+    public StateCategorys category;
+}
+
+[System.Serializable]
+public enum StateCategorys
+{
+    defaul,
+    armor,
+    staff,
+    swords
 }

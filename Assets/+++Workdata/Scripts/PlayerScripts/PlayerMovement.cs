@@ -24,6 +24,8 @@ public class PlayerMovement : MonoBehaviour
     public Animator[] rangeAnim;
     public ProjectileSpawner[] projectileSpawners;
     public Animator[] anim;
+    public EquipmentSlot[] equipmentSlot;
+    public GameObject[] swords;
     public Vector2 moveInput;
 
     public float movespeed;
@@ -192,6 +194,26 @@ public class PlayerMovement : MonoBehaviour
             }
 
             canRangeAttack = false;
+
+            for (int i = 0; i < equipmentSlot.Length; i++)
+            {
+                if(equipmentSlot[i].assignedItem == null) continue;
+                
+                if (equipmentSlot[i].assignedItem.itemState.id == "Sword1")
+                {
+                    for (int j = 0; j < swords.Length; j++)
+                    {
+                        swords[i].SetActive(false);
+
+                        if (swords[i].gameObject.name == "Sword1")
+                        {
+                            swords[i].SetActive(true);
+                        }
+                    }
+                    
+                }
+                
+            }
         }
     }
 
