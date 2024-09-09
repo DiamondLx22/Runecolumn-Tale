@@ -11,6 +11,7 @@ public class PlayerMovement : MonoBehaviour
     private InputAction moveAction;
     private InputAction meleeAttack;
     private InputAction rangeAttack;
+    private Vector2 lookDirection = Vector2.down;
 
     public GameObject staff1Projectile;
     public GameObject projectile;
@@ -124,6 +125,8 @@ public class PlayerMovement : MonoBehaviour
 
         }
 
+        if (moveInput != Vector2.zero) lookDirection = context.ReadValue<Vector2>();
+
     }
 
     #endregion
@@ -230,12 +233,12 @@ public class PlayerMovement : MonoBehaviour
         }
 
 
-        if (moveInput != Vector2.zero)
+        if (true)
         {
             for (int i = 0; i < rangeAnim.Length; i++)
             {
-                rangeAnim[i].SetFloat("dirX", moveInput.x);
-                rangeAnim[i].SetFloat("dirY", moveInput.y);
+                rangeAnim[i].SetFloat("dirX", lookDirection.x);
+                rangeAnim[i].SetFloat("dirY", lookDirection.y);
             }
 
             for (int i = 0; i < meleeAnim.Length; i++)
@@ -252,7 +255,7 @@ public class PlayerMovement : MonoBehaviour
 
             for (int i = 0; i < projectileSpawners.Length; i++)
             {
-                projectileSpawners[i].targetDirection = new Vector2(moveInput.x, moveInput.y);
+                projectileSpawners[i].targetDirection = new Vector2(lookDirection.x, lookDirection.y);
             }
 
         }

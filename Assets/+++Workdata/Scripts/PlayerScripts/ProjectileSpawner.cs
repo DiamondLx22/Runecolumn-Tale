@@ -73,7 +73,7 @@ public class ProjectileSpawner : MonoBehaviour
      
         if (direction.y == 0f)
         {
-            projectile.transform.position = alternativeSpawnPosition.position;
+           // projectile.transform.position = alternativeSpawnPosition.position;
             projectile.GetComponentInChildren<SpriteRenderer>().sortingOrder = 0;
         }
 
