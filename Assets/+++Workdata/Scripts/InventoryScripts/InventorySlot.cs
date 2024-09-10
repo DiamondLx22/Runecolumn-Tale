@@ -120,6 +120,7 @@ public class InventorySlot : MonoBehaviour, IPointerClickHandler
         if (inventoryManager.HasCurrentItem())
         {
             //Rein laden
+            if(assignedItem == inventoryManager.GetCurrenItemInfo()) return;
             SetItem(inventoryManager.GetCurrenItemInfo());
             inventoryManager.ClearSlot();
         }

@@ -40,7 +40,6 @@ public class PlayerMovement : MonoBehaviour
 
     private void Awake()
     {
-
         inputActions = new Player_InputActions();
         moveAction = inputActions.Player.Move;
         interactAction = inputActions.Player.Interact;
@@ -77,7 +76,6 @@ public class PlayerMovement : MonoBehaviour
     #endregion
 
 
-
     //--- OnDisable ---
 
     #region OnDisable
@@ -108,7 +106,6 @@ public class PlayerMovement : MonoBehaviour
     #endregion
 
 
-
     //--- Movement ---
 
     #region Movement
@@ -119,20 +116,16 @@ public class PlayerMovement : MonoBehaviour
 
         if (context.performed)
         {
-
         }
 
         else if (context.canceled)
         {
-
         }
 
         if (moveInput != Vector2.zero) lookDirection = context.ReadValue<Vector2>();
-
     }
 
     #endregion
-
 
 
     //--- MeleeAttack CancelAnimation ---
@@ -154,8 +147,8 @@ public class PlayerMovement : MonoBehaviour
                     weaponBehaviour.StartAttack();
                 }
 
-                meleeAnim[i].SetFloat("dirX", anim[0].GetFloat("dirX"));
-                meleeAnim[i].SetFloat("dirY", anim[0].GetFloat("dirY"));
+                //meleeAnim[i].SetFloat("dirX", anim[0].GetFloat("dirX"));
+                //meleeAnim[i].SetFloat("dirY", anim[0].GetFloat("dirY"));
             }
 
             for (int i = 0; i < anim.Length; i++)
@@ -168,7 +161,6 @@ public class PlayerMovement : MonoBehaviour
     }
 
     #endregion
-
 
 
     //--- RangeAttack CancelAnimation ---
@@ -197,8 +189,8 @@ public class PlayerMovement : MonoBehaviour
 
             for (int i = 0; i < equipmentSlot.Length; i++)
             {
-                if(equipmentSlot[i].assignedItem == null) continue;
-                
+                if (equipmentSlot[i].assignedItem == null) continue;
+
                 if (equipmentSlot[i].assignedItem.itemState.id == "Sword1")
                 {
                     for (int j = 0; j < swords.Length; j++)
@@ -210,15 +202,13 @@ public class PlayerMovement : MonoBehaviour
                             swords[i].SetActive(true);
                         }
                     }
-                    
                 }
-                
             }
         }
     }
 
     #endregion
-    
+
 
     //--- Update ---
 
@@ -230,7 +220,6 @@ public class PlayerMovement : MonoBehaviour
     }
 
     #endregion
-
 
 
     //--- UpdateAnimations ---
@@ -246,17 +235,8 @@ public class PlayerMovement : MonoBehaviour
                 anim[i].SetFloat("dirX", moveInput.x);
                 anim[i].SetFloat("dirY", moveInput.y);
             }
-
-        }
-
-        for (int i = 0; i < anim.Length; i++)
-        {
-            anim[i].SetBool("isMoving", moveInput != Vector2.zero);
-        }
-
-
-        if (true)
-        {
+            
+            
             for (int i = 0; i < rangeAnim.Length; i++)
             {
                 rangeAnim[i].SetFloat("dirX", lookDirection.x);
@@ -265,8 +245,9 @@ public class PlayerMovement : MonoBehaviour
 
             for (int i = 0; i < meleeAnim.Length; i++)
             {
-                meleeAnim[i].SetFloat("dirX", moveInput.x);
-                meleeAnim[i].SetFloat("dirY", moveInput.y);
+                meleeAnim[i].SetFloat("dirX", lookDirection.x);
+                meleeAnim[i].SetFloat("dirY", lookDirection.y);
+                
                 WeaponBehaviour weaponBehaviour = meleeAnim[i].GetComponent<WeaponBehaviour>();
                 if (weaponBehaviour != null)
                 {
@@ -274,18 +255,20 @@ public class PlayerMovement : MonoBehaviour
                     weaponBehaviour.dirY = moveInput.y;
                 }
             }
-
-            for (int i = 0; i < projectileSpawners.Length; i++)
-            {
-                projectileSpawners[i].targetDirection = new Vector2(lookDirection.x, lookDirection.y);
-            }
-
         }
 
+        for (int i = 0; i < anim.Length; i++)
+        {
+            anim[i].SetBool("isMoving", moveInput != Vector2.zero);
+        }
+
+        for (int i = 0; i < projectileSpawners.Length; i++)
+        {
+            projectileSpawners[i].targetDirection = new Vector2(lookDirection.x, lookDirection.y);
+        }
     }
 
     #endregion
-
 
 
     private void FixedUpdate()

@@ -9,13 +9,13 @@ public class EquipmentSlot : InventorySlot
     
     public override void OnPointerClick(PointerEventData eventData)
     {
-        if (base.inventoryManager.HasCurrentItem())
+        if (inventoryManager.HasCurrentItem())
         {
             //Rein laden
             if (inventoryManager.GetCurrenItemInfo().itemState.category == targetCategory)
             {
+                if(assignedItem == inventoryManager.GetCurrenItemInfo()) return;
                 SetItem(inventoryManager.GetCurrenItemInfo());
-                
                 inventoryManager.ClearSlot();
             }
         }

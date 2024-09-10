@@ -46,6 +46,7 @@ public class InventoryController : MonoBehaviour
     void Inventory(InputAction.CallbackContext context)
     {
         inventoryContainer.SetActive(!inventoryContainer.activeSelf);
+        inventoryManager.RefreshInventory();
     
         if (inventoryContainer.activeSelf)
         {
