@@ -13,6 +13,12 @@ public class BossController : MonoBehaviour
 
     public AttackState currentAttackState;
 
+    private Rigidbody2D rb; // Neu hinzugefügt
+    private SpriteRenderer spriteRenderer; // Neu hinzugefügt
+    public Color32 normalColor; // Neu hinzugefügt
+    public Color32 hitColor; // Neu hinzugefügt
+    public float hitColorTime = 0.1f; // Neu hinzugefügt
+
     [System.Serializable]
     public enum AttackState
     {
@@ -21,24 +27,24 @@ public class BossController : MonoBehaviour
         attack3
     }
 
-    private Slimelin slimelin;
+    //private EndBoss endboss;
 
     public float dirX;
     public float dirY;
 
     public void Start()
     {
-        slimelin = FindObjectOfType<Slimelin>();
+        //endboss = FindObjectOfType<EndBoss>();
 
         hitboxColliderTopDown.enabled = false;
         hitboxColliderRightLeft.enabled = false;
+
+        rb = GetComponent<Rigidbody2D>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     public void StartAttack()
     {
-        //dirX = playerMovement.moveInput.x;
-        //dirY = playerMovement.moveInput.y;
-
         hitboxColliderTopDown.enabled = false;
         hitboxColliderRightLeft.enabled = false;
 
@@ -84,18 +90,52 @@ public class BossController : MonoBehaviour
             Vector2 knockback = direction * knockbackForce;
 
             playerHealth.TakeDamage((int)swordDamage);
-            playerHealth.ApplyKnockback(knockback);
+            ApplyKnockback(knockback); // Anwendung von ApplyKnockback
         }
-
         else
         {
             Debug.LogWarning("Collider hat keine HealthComponent");
         }
 
-        // Überprüfen, ob das kollidierte Objekt das Tag "Player" hat
         if (collider.gameObject.CompareTag("Player"))
         {
             Debug.Log("Gegner Treffer erfolgreich");
+        }
+    }
+
+    // Knockback-Funktion aus Slimelin.cs übernommen
+    public void ApplyKnockback(Vector2 knockback)
+    {
+        if (rb != null)
+        {
+            rb.isKinematic = false;
+            rb.AddForce(knockback, ForceMode2D.Impulse);
+            rb.isKinematic = true;
+            Invoke("ResetVelocity", 1);
+        }
+    }
+
+    private void ResetVelocity()
+    {
+        rb.velocity = Vector2.zero;
+    }
+
+    // Neu: Farbanpassung für Treffer
+    private void ResetColor()
+    {
+        spriteRenderer.color = normalColor;
+    }
+
+    // Kollisionserkennung aus Slimelin.cs übernommen
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        EnemyHealth enemyHealth = collision.gameObject.GetComponent<EnemyHealth>();
+        if (enemyHealth != null)
+        {
+            Vector2 direction = (collision.transform.position - transform.position).normalized;
+            Vector2 knockback = direction * knockbackForce;
+
+            enemyHealth.OnHit(swordDamage, knockback); // Übertragen des Schadens und Knockback
         }
     }
 }

@@ -14,14 +14,33 @@ public class BossDetector : MonoBehaviour
 
     public event Action<Collider2D> OnTargetEnterAttackRange;
     public event Action<Collider2D> OnTargetExitAttackRange;
+    
+    public float constantDistance = 2.0f;
 
-    public GameObject enemyCanvas;
+    public GameObject bossCanvas;
 
     void Start()
     {
-        enemyCanvas.SetActive(false);
+        bossCanvas.SetActive(false);
+        
         col = GetComponent<Collider2D>();
+
+        if (col == null)
+        {
+            Debug.LogError("DetectorCollider nicht Verknüpft.");
+        }
+
+        if (attackRangeCollider == null)
+        {
+            Debug.LogError("AttackRangeCollider nicht Verknüpft");
+        }
         parentTransform = transform.parent;
+        
+        if (parentTransform == null)
+        {
+            
+            Debug.LogError(("Parent Transform fehlt"));
+        }
     }
 
     void Update()
@@ -31,13 +50,22 @@ public class BossDetector : MonoBehaviour
             transform.position = parentTransform.position;  // Update der Position des Detektors
         }
     }
+    
+    public void TriggerOnTargetEnterAttackRangeEvent(Collider2D collider)
+    {
+        OnTargetEnterAttackRange?.Invoke(collider);
+    }
+    public void TriggerOnTargetExitAttackRangeEvent(Collider2D collider)
+    {
+        OnTargetExitAttackRange?.Invoke((collider));
+    }
 
     void OnTriggerEnter2D(Collider2D collider)
     {
         if (collider != null && tagTargets.Contains(collider.gameObject.tag))
         {
             detectObjects.Add(collider);
-            enemyCanvas.SetActive(true);
+            bossCanvas.SetActive(true);
             OnTargetEnterAttackRange?.Invoke(collider);
         }
     }
@@ -47,7 +75,7 @@ public class BossDetector : MonoBehaviour
         if (collider != null && tagTargets.Contains(collider.gameObject.tag))
         {
             detectObjects.Remove(collider);
-            enemyCanvas.SetActive(false);
+            bossCanvas.SetActive(false);
             OnTargetExitAttackRange?.Invoke(collider);
         }
     }
