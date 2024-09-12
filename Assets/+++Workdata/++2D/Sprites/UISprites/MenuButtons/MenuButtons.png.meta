@@ -218,7 +218,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ba426ec13778d35499aab449345df03d
+      spriteID: ab0352b0bfcb20642804019b692a8204
       internalID: -2118549134
       vertices: []
       indices: 
@@ -239,7 +239,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 91420cf5ca4814643a7eeba1091dc23a
+      spriteID: a4e5e1d07ba468342914d9c8c4effc06
       internalID: 1825802350
       vertices: []
       indices: 
@@ -260,7 +260,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6f4b8ea9230f5a24aaff896e2f0349dc
+      spriteID: c0eb818cb33df6c4686e8d3bb35693f3
       internalID: -985723124
       vertices: []
       indices: 
@@ -281,7 +281,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5ef4871c6d3e2b449ab1c90cb2a67d47
+      spriteID: 4a4cc26874337764ba124f2733527191
       internalID: 1860661265
       vertices: []
       indices: 
@@ -289,6 +289,27 @@ TextureImporter:
       weights: []
     - serializedVersion: 2
       name: MenuButtons_6
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 0
+        width: 250
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c34417c0a25d19e4b99abfcf9953d7f7
+      internalID: -1318530446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MenuButtons_7
       rect:
         serializedVersion: 2
         x: 750
@@ -302,8 +323,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5f7b2695f35b74247bbc674ef363b404
-      internalID: -1318530446
+      spriteID: 4f0cda1a94aac6e4e939438afaafee4a
+      internalID: 1421749828
       vertices: []
       indices: 
       edges: []
@@ -326,6 +347,7 @@ TextureImporter:
       MenuButtons_4: -985723124
       MenuButtons_5: 1860661265
       MenuButtons_6: -1318530446
+      MenuButtons_7: 1421749828
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

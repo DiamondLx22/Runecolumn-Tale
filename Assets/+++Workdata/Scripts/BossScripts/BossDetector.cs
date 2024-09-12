@@ -79,4 +79,5 @@ public class BossDetector : MonoBehaviour
             OnTargetExitAttackRange?.Invoke(collider);
         }
     }
+    
 }

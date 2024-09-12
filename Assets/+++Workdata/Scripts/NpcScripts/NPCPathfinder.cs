@@ -6,6 +6,7 @@ public class NPCPathfinder : MonoBehaviour
 {
     public Collider2D col;
     public float moveSpeed = 2.0f;
+    public float obstacleAvoidanceDistance = 0.5f; // Abstand zu Hindernissen
 
     public Transform pointA;
     public Transform pointB;
@@ -58,6 +59,9 @@ public class NPCPathfinder : MonoBehaviour
         Vector3 movementDirection = (nextDestination - transform.position).normalized;
         Vector3 newPosition = Vector3.MoveTowards(transform.position, nextDestination, moveSpeed * Time.deltaTime);
 
+        // Verhindere Kollisionen mit Hindernissen
+        newPosition = AvoidObstacles(movementDirection, newPosition);
+
         // Setze die Position des NPCs
         transform.position = newPosition;
 
@@ -66,6 +70,22 @@ public class NPCPathfinder : MonoBehaviour
 
         // Speichere die aktuelle Position für das nächste Frame
         lastPosition = transform.position;
+    }
+
+    // Vermeide Hindernisse, indem ein Mindestabstand eingehalten wird
+    private Vector3 AvoidObstacles(Vector3 movementDirection, Vector3 desiredPosition)
+    {
+        RaycastHit2D hit = Physics2D.Raycast(transform.position, movementDirection, obstacleAvoidanceDistance);
+
+        // Wenn ein Hindernis erkannt wird, weiche seitlich aus
+        if (hit.collider != null && hit.collider != col)
+        {
+            // Berechne die Richtung des Ausweichens (senkrecht zur Bewegungsrichtung)
+            Vector3 avoidDirection = Vector3.Cross(movementDirection, Vector3.forward).normalized;
+            desiredPosition += avoidDirection * moveSpeed * Time.deltaTime;
+        }
+
+        return desiredPosition;
     }
 
     // Funktion zum Stoppen der Bewegung bei Interaktionen
@@ -85,9 +105,6 @@ public class NPCPathfinder : MonoBehaviour
     {
         if (animator != null)
         {
-            // Setze den Parameter "Speed" für die Animation, basierend auf der Bewegung
-            animator.SetFloat("Speed", movementDirection.magnitude); 
-
             // Setze die Bewegungsrichtung in den Animator (Horizontal = X, Vertical = Y)
             animator.SetFloat("Horizontal", movementDirection.x);  
             animator.SetFloat("Vertical", movementDirection.y);    

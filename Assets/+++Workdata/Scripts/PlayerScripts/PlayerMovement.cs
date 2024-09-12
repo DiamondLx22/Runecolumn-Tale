@@ -30,6 +30,7 @@ public class PlayerMovement : MonoBehaviour
 
     public float movespeed;
     private Interactable selectedInteractable;
+  
 
     public static event Action SubscribeAction;
     public static event Action UnsubscribeAction;
@@ -136,7 +137,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void MeleeAttack(InputAction.CallbackContext context)
     {
-        if (context.performed && canMeleeAttack)
+        if (context.performed && canMeleeAttack && IsMeleeItemEquipped())
         {
             for (int i = 0; i < meleeAnim.Length; i++)
             {
@@ -146,17 +147,14 @@ public class PlayerMovement : MonoBehaviour
                 {
                     weaponBehaviour.StartAttack();
                 }
-
-                //meleeAnim[i].SetFloat("dirX", anim[0].GetFloat("dirX"));
-                //meleeAnim[i].SetFloat("dirY", anim[0].GetFloat("dirY"));
-            }
-
-            for (int i = 0; i < anim.Length; i++)
-            {
                 anim[i].SetTrigger("meleeAttack");
             }
 
             canMeleeAttack = false;
+        }
+        else
+        {
+            DisableMeleeAnimations();
         }
     }
 
@@ -171,41 +169,43 @@ public class PlayerMovement : MonoBehaviour
 
     private void RangeAttack(InputAction.CallbackContext context)
     {
-        if (context.performed && canRangeAttack)
+        if (context.performed && canRangeAttack && IsRangeItemEquipped())
         {
             for (int i = 0; i < rangeAnim.Length; i++)
             {
                 rangeAnim[i].gameObject.SetActive(true);
-                //rangeAnim[i].SetFloat("dirX", anim[0].GetFloat("dirX"));
-                // rangeAnim[i].SetFloat("dirY", anim[0].GetFloat("dirY"));
-            }
-
-            for (int i = 0; i < anim.Length; i++)
-            {
                 anim[i].SetTrigger("rangeAttack");
             }
 
             canRangeAttack = false;
-
-            for (int i = 0; i < equipmentSlot.Length; i++)
-            {
-                if (equipmentSlot[i].assignedItem == null) continue;
-
-                if (equipmentSlot[i].assignedItem.itemState.id == "Sword1")
-                {
-                    for (int j = 0; j < swords.Length; j++)
-                    {
-                        swords[i].SetActive(false);
-
-                        if (swords[i].gameObject.name == "Sword1")
-                        {
-                            swords[i].SetActive(true);
-                        }
-                    }
-                }
-            }
+        }
+        else
+        {
+            DisableRangeAnimations();
         }
     }
+
+          //  canRangeAttack = false;
+
+            //for (int i = 0; i < equipmentSlot.Length; i++)
+            //{
+            //    if (equipmentSlot[i].assignedItem == null) continue;
+//
+            //    if (equipmentSlot[i].assignedItem.itemState.id == "Sword1")
+            //    {
+            //        for (int j = 0; j < swords.Length; j++)
+            //        {
+            //            swords[i].SetActive(false);
+//
+            //            if (swords[i].gameObject.name == "Sword1")
+            //            {
+            //                swords[i].SetActive(true);
+            //            }
+            //        }
+            //    }
+            //}
+        //}
+   // }
 
     #endregion
 
@@ -220,6 +220,61 @@ public class PlayerMovement : MonoBehaviour
     }
 
     #endregion
+
+    public List<string> swordIDs = new List<string>
+    {
+        
+    };
+    
+    private bool IsMeleeItemEquipped()
+    {
+        foreach (var slot in equipmentSlot)
+        {
+            if (slot.assignedItem != null && swordIDs.Contains(slot.assignedItem.itemState.id))  // Beispielhafte ID
+            {
+                return true;
+            }
+        }
+        return false;
+    }
+
+
+
+    public List<string> staffIDs = new List<string>
+    {
+        "item_amber_staff"
+    };
+        
+    private bool IsRangeItemEquipped()
+    {
+        foreach (var slot in equipmentSlot)
+        {
+            if (slot.assignedItem != null && staffIDs.Contains(slot.assignedItem.itemState.id))  // Beispielhafte ID
+            {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    // Deaktiviere Nahkampfanimationen
+    private void DisableMeleeAnimations()
+    {
+        for (int i = 0; i < meleeAnim.Length; i++)
+        {
+            meleeAnim[i].gameObject.SetActive(false);
+        }
+    }
+
+    // Deaktiviere Fernkampfanimationen
+    private void DisableRangeAnimations()
+    {
+        for (int i = 0; i < rangeAnim.Length; i++)
+        {
+            rangeAnim[i].gameObject.SetActive(false);
+        }
+    }
+    
 
 
     //--- UpdateAnimations ---
