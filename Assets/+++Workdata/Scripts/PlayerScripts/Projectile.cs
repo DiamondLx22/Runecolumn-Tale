@@ -49,6 +49,14 @@ public class Projectile : MonoBehaviour
             Destroy(gameObject);
         }
 
+        BossHealth bossHealth = other.GetComponent<BossHealth>();
+        if (bossHealth != null)
+        {
+            bossHealth.TakeDamage(damage);
+            
+            Destroy(gameObject);
+        }
+
     }
 
     public void SetDirectionAnimation()

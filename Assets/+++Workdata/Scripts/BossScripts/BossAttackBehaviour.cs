@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class BossAttackBehaviour : MonoBehaviour
 {
-      public float swordDamage = 10f;
+    public float meleeDamage = 10f;
+    public float rangeDamage = 15f; 
     public float knockbackForce = 10f;
     public Animator animator;
 
@@ -13,11 +14,11 @@ public class BossAttackBehaviour : MonoBehaviour
 
     public bool canAttack = false;  // Wird vom BossController aktiviert/deaktiviert
 
-    private BossController bossController;
+    private Endboss endBoss;
 
     private void Start()
     {
-        bossController = GetComponent<BossController>();
+        endBoss = transform.GetComponentInParent<Endboss>();
         
         // Deaktiviere die Hitboxen am Anfang
         hitboxColliderTopDown.enabled = false;
@@ -29,6 +30,22 @@ public class BossAttackBehaviour : MonoBehaviour
     {
         if (!canAttack) return;
 
+        if (endBoss.canMeleeAttack)
+        {
+            StartMeleeAttack(moveDirection);
+        }
+        else if (endBoss.canRangeAttack)
+        {
+            StartRangeAttack(moveDirection);
+        }
+    }
+    
+    private void StartMeleeAttack(Vector2 moveDirection)
+    {
+        // Disable both hitboxes before deciding which one to enable
+        hitboxColliderTopDown.enabled = false;
+        hitboxColliderRightLeft.enabled = false;
+        
         // Berechnung der Angriffsrichtung
         hitboxColliderTopDown.enabled = false;
         hitboxColliderRightLeft.enabled = false;
@@ -50,19 +67,51 @@ public class BossAttackBehaviour : MonoBehaviour
         }
 
         // Animationen basierend auf dem aktuellen Angriffszustand (AttackState)
-        switch (bossController.currentAttackState)
+        switch (endBoss.currentAttackState)
         {
-            case BossController.AttackState.attack1:
+            case Endboss.AttackState.attack1:
+                meleeDamage = endBoss.meleeDamage;
                 animator.SetTrigger("Attack1");
                 break;
-            case BossController.AttackState.attack2:
+            case Endboss.AttackState.attack2:
+                meleeDamage = endBoss.meleeDamage;
                 animator.SetTrigger("Attack2");
                 break;
-            case BossController.AttackState.attack3:
+            case Endboss.AttackState.attack3:
+                meleeDamage = endBoss.meleeDamage;
                 animator.SetTrigger("Attack3");
                 break;
         }
     }
+    
+    public void StartRangeAttack(Vector2 moveDirection)
+    {
+        switch (endBoss.currentAttackState)
+        {
+            case Endboss.AttackState.attack1:
+                rangeDamage = endBoss.rangeDamage;
+                animator.SetTrigger("RangeAttack1");
+                break;
+            case Endboss.AttackState.attack2:
+                rangeDamage = endBoss.rangeDamage;
+                animator.SetTrigger("RangeAttack2");
+                break;
+            case Endboss.AttackState.attack3:
+                rangeDamage = endBoss.rangeDamage;
+                animator.SetTrigger("RangeAttack3");
+                break;
+        }
+    }
+    
+    /*
+    private void FireProjectile(Vector2 moveDirection)
+    {
+        // Instantiate the projectile and shoot it towards the target
+        GameObject projectile = Instantiate(endBoss.projectilePrefab, transform.position, Quaternion.identity);
+        Vector2 direction = moveDirection.normalized;
+        projectile.GetComponent<Rigidbody2D>().velocity = direction * endBoss.projectileSpeed;
+    }
+    */
 
     // Angriff beenden
     public void EndAttack()
@@ -84,9 +133,10 @@ public class BossAttackBehaviour : MonoBehaviour
             Vector2 direction = (collider.transform.position - parentPosition).normalized;
             Vector2 knockback = direction * knockbackForce;
 
-            playerHealth.TakeDamage((int)swordDamage);
+            playerHealth.TakeDamage((int)meleeDamage);
+            playerHealth.TakeDamage((int)rangeDamage);
      	    playerHealth.ApplyKnockback(knockback);
-         }
+        }
 
         else
         {

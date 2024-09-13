@@ -62,8 +62,8 @@ public class Slimelin : MonoBehaviour
         }
         
         Vector2 moveDirection = target.transform.position - transform.position;
-        meleeAnim[i].SetFloat("dirX", moveDirection.x); //anim[0].GetFloat("dirX"));
-        meleeAnim[i].SetFloat("dirY", moveDirection.y); //anim[0].GetFloat("dirY"));
+        meleeAnim[i].SetFloat("dirX", moveDirection.x);
+        meleeAnim[i].SetFloat("dirY", moveDirection.y);
       }
 
       for (int i = 0; i < anim.Length; i++)
@@ -72,24 +72,10 @@ public class Slimelin : MonoBehaviour
       }
     }
   }
-
- /* public void ApplyDamage(float damage)
-  {
-   
-    spriteRenderer.color = hitColor;
-    Invoke("ResetColor", hitColorTime);
-    
-    healthBar.fillAmount = GetHealthNormalized();
-    
-    if (currentHealth <= 0f)
-    {
-      Die();
-    }
-  }*/
+  
   
   public void ApplyKnockback(Vector2 knockback)
   {
-    //Rigidbody2D rb = GetComponent<Rigidbody2D>();
     if (rb != null)
     {
       rb.isKinematic = false;
@@ -119,44 +105,7 @@ public class Slimelin : MonoBehaviour
     slimelinDetect.OnTargetEnterAttackRange -= HandleTargetEnterAttackRange;
     slimelinDetect.OnTargetEnterAttackRange -= HandleTargetExitAttackRange;
   }
-  /* public void OnHit(float damage)
-   {
-     currentHealth -= this.damage;
-     spriteRenderer.color = hitColor;
-     Invoke("ResetColor", hitColorTime);
-     
-     if (currentHealth <= 0)
-     {
-       Die();
-     }
-   }*/
-
-//public bool canMeleeAttack = true;
-//{
-//  if (context.performed && canMeleeAttack)
-//  {
-//    for (int i = 0; i < meleeAnim.Length; i++)
-//    {
-//      meleeAnim[i].gameObject.SetActive(true);
-//      EnemyAttackBehaviour enemyAttackBehaviour = meleeAnim[i].GetComponent<EnemyAttackBehaviour>();
-//      if (enemyAttackBehaviour != null)
-//      {
-//        enemyAttackBehaviour.StartAttack();
-//      }
-//      meleeAnim[i].SetFloat("dirX", anim[0].GetFloat("dirX"));
-//      meleeAnim[i].SetFloat("dirY", anim[0].GetFloat("dirY"));
-//    }
-//
-//    for (int i = 0; i < anim.Length; i++)
-//    {
-//      anim[i].SetTrigger("meleeAttack");
-//    }
-//
-//    canMeleeAttack = false;
-//  }
-//}
-
-
+  
    private void OnCollisionEnter2D(Collision2D collision)
    {
      EnemyHealth enemyHealth = collision.gameObject.GetComponent<EnemyHealth>();
@@ -199,6 +148,4 @@ public class Slimelin : MonoBehaviour
        }
      }
    }
-
-  
 }

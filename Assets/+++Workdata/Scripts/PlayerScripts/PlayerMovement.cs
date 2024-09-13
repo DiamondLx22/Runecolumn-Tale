@@ -117,13 +117,17 @@ public class PlayerMovement : MonoBehaviour
 
         if (context.performed)
         {
+            if (moveInput != Vector2.zero)
+            {
+                lookDirection = moveInput;
+            }
         }
 
         else if (context.canceled)
         {
         }
 
-        if (moveInput != Vector2.zero) lookDirection = context.ReadValue<Vector2>();
+        //if (moveInput != Vector2.zero) lookDirection = context.ReadValue<Vector2>();
     }
 
     #endregion
@@ -146,7 +150,13 @@ public class PlayerMovement : MonoBehaviour
                 if (weaponBehaviour != null)
                 {
                     weaponBehaviour.StartAttack();
+                    weaponBehaviour.dirX = lookDirection.x;
+                    weaponBehaviour.dirY = lookDirection.y;
                 }
+                
+                anim[i].SetFloat("dirX", lookDirection.x);
+                anim[i].SetFloat("dirY", lookDirection.y);
+                
                 anim[i].SetTrigger("meleeAttack");
             }
 
@@ -174,6 +184,9 @@ public class PlayerMovement : MonoBehaviour
             for (int i = 0; i < rangeAnim.Length; i++)
             {
                 rangeAnim[i].gameObject.SetActive(true);
+                anim[i].SetFloat("dirX", lookDirection.x);
+                anim[i].SetFloat("dirY", lookDirection.y);
+                
                 anim[i].SetTrigger("rangeAttack");
             }
 
@@ -184,28 +197,7 @@ public class PlayerMovement : MonoBehaviour
             DisableRangeAnimations();
         }
     }
-
-          //  canRangeAttack = false;
-
-            //for (int i = 0; i < equipmentSlot.Length; i++)
-            //{
-            //    if (equipmentSlot[i].assignedItem == null) continue;
-//
-            //    if (equipmentSlot[i].assignedItem.itemState.id == "Sword1")
-            //    {
-            //        for (int j = 0; j < swords.Length; j++)
-            //        {
-            //            swords[i].SetActive(false);
-//
-            //            if (swords[i].gameObject.name == "Sword1")
-            //            {
-            //                swords[i].SetActive(true);
-            //            }
-            //        }
-            //    }
-            //}
-        //}
-   // }
+    
 
     #endregion
 
@@ -216,11 +208,23 @@ public class PlayerMovement : MonoBehaviour
 
     private void Update()
     {
+        if (moveInput != Vector2.zero)
+        {
+            for (int i = 0; i < anim.Length; i++)
+            {
+                anim[i].SetFloat("dirX", moveInput.x);
+                anim[i].SetFloat("dirY", moveInput.y);
+            }
+
+            lookDirection = moveInput;
+        }
         UpdateAnimations();
     }
 
     #endregion
 
+    
+    
     public List<string> swordIDs = new List<string>
     {
         
@@ -290,16 +294,19 @@ public class PlayerMovement : MonoBehaviour
                 anim[i].SetFloat("dirX", moveInput.x);
                 anim[i].SetFloat("dirY", moveInput.y);
             }
-            
-            
-            for (int i = 0; i < rangeAnim.Length; i++)
-            {
+
+            lookDirection = moveInput;
+        }
+
+
+        for (int i = 0; i < rangeAnim.Length; i++)
+        {
                 rangeAnim[i].SetFloat("dirX", lookDirection.x);
                 rangeAnim[i].SetFloat("dirY", lookDirection.y);
-            }
+        }
 
-            for (int i = 0; i < meleeAnim.Length; i++)
-            {
+        for (int i = 0; i < meleeAnim.Length; i++)
+        {
                 meleeAnim[i].SetFloat("dirX", lookDirection.x);
                 meleeAnim[i].SetFloat("dirY", lookDirection.y);
                 
@@ -309,8 +316,8 @@ public class PlayerMovement : MonoBehaviour
                     weaponBehaviour.dirX = moveInput.x;
                     weaponBehaviour.dirY = moveInput.y;
                 }
-            }
         }
+    
 
         for (int i = 0; i < anim.Length; i++)
         {

@@ -66,7 +66,7 @@ public class BossDetector : MonoBehaviour
         {
             detectObjects.Add(collider);
             bossCanvas.SetActive(true);
-            OnTargetEnterAttackRange?.Invoke(collider);
+            //OnTargetEnterAttackRange?.Invoke(collider);
         }
     }
 
@@ -76,7 +76,7 @@ public class BossDetector : MonoBehaviour
         {
             detectObjects.Remove(collider);
             bossCanvas.SetActive(false);
-            OnTargetExitAttackRange?.Invoke(collider);
+            //OnTargetExitAttackRange?.Invoke(collider);
         }
     }
     

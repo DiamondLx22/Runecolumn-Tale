@@ -5,18 +5,18 @@ using UnityEngine.UI;
 
 public class BossHealth : MonoBehaviour
 {
-      private SpriteRenderer spriteRenderer;
+    private SpriteRenderer spriteRenderer;
     private Rigidbody2D rb;
     
-    public float maxHealth = 500f;  // Höhere Lebenspunkte für einen Boss
+    public float maxHealth = 500f;
     private float currentHealth;
     public Image healthBar;
 
     public float hitColorTime = 0.1f;
-    public Color32 normalColor = new Color32(255, 255, 255, 255);  // Standardfarbe
-    public Color32 hitColor = new Color32(255, 0, 0, 255);  // Farbe bei Treffer
+    public Color32 normalColor = new Color32(255, 255, 255, 255);
+    public Color32 hitColor = new Color32(255, 0, 0, 255);
     
-    private BossController bossController;  // Verknüpfung zum BossController
+    private Endboss endboss;
 
     void Start()
     {
@@ -25,7 +25,7 @@ public class BossHealth : MonoBehaviour
         currentHealth = maxHealth;
         UpdateHealthBar();
 
-        bossController = GetComponent<BossController>();
+        endboss = GetComponent<Endboss>();
     }
 
     public void TakeDamage(float damage)
@@ -34,13 +34,17 @@ public class BossHealth : MonoBehaviour
         currentHealth = Mathf.Clamp(currentHealth, 0f, maxHealth);
         UpdateHealthBar();
         
-        // Färbt den Boss bei Schaden rot ein
+        
         spriteRenderer.color = hitColor;
         Invoke("ChangeToNormalColor", hitColorTime);
 
         if (currentHealth <= 0f)
         {
             Die();
+        }
+        else
+        {
+            endboss.UpdateAttackState();  // Aktualisiert den Angriffszustand basierend auf der Gesundheit
         }
     }
     
@@ -67,6 +71,11 @@ public class BossHealth : MonoBehaviour
     {
         spriteRenderer.color = normalColor;
     }
+    
+    public float GetHealthPercentage()
+    {
+        return currentHealth / maxHealth;
+    }
 
     void UpdateHealthBar()
     {
@@ -79,11 +88,7 @@ public class BossHealth : MonoBehaviour
     void Die()
     {
         Debug.Log("Boss died!");
-        // Benachrichtige den BossController über den Tod
-        if (bossController != null)
-        {
-            bossController.OnBossDeath();
-        }
+        Destroy(gameObject);
     }
 
     // Reagiert auf Kollisionen, z.B. mit dem Spieler
@@ -91,7 +96,7 @@ public class BossHealth : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            TakeDamage(10f);  // Schaden bei Kollision mit Spieler
+           // TakeDamage(10f);
         }
     }
 }
