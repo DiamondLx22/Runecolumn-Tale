@@ -45,6 +45,9 @@ public class Endboss : MonoBehaviour
     public bool canRangeAttack;
     public float dirX;
     public float dirY;
+    
+    public GameObject bossprojectilePrefab;  
+    public Transform firePoint;  
 
     [System.Serializable]
     public enum AttackState
@@ -152,6 +155,23 @@ public class Endboss : MonoBehaviour
             }
 
             TriggerAttackAnimation("rangeAttack"); // Angriff nur triggern, wenn tatsächlich angegriffen wird
+
+            FireProjectile(target);
+        }
+    }
+
+    private void FireProjectile(Collider2D target)
+    {
+        if (bossprojectilePrefab != null && firePoint != null)
+        {
+            GameObject bossprojectile = Instantiate(bossprojectilePrefab, firePoint.position, Quaternion.identity);
+            BossProjectile bossprojectileScript = bossprojectile.GetComponent<BossProjectile>();
+
+            if (bossprojectileScript != null)
+            {
+                Vector2 attackDirection = new Vector2(animator.GetFloat("dirX"), animator.GetFloat("dirY"));
+                bossprojectileScript.Initialize(target.transform, rangeDamage, attackDirection);
+            }
         }
     }
 
