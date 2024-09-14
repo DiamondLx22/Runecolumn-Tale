@@ -155,6 +155,7 @@ public class Endboss : MonoBehaviour
             }
 
             TriggerAttackAnimation("rangeAttack"); // Angriff nur triggern, wenn tatsächlich angegriffen wird
+            
 
             FireProjectile(target);
         }
