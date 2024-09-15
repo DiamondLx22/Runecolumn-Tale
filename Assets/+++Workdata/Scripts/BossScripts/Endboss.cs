@@ -80,10 +80,10 @@ public class Endboss : MonoBehaviour
 
         bossHealth = GetComponent<BossHealth>(); // Verknüpfung mit BossHealth-Skript
         UpdateAttackState();
-        UpdateMoveState();
+        //UpdateMoveState();
         ActivateAnimationObjects();
-        ActivateMeleeAttackObjects();
-        ActivateRangeAttackObjects();
+        //ActivateMeleeAttackObjects();
+        //ActivateRangeAttackObjects();
 
         BossDetector bossDetect = GetComponentInChildren<BossDetector>();
         bossDetect.OnTargetEnterAttackRange += HandleTargetEnterAttackRange;
