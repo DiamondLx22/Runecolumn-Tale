@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Ink.Parsed;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -15,6 +16,21 @@ public class SaveManager : MonoBehaviour
         PlayerPrefs.SetFloat("PlayerPositionY", playerTransform.position.y);
         
         PlayerPrefs.Save();
+    }
+
+    public void SaveInventory()
+    {
+        SaveDataManager.SaveToJson("inventory", FindObjectOfType<GameState>().states);
+    }
+
+    public void PlayerPosition()
+    {
+        SaveDataManager.SaveToJson("playerposition", FindObjectOfType<PlayerMovement>().transform.position);
+    }
+
+    public List<State> LoadInventory()
+    {
+        return SaveDataManager.LoadFromJson<List<State>>("inventory");
     }
 
     public void LoadGame()

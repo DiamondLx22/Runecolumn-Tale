@@ -20,18 +20,41 @@ public class EquipmentSlot : InventorySlot
                 { "Player_Staff1_Attack-Down" },
                 { "Player_Staff1_Attack-Left" },
                 { "Player_Staff1_Attack-Right" },
+                
                 { "Weapon_Staff1_Attack-Up" },
                 { "Weapon_Staff1_Attack-Down" },
                 { "Weapon_Staff1_Attack-Left" },
                 { "Weapon_Staff1_Attack-Right" },
+                
                 { "Weapon_Staff1_AttackEffect-Up" },
                 { "Weapon_Staff1_AttackEffect-Down" },
                 { "Weapon_Staff1_AttackEffect-Left" },
                 { "Weapon_Staff1_AttackEffect-Right" },
+                
                 { "Projectile_Shoot-Up" },
                 { "Projectile_Shoot-Down" },
                 { "Projectile_Shoot-Left" },
                 { "Projectile_Shoot-Right" }
+            }
+        },
+        
+        {
+            "item_ferrit_sword", new List<string>
+            {
+                {"Player_Sword1_Attack-Up"},
+                {"Player_Sword1_Attack-Down"},
+                {"Player_Sword1_Attack-Left"},
+                {"Player_Sword1_Attack-Right"},
+                
+                {"Weapon_Sword1_Attack-Up"},
+                {"Weapon_Sword1_Attack-Down"},
+                {"Weapon_Sword1_Attack-Left"},
+                {"Weapon_Sword1_Attack-Right"},
+                
+                {"Weapon_Sword1_AttackEffect-Up"},
+                {"Weapon_Sword1_AttackEffect-Down"},
+                {"Weapon_Sword1_AttackEffect-Left"},
+                {"Weapon_Sword1_AttackEffect-Right"}
             }
 
 

@@ -13,7 +13,7 @@ public class GameState : MonoBehaviour
 
     #region Inspector
 
-    [SerializeField] private List<State> states;
+    [SerializeField] public List<State> states;
 
     //public StateInfo[] stateInfos;
 
