@@ -20,7 +20,7 @@ public class NPCPathfinder : MonoBehaviour
 
     void Start()
     {
-        col = GetComponent<Collider2D>();
+        //col = GetComponent<Collider2D>();
 
         if (col == null)
         {
@@ -78,7 +78,7 @@ public class NPCPathfinder : MonoBehaviour
         RaycastHit2D hit = Physics2D.Raycast(transform.position, movementDirection, obstacleAvoidanceDistance);
 
         // Wenn ein Hindernis erkannt wird, weiche seitlich aus
-        if (hit.collider != null && hit.collider != col)
+        if (hit.collider != null && hit.collider != col && hit.collider != GetComponent<Collider2D>())
         {
             // Berechne die Richtung des Ausweichens (senkrecht zur Bewegungsrichtung)
             Vector3 avoidDirection = Vector3.Cross(movementDirection, Vector3.forward).normalized;
