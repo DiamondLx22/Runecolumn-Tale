@@ -26,7 +26,7 @@ public class BossAttackBehaviour : MonoBehaviour
     }
 
     // Angriff starten
-    public void StartAttack(Vector2 moveDirection)
+    /*public void StartAttack(Vector2 moveDirection)
     {
         if (!canAttack) return;
 
@@ -38,7 +38,7 @@ public class BossAttackBehaviour : MonoBehaviour
         {
             StartRangeAttack(moveDirection);
         }
-    }
+    }*/
     
     private void StartMeleeAttack(Vector2 moveDirection)
     {

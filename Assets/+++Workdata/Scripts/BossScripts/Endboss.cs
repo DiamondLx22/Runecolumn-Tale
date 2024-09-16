@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.Serialization;
 using UnityEngine.UI;
 
 public class Endboss : MonoBehaviour
@@ -22,29 +23,9 @@ public class Endboss : MonoBehaviour
     public float moveSpeed;
 
     public Image healthBar;
-    public Animator[] meleeAnim;
-    public Animator[] rangeAnim;
-    public Animator[] anim;
-
-    public GameObject[] phase1AnimGameObjects;
-    public GameObject[] phase2AnimGameObjects;
-    public GameObject[] phase3AnimGameObjects;
-
-    public GameObject[] phase1MeleeAnimGameObjects;
-    public GameObject[] phase2MeleeAnimGameObjects;
-    public GameObject[] phase3MeleeAnimGameObjects;
-
-    public GameObject[] phase1RangeAnimGameObjects;
-    public GameObject[] phase2RangeAnimGameObjects;
-    public GameObject[] phase3RangeAnimGameObjects;
-
+    
     public Collider2D hitboxColliderTopDown;
     public Collider2D hitboxColliderRightLeft;
-
-    public bool canMeleeAttack;
-    public bool canRangeAttack;
-    public float dirX;
-    public float dirY;
     
     public GameObject bossprojectilePrefab;  
     public Transform firePoint;  
@@ -57,20 +38,22 @@ public class Endboss : MonoBehaviour
         attack3
     }
 
-    public enum MoveState
+    public enum BossForm
     {
-        move1,
-        move2,
-        move3
+        Hugin,
+        Munin,
+        Skalli
     }
 
-    public MoveState currentMoveState;
+    
+
+    private BossForm currentBossForm = BossForm.Hugin;
 
     public AttackState currentAttackState;
 
     private BossHealth bossHealth;
 
-    private Collider2D playerInAttackRange;
+    
 
     public void Start()
     {
@@ -80,10 +63,7 @@ public class Endboss : MonoBehaviour
 
         bossHealth = GetComponent<BossHealth>(); // Verknüpfung mit BossHealth-Skript
         UpdateAttackState();
-        //UpdateMoveState();
-        ActivateAnimationObjects();
-        //ActivateMeleeAttackObjects();
-        //ActivateRangeAttackObjects();
+      
 
         BossDetector bossDetect = GetComponentInChildren<BossDetector>();
         bossDetect.OnTargetEnterAttackRange += HandleTargetEnterAttackRange;
@@ -92,73 +72,29 @@ public class Endboss : MonoBehaviour
 
     private void HandleTargetEnterAttackRange(Collider2D target)
     {
-        playerInAttackRange = target;
-        canMeleeAttack = true;
-        HandleMeleeAttack(target);
+        
+       
+        HandleAttack(target);
     }
 
     private void HandleTargetExitAttackRange(Collider2D target)
     {
-        if (target == playerInAttackRange)
+        if (target)
         {
-            playerInAttackRange = null;
-            canMeleeAttack = false;
-            canRangeAttack = false;
+            
             EndAttack();
         }
     }
 
-    private void HandleMeleeAttack(Collider2D target)
+    private void HandleAttack(Collider2D target)
     {
-        if (canMeleeAttack)
-        {
-            StartMeleeAttack();
+        bool meleeRange = Vector2.Distance(transform.position, target.transform.position) < 1.2f;
+        
+       
+            //StartAttack();
             ColliderHit(target);
-
-            for (int i = 0; i < meleeAnim.Length; i++)
-            {
-                meleeAnim[i].gameObject.SetActive(true);
-                BossAttackBehaviour enemyAttackBehaviour = meleeAnim[i].GetComponent<BossAttackBehaviour>();
-                if (enemyAttackBehaviour != null)
-                {
-                    enemyAttackBehaviour.StartAttack(new Vector2(dirX, dirY));
-                }
-
-                Vector2 moveDirection = target.transform.position - transform.position;
-                meleeAnim[i].SetFloat("dirX", moveDirection.x);
-                meleeAnim[i].SetFloat("dirY", moveDirection.y);
-            }
-
-            TriggerAttackAnimation("meleeAttack"); // Angriff nur triggern, wenn tatsächlich angegriffen wird
-        }
-    }
-
-    private void HandleRangeAttack(Collider2D target)
-    {
-        if (canRangeAttack && target == playerInAttackRange)
-        {
-            StartRangeAttack();
-            ColliderHit(target);
-
-            for (int i = 0; i < rangeAnim.Length; i++)
-            {
-                rangeAnim[i].gameObject.SetActive(true);
-                BossAttackBehaviour enemyAttackBehaviour = rangeAnim[i].GetComponent<BossAttackBehaviour>();
-                if (enemyAttackBehaviour != null)
-                {
-                    enemyAttackBehaviour.StartRangeAttack(new Vector2(dirX, dirY));
-                }
-
-                Vector2 moveDirection = target.transform.position - transform.position;
-                rangeAnim[i].SetFloat("dirX", moveDirection.x);
-                rangeAnim[i].SetFloat("dirY", moveDirection.y);
-            }
-
-            TriggerAttackAnimation("rangeAttack"); // Angriff nur triggern, wenn tatsächlich angegriffen wird
             
-
             FireProjectile(target);
-        }
     }
 
     private void FireProjectile(Collider2D target)
@@ -198,7 +134,8 @@ public class Endboss : MonoBehaviour
         }
     }
 
-    public void StartRangeAttack()
+    /*
+     public void StartRangeAttack()
     {
         switch (currentAttackState)
         {
@@ -234,14 +171,7 @@ public class Endboss : MonoBehaviour
             hitboxColliderTopDown.offset = offset;
         }
     }
-
-    private void TriggerAttackAnimation(string attackType)
-    {
-        for (int i = 0; i < anim.Length; i++)
-        {
-            anim[i].SetTrigger(attackType);
-        }
-    }
+    */
 
     public void UpdateAttackState()
     {
@@ -262,102 +192,57 @@ public class Endboss : MonoBehaviour
 
         healthBar.fillAmount = healthPercentage;
     }
+    
+/// <summary>
+/// Switch Boss Form according to Health
+/// </summary>
 
-    public void UpdateMoveState()
+    public void UpdateBossForm()
     {
         float healthPercentage = bossHealth.GetHealthPercentage();
 
+        BossForm nextBossForm;
+        
         if (healthPercentage > 0.66f)
         {
-            currentMoveState = MoveState.move1;
-            animator.SetTrigger("HuginTransform");
+            nextBossForm = BossForm.Hugin;
         }
         else if (healthPercentage > 0.33f)
         {
-            currentMoveState = MoveState.move2;
-            animator.SetTrigger("MuninTransform");
+            nextBossForm  = BossForm.Munin;
         }
-        else
+        else //if
         {
-            currentMoveState = MoveState.move3;
-            animator.SetTrigger("HeavyMove");
+            nextBossForm  = BossForm.Skalli;
         }
+        //else
 
-        ActivateAnimationObjects();
-        ActivateMeleeAttackObjects();
-        ActivateRangeAttackObjects();
-    }
+        bool shouldTransform = nextBossForm != currentBossForm;
 
-    private void ActivateAnimationObjects()
-    {
-        foreach (GameObject obj in phase1AnimGameObjects)
+        if (shouldTransform)
         {
-            obj.SetActive(currentMoveState == MoveState.move1);
-        }
-        foreach (GameObject obj in phase2AnimGameObjects)
-        {
-            obj.SetActive(currentMoveState == MoveState.move2);
-        }
-        foreach (GameObject obj in phase3AnimGameObjects)
-        {
-            obj.SetActive(currentMoveState == MoveState.move3);
-        }
-    }
+            switch (nextBossForm)
+            {
+                case BossForm.Hugin:
+                    animator.SetTrigger("HuginTransform");
+                    break;
+                
+                case BossForm.Munin:
+                    animator.SetTrigger("MuninTransform");
+                    break;
+                
+                case BossForm.Skalli:
+                    animator.SetTrigger("Skalli");
+                    break;
+            }
 
-    public void ActivateMeleeAttackObjects()
-    {
-        foreach (GameObject obj in phase1MeleeAnimGameObjects)
-        {
-            obj.SetActive(currentMoveState == MoveState.move1);
-        }
-        foreach (GameObject obj in phase2MeleeAnimGameObjects)
-        {
-            obj.SetActive(currentMoveState == MoveState.move2);
-        }
-        foreach (GameObject obj in phase3MeleeAnimGameObjects)
-        {
-            obj.SetActive(currentMoveState == MoveState.move3);
-        }
-    }
-
-    public void ActivateRangeAttackObjects()
-    {
-        foreach (GameObject obj in phase1RangeAnimGameObjects)
-        {
-            obj.SetActive(currentMoveState == MoveState.move1);
-        }
-        foreach (GameObject obj in phase2RangeAnimGameObjects)
-        {
-            obj.SetActive(currentMoveState == MoveState.move2);
-        }
-        foreach (GameObject obj in phase3RangeAnimGameObjects)
-        {
-            obj.SetActive(currentMoveState == MoveState.move3);
+            currentBossForm = nextBossForm;
         }
     }
     
-    private void DeactivateAttackObjects()
-    {
-        foreach (Animator anim in meleeAnim)
-        {
-            anim.gameObject.SetActive(false); // Deaktivieren der Child-Objekte nach Angriff
-        }
-
-        foreach (Animator anim in rangeAnim)
-        {
-            anim.gameObject.SetActive(false); // Deaktivieren der Child-Objekte nach Angriff
-        }
-    }
     
     public void EndAttack()
     {
-        for (int i = 0; i < anim.Length; i++)
-        {
-            anim[i].ResetTrigger("meleeAttack");
-            anim[i].SetTrigger("StopAttack");  
-            DeactivateAttackObjects();
-        }
-
         hitboxColliderRightLeft.enabled = false;
         hitboxColliderTopDown.enabled = false;
     }
@@ -418,36 +303,20 @@ public class Endboss : MonoBehaviour
 
     void FixedUpdate()
     {
-        if (bossDetect.detectObjects.Count > 0)
-        {
-            Collider2D target = null;
-            foreach (var obj in bossDetect.detectObjects)
-            {
-                target = obj;
-                break;
-            }
+       
+            Collider2D target = bossDetect.detectObjects.FirstOrDefault();
 
             if (target != null)
             {
-                Vector2 direction = Vector2.MoveTowards(transform.position,
-                    bossDetect.detectObjects.First().transform.position, moveSpeed * Time.deltaTime);
-
-                if (Vector2.Distance(direction, bossDetect.detectObjects.First().transform.position) < 1.2f)
-                {
-                    HandleMeleeAttack(target);
-                }
-                else
-                {
-                    canRangeAttack = true;
-                    HandleRangeAttack(target);
-                }
-
-                Vector2 moveDirection = target.transform.position - transform.position;
-                animator.SetFloat("dirX", moveDirection.x);
-                animator.SetFloat("dirY", moveDirection.y);
-                transform.position = direction;
+                transform.position = Vector2.MoveTowards(transform.position,
+                    target.transform.position, moveSpeed * Time.deltaTime);
+                HandleAttack(target);
             }
-            UpdateMoveState();
-        }
+            
+            Vector2 moveDirection = target.transform.position - transform.position;
+            animator.SetFloat("dirX", moveDirection.x);
+            animator.SetFloat("dirY", moveDirection.y);
+            
+            UpdateBossForm();
     }
 }

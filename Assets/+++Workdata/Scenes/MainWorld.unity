@@ -51370,31 +51370,10 @@ MonoBehaviour:
   bossDetect: {fileID: 1250452016}
   moveSpeed: 1
   healthBar: {fileID: 1192932220}
-  meleeAnim: []
-  rangeAnim: []
-  anim: []
-  phase1AnimGameObjects:
-  - {fileID: 0}
-  - {fileID: 0}
-  phase2AnimGameObjects:
-  - {fileID: 0}
-  phase3AnimGameObjects: []
-  phase1MeleeAnimGameObjects:
-  - {fileID: 0}
-  phase2MeleeAnimGameObjects: []
-  phase3MeleeAnimGameObjects: []
-  phase1RangeAnimGameObjects: []
-  phase2RangeAnimGameObjects: []
-  phase3RangeAnimGameObjects: []
   hitboxColliderTopDown: {fileID: 0}
   hitboxColliderRightLeft: {fileID: 0}
-  canMeleeAttack: 0
-  canRangeAttack: 0
-  dirX: 0
-  dirY: 0
   bossprojectilePrefab: {fileID: 0}
   firePoint: {fileID: 0}
-  currentMoveState: 0
   currentAttackState: 0
 --- !u!1 &1292388822
 GameObject:
