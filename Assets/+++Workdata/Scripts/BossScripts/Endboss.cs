@@ -270,12 +270,12 @@ public class Endboss : MonoBehaviour
         if (healthPercentage > 0.66f)
         {
             currentMoveState = MoveState.move1;
-            animator.SetTrigger("HuginMoveState1");
+            animator.SetTrigger("HuginTransform");
         }
         else if (healthPercentage > 0.33f)
         {
             currentMoveState = MoveState.move2;
-            animator.SetTrigger("MuninMoveState1");
+            animator.SetTrigger("MuninTransform");
         }
         else
         {
