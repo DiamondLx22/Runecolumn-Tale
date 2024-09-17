@@ -81,6 +81,7 @@ public class EquipmentSlot : InventorySlot
                 if (itemAnimations.ContainsKey(currentItem.itemState.id))
                 {
                     PlayAnimations(currentItem.itemState.id);
+                    print("Ja");
                 }
                 else
                 {

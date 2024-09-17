@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/+++Workdata/Scenes/MainWorld.unity
     guid: 3bb6af5cda80ffb43bf6903bac60dc5e
+  - enabled: 1
+    path: Assets/+++Workdata/Scenes/ThalgrimmWorld.unity
+    guid: d74c5800f4dbf3e4ab5e0f34c0aec019
   m_configObjects: {}

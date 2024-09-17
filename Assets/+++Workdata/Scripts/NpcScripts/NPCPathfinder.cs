@@ -75,14 +75,17 @@ public class NPCPathfinder : MonoBehaviour
     // Vermeide Hindernisse, indem ein Mindestabstand eingehalten wird
     private Vector3 AvoidObstacles(Vector3 movementDirection, Vector3 desiredPosition)
     {
-        RaycastHit2D hit = Physics2D.Raycast(transform.position, movementDirection, obstacleAvoidanceDistance);
-
-        // Wenn ein Hindernis erkannt wird, weiche seitlich aus
-        if (hit.collider != null && hit.collider != col && hit.collider != GetComponent<Collider2D>())
+        RaycastHit2D[] hits = Physics2D.RaycastAll(transform.position, movementDirection, obstacleAvoidanceDistance);
+       
+        foreach (RaycastHit2D hit in hits)
         {
-            // Berechne die Richtung des Ausweichens (senkrecht zur Bewegungsrichtung)
-            Vector3 avoidDirection = Vector3.Cross(movementDirection, Vector3.forward).normalized;
-            desiredPosition += avoidDirection * moveSpeed * Time.deltaTime;
+            // Wenn ein Hindernis erkannt wird, weiche seitlich aus
+            if (hit.collider != null && hit.collider != col && hit.collider != GetComponent<Collider2D>())
+            {
+                // Berechne die Richtung des Ausweichens (senkrecht zur Bewegungsrichtung)
+                Vector3 avoidDirection = Vector3.Cross(movementDirection, Vector3.forward).normalized;
+                desiredPosition += avoidDirection * moveSpeed * Time.deltaTime;
+            }
         }
 
         return desiredPosition;

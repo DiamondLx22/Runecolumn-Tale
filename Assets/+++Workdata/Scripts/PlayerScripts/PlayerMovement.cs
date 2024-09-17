@@ -225,15 +225,16 @@ public class PlayerMovement : MonoBehaviour
 
     
     
-    public List<string> swordIDs = new List<string>
+    private List<string> swordIDs = new List<string>
     {
-        
+        "item_ferrit_sword"
     };
     
     private bool IsMeleeItemEquipped()
     {
         foreach (var slot in equipmentSlot)
         {
+            if(slot.assignedItem != null) print(slot.assignedItem.itemState.id);
             if (slot.assignedItem != null && swordIDs.Contains(slot.assignedItem.itemState.id))  // Beispielhafte ID
             {
                 return true;
@@ -253,6 +254,7 @@ public class PlayerMovement : MonoBehaviour
     {
         foreach (var slot in equipmentSlot)
         {
+            if(slot.assignedItem != null) print(slot.assignedItem.itemState.id);
             if (slot.assignedItem != null && staffIDs.Contains(slot.assignedItem.itemState.id))  // Beispielhafte ID
             {
                 return true;
