@@ -66,8 +66,7 @@ public class Endboss : MonoBehaviour
       
 
         BossDetector bossDetect = GetComponentInChildren<BossDetector>();
-        bossDetect.OnTargetEnterAttackRange += HandleTargetEnterAttackRange;
-        bossDetect.OnTargetExitAttackRange += HandleTargetExitAttackRange;
+    
     }
 
     private void HandleTargetEnterAttackRange(Collider2D target)
@@ -91,7 +90,7 @@ public class Endboss : MonoBehaviour
         bool meleeRange = Vector2.Distance(transform.position, target.transform.position) < 1.2f;
         
        
-            //StartAttack();
+        
             ColliderHit(target);
             
             FireProjectile(target);
@@ -114,65 +113,26 @@ public class Endboss : MonoBehaviour
 
     public void StartMeleeAttack()
     {
-        // Animation und Schaden basierend auf dem Angriffszustand setzen
         switch (currentAttackState)
         {
             case AttackState.attack1:
-                meleeDamage = 10f;  // Geringster Schaden
+                meleeDamage = 10f; 
                 animator.SetTrigger("HuginMeleeAttack");
                 break;
 
             case AttackState.attack2:
-                meleeDamage = 20f;  // Mittlerer Schaden
+                meleeDamage = 20f;
                 animator.SetTrigger("Attack2");
                 break;
 
             case AttackState.attack3:
-                meleeDamage = 30f;  // Höchster Schaden
+                meleeDamage = 30f;
                 animator.SetTrigger("Attack3");
                 break;
         }
     }
 
-    /*
-     public void StartRangeAttack()
-    {
-        switch (currentAttackState)
-        {
-            case AttackState.attack1:
-                rangeDamage = 15f;
-                animator.SetTrigger("RangeAttack1");
-                break;
-
-            case AttackState.attack2:
-                rangeDamage = 25f;
-                animator.SetTrigger("RangeAttack2");
-                break;
-
-            case AttackState.attack3:
-                rangeDamage = 35f;
-                animator.SetTrigger("RangeAttack3");
-                break;
-        }
-
-        // Hitbox basierend auf Richtung aktivieren
-        if (dirX != 0)
-        {
-            hitboxColliderRightLeft.enabled = true;
-            Vector2 offset = hitboxColliderRightLeft.offset;
-            offset.x = Mathf.Abs(offset.x) * (dirX > 0 ? 1 : -1);
-            hitboxColliderRightLeft.offset = offset;
-        }
-        else if (dirY != 0)
-        {
-            hitboxColliderTopDown.enabled = true;
-            Vector2 offset = hitboxColliderTopDown.offset;
-            offset.y = Mathf.Abs(offset.y) * (dirY > 0 ? 1 : -1);
-            hitboxColliderTopDown.offset = offset;
-        }
-    }
-    */
-
+    
     public void UpdateAttackState()
     {
         float healthPercentage = bossHealth.GetHealthPercentage();
@@ -193,10 +153,6 @@ public class Endboss : MonoBehaviour
         healthBar.fillAmount = healthPercentage;
     }
     
-/// <summary>
-/// Switch Boss Form according to Health
-/// </summary>
-
     public void UpdateBossForm()
     {
         float healthPercentage = bossHealth.GetHealthPercentage();
@@ -281,14 +237,7 @@ public class Endboss : MonoBehaviour
     {
         rb.velocity = Vector2.zero;
     }
-
-    private void OnDestroy()
-    {
-        BossDetector bossDetect = GetComponentInChildren<BossDetector>();
-        bossDetect.OnTargetEnterAttackRange -= HandleTargetEnterAttackRange;
-        bossDetect.OnTargetExitAttackRange -= HandleTargetExitAttackRange;
-    }
-
+    
     private void OnCollisionEnter2D(Collision2D collision)
     {
         EnemyHealth enemyHealth = collision.gameObject.GetComponent<EnemyHealth>();
