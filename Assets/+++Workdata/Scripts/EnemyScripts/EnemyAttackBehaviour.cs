@@ -18,9 +18,16 @@ public class EnemyAttackBehaviour : MonoBehaviour
     public void Start()
     {
         slimelin = FindObjectOfType<Slimelin>();
-        
-        hitboxColliderTopDown.enabled = false;
-        hitboxColliderRightLeft.enabled = false;
+
+        if (hitboxColliderRightLeft)
+        {
+            hitboxColliderRightLeft.enabled = false;
+        }
+
+        if (hitboxColliderTopDown)
+        {
+            hitboxColliderTopDown.enabled = false;
+        }
     }
 
     public void StartAttack()
@@ -54,8 +61,15 @@ public class EnemyAttackBehaviour : MonoBehaviour
             anim[i].SetTrigger("StopAttack");
         }
 
-        hitboxColliderRightLeft.enabled = false;
-        hitboxColliderTopDown.enabled = false;
+        if (hitboxColliderRightLeft != null)
+        {
+            hitboxColliderRightLeft.enabled = false; 
+        }
+
+        if (hitboxColliderTopDown != null)
+        {
+            hitboxColliderTopDown.enabled = false; 
+        }
     }
 
     public void ColliderHit(Collider2D collider)

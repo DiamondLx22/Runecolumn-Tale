@@ -21,9 +21,16 @@ public class WeaponBehaviour : MonoBehaviour
     public void Start()
     {
         playerMovement = FindObjectOfType<PlayerMovement>();
-        
-        hitboxColliderTopDown.enabled = false;
-        hitboxColliderRightLeft.enabled = false;
+
+        if (hitboxColliderRightLeft != null)
+        {
+            hitboxColliderRightLeft.enabled = false;
+        }
+
+        if (hitboxColliderTopDown != null)
+        {
+            hitboxColliderTopDown.enabled = false; 
+        }
     }
 
     public void StartAttack()
@@ -59,9 +66,16 @@ public class WeaponBehaviour : MonoBehaviour
 
         playerMovement.canMeleeAttack = true;
         playerMovement.canRangeAttack = true;
-        
-        hitboxColliderRightLeft.enabled = false;
-        hitboxColliderTopDown.enabled = false;
+
+        if (hitboxColliderRightLeft != null)
+        {
+            hitboxColliderRightLeft.enabled = false;
+        }
+
+        if (hitboxColliderTopDown != null)
+        {
+            hitboxColliderTopDown.enabled = false;
+        }
     }
 
     public void ShootStaff1Projectile()

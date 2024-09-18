@@ -269,7 +269,9 @@ public class Endboss : MonoBehaviour
     {
         if (hitboxColliderTopDown.enabled || hitboxColliderRightLeft.enabled)
         {
-            ColliderHit(GetComponent<Collider2D>());
+
+            ColliderHit(other);
+
         }
     }
 
@@ -295,11 +297,11 @@ public class Endboss : MonoBehaviour
                 transform.position = Vector2.MoveTowards(transform.position,
                     target.transform.position, moveSpeed * Time.deltaTime);
                 HandleAttack(target);
+                
+                Vector2 moveDirection = target.transform.position - transform.position;
+                animator.SetFloat("dirX", moveDirection.x);
+                animator.SetFloat("dirY", moveDirection.y);
             }
-            
-            Vector2 moveDirection = target.transform.position - transform.position;
-            animator.SetFloat("dirX", moveDirection.x);
-            animator.SetFloat("dirY", moveDirection.y);
             
             UpdateBossForm();
     }
