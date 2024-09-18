@@ -269,7 +269,7 @@ public class Endboss : MonoBehaviour
     {
         if (hitboxColliderTopDown.enabled || hitboxColliderRightLeft.enabled)
         {
-            ColliderHit(collider);
+            ColliderHit(GetComponent<Collider2D>());
         }
     }
 

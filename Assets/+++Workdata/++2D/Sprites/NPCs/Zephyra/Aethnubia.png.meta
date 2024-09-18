@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 8922259393d9ef64ebbf8054f3889ff5
+guid: e48311e7ab6d74941ab344f6411ac2e8
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,13 +110,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ThalgrimmCrystalls_0
+      name: Aethnubia_0
       rect:
         serializedVersion: 2
-        x: 48
-        y: 144
-        width: 16
-        height: 16
+        x: 0
+        y: 60
+        width: 20
+        height: 20
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,58 +124,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 945fd10c105a08e46a41dfcf0d59a2b5
-      internalID: -425073718
+      spriteID: 44046dc5fde6f2b4a9fdd8adbe115e5d
+      internalID: -257374630
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ThalgrimmCrystalls_1
+      name: Aethnubia_1
       rect:
         serializedVersion: 2
-        x: 64
-        y: 144
-        width: 16
-        height: 16
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: -7, y: -6}
-        - {x: -7, y: -3}
-        - {x: -5, y: -2}
-        - {x: -4, y: -2}
-        - {x: -6, y: 0}
-        - {x: -6, y: 3}
-        - {x: -3, y: 3}
-        - {x: -2, y: 6}
-        - {x: 0, y: 8}
-        - {x: 1, y: 8}
-        - {x: 3, y: 6}
-        - {x: 4, y: 3}
-        - {x: 7, y: 3}
-        - {x: 5, y: -2}
-        - {x: 6, y: -2}
-        - {x: 7, y: -4}
-        - {x: 7, y: -6}
-      tessellationDetail: 0
-      bones: []
-      spriteID: d59287e5a926f7745b4f9edf83bcd97b
-      internalID: -1617265422
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ThalgrimmCrystalls_2
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 144
-        width: 16
-        height: 16
+        x: 20
+        y: 60
+        width: 20
+        height: 20
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -183,20 +145,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7084500fefe9d1f4d9bb10ef2947087b
-      internalID: 1096583262
+      spriteID: 40b70703d0888d4479adb705e28f45ac
+      internalID: -1040863644
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ThalgrimmCrystalls_3
+      name: Aethnubia_2
       rect:
         serializedVersion: 2
-        x: 128
-        y: 144
-        width: 16
-        height: 16
+        x: 40
+        y: 60
+        width: 20
+        height: 20
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -204,20 +166,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5087832106e0e5c438cbfd7826c6cab8
-      internalID: -195082956
+      spriteID: 50e9d8c5800ab184190775e53e50da9a
+      internalID: -309042633
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ThalgrimmCrystalls_4
+      name: Aethnubia_3
       rect:
         serializedVersion: 2
-        x: 48
-        y: 128
-        width: 16
-        height: 16
+        x: 60
+        y: 60
+        width: 20
+        height: 20
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -225,64 +187,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cbd05852216586c4ea0c4b2624a02c04
-      internalID: -2016193078
+      spriteID: 33d7f6550417fac4abb244fe457ef713
+      internalID: -1860207927
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ThalgrimmCrystalls_5
+      name: Aethnubia_4
       rect:
         serializedVersion: 2
-        x: 64
-        y: 128
-        width: 16
-        height: 16
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: -4, y: -6}
-        - {x: -4, y: -7}
-        - {x: -6, y: -7}
-        - {x: -6, y: -5.856003}
-        - {x: -7, y: -6}
-        - {x: -7, y: -4}
-        - {x: -5, y: -2}
-        - {x: -4, y: -2}
-        - {x: -6, y: 0}
-        - {x: -6, y: 3}
-        - {x: -3, y: 3}
-        - {x: -2, y: 6}
-        - {x: 0, y: 8}
-        - {x: 1, y: 8}
-        - {x: 3, y: 6}
-        - {x: 4, y: 3}
-        - {x: 7, y: 3}
-        - {x: 7, y: 0}
-        - {x: 5, y: -2}
-        - {x: 6, y: -2}
-        - {x: 7, y: -3}
-        - {x: 7, y: -4}
-        - {x: 6, y: -6}
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5063f48266f04524a9020cae7cfbcbe5
-      internalID: -1591536214
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ThalgrimmCrystalls_6
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 128
-        width: 16
-        height: 16
+        x: 80
+        y: 60
+        width: 20
+        height: 20
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -290,20 +208,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2f02bf477a9b9a847a0a37a4c42e2db4
-      internalID: 1825475098
+      spriteID: 1ea0a94c4d2e8ea42917bd79d4c0c6b0
+      internalID: 221912134
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ThalgrimmCrystalls_7
+      name: Aethnubia_5
       rect:
         serializedVersion: 2
-        x: 128
-        y: 128
-        width: 16
-        height: 16
+        x: 0
+        y: 40
+        width: 20
+        height: 20
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -311,20 +229,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 29293774336002f41bbbf9af2413db34
-      internalID: -743500954
+      spriteID: 0d2d82d677c92c34aa35d5b90cc65525
+      internalID: 308055325
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ThalgrimmCrystalls_8
+      name: Aethnubia_6
       rect:
         serializedVersion: 2
-        x: 48
-        y: 112
-        width: 16
-        height: 16
+        x: 20
+        y: 40
+        width: 20
+        height: 20
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -332,62 +250,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e8b3c52cd7293fd40a075be88953edc4
-      internalID: -1111801285
+      spriteID: 828c10c2407ad8a438bfccc63c4d4dd8
+      internalID: 2001948880
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ThalgrimmCrystalls_9
+      name: Aethnubia_7
       rect:
         serializedVersion: 2
-        x: 64
-        y: 112
-        width: 16
-        height: 16
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: -5, y: -7}
-        - {x: -6, y: -6}
-        - {x: -6, y: -4}
-        - {x: -4, y: -4}
-        - {x: -6, y: -2}
-        - {x: -6, y: 2}
-        - {x: -3, y: 2}
-        - {x: -2, y: 6}
-        - {x: 0, y: 8}
-        - {x: 1, y: 8}
-        - {x: 3, y: 6}
-        - {x: 3, y: 3}
-        - {x: 5, y: 3}
-        - {x: 5, y: 4}
-        - {x: 8, y: 4}
-        - {x: 8, y: 0}
-        - {x: 4, y: -4}
-        - {x: 5, y: -4}
-        - {x: 7, y: -5}
-        - {x: 7, y: -6}
-        - {x: 6, y: -7}
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2822d26b101894449a8c34b00fdd6051
-      internalID: -431191410
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ThalgrimmCrystalls_10
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 112
-        width: 16
-        height: 16
+        x: 40
+        y: 40
+        width: 20
+        height: 20
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -395,20 +271,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 71cf4bcc98c4a9a44b432120dc7f3f51
-      internalID: 240447355
+      spriteID: 2f635622777fab944b1e892cdd996540
+      internalID: -1904520428
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ThalgrimmCrystalls_11
+      name: Aethnubia_8
       rect:
         serializedVersion: 2
-        x: 128
-        y: 112
-        width: 16
-        height: 16
+        x: 60
+        y: 40
+        width: 20
+        height: 20
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -416,20 +292,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4fcf88cbd49c42849b1c7563628067df
-      internalID: 854172442
+      spriteID: 2819bb16812e1a6468ebf48b12c01099
+      internalID: 1843551821
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ThalgrimmCrystalls_12
+      name: Aethnubia_9
       rect:
         serializedVersion: 2
-        x: 48
-        y: 96
-        width: 16
-        height: 16
+        x: 80
+        y: 40
+        width: 20
+        height: 20
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -437,71 +313,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 83fd67895475f9b4db220ff39677a5be
-      internalID: 1954060701
+      spriteID: d8b74d9105726ee40b5e9cf936051eee
+      internalID: -1243643790
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ThalgrimmCrystalls_13
+      name: Aethnubia_10
       rect:
         serializedVersion: 2
-        x: 64
-        y: 96
-        width: 16
-        height: 16
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: -2, y: -7}
-        - {x: -2, y: -8}
-        - {x: -4, y: -8}
-        - {x: -7, y: -7}
-        - {x: -8, y: -6}
-        - {x: -8, y: -5}
-        - {x: -6, y: -5}
-        - {x: -7, y: -3}
-        - {x: -7, y: 0}
-        - {x: -6, y: 3}
-        - {x: -3, y: 3}
-        - {x: -3, y: 6}
-        - {x: -1, y: 8}
-        - {x: 0, y: 8}
-        - {x: 2, y: 6}
-        - {x: 2, y: 3}
-        - {x: 3, y: 3}
-        - {x: 3, y: 4}
-        - {x: 4, y: 5}
-        - {x: 7, y: 5}
-        - {x: 7, y: 3}
-        - {x: 5, y: 1}
-        - {x: 4, y: 1}
-        - {x: 4, y: -2}
-        - {x: 2, y: -4}
-        - {x: 3, y: -4}
-        - {x: 3, y: -5}
-        - {x: 6, y: -4.959587}
-        - {x: 6, y: -6}
-        - {x: 5, y: -7}
-      tessellationDetail: 0
-      bones: []
-      spriteID: a7628951702dd7945a93cc3011c74d6d
-      internalID: -1022548075
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ThalgrimmCrystalls_14
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 96
-        width: 16
-        height: 16
+        x: 0
+        y: 20
+        width: 20
+        height: 20
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -509,20 +334,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 48ca9492d83a4c04a9f0661e39c72ef3
-      internalID: 285773792
+      spriteID: 408b260e7ff55f34ea2dcf96dfd901b1
+      internalID: -1221291704
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ThalgrimmCrystalls_15
+      name: Aethnubia_11
       rect:
         serializedVersion: 2
-        x: 128
-        y: 96
-        width: 16
-        height: 16
+        x: 20
+        y: 20
+        width: 20
+        height: 20
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -530,20 +355,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0766ecc87ea4ba549b60c242c3e0991e
-      internalID: 2028744214
+      spriteID: 77829d55cb61df64f8a144a72d7e725f
+      internalID: 1960387366
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ThalgrimmCrystalls_16
+      name: Aethnubia_12
       rect:
         serializedVersion: 2
-        x: 48
-        y: 80
-        width: 16
-        height: 16
+        x: 40
+        y: 20
+        width: 20
+        height: 20
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -551,152 +376,155 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4e4682e885cb9c74cba1ecea5d7ede97
-      internalID: 2078092725
+      spriteID: f9a4b5f9f47226f46ae04ffd338114c0
+      internalID: 1876794417
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ThalgrimmCrystalls_17
+      name: Aethnubia_13
       rect:
         serializedVersion: 2
-        x: 64
-        y: 80
-        width: 16
-        height: 16
+        x: 60
+        y: 20
+        width: 20
+        height: 20
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape:
-      - - {x: -7, y: -8}
-        - {x: -7, y: -7}
-        - {x: -5, y: -7}
-        - {x: -5, y: -5.973572}
-        - {x: -2, y: -6}
-        - {x: -6, y: -2}
-        - {x: -6, y: 2}
-        - {x: -3, y: 2}
-        - {x: -2, y: 6}
-        - {x: -1, y: 7}
-        - {x: 2, y: 7}
-        - {x: 3, y: 6}
-        - {x: 3, y: 3}
-        - {x: 5, y: 3}
-        - {x: 5, y: 4}
-        - {x: 8, y: 4}
-        - {x: 8, y: -1}
-        - {x: 6, y: -1}
-        - {x: 6, y: -2}
-        - {x: 4, y: -4}
-        - {x: 3, y: -4}
-        - {x: 3, y: -6}
-        - {x: 4, y: -6}
-        - {x: 4, y: -7}
-        - {x: 7, y: -7}
-        - {x: 7, y: -8}
+      physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a6c57d8baa61ca04f9ab848abfb419c3
-      internalID: -1116026320
+      spriteID: 4e03b514d8cdf894c9ddd60bf8f67144
+      internalID: -1353868406
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ThalgrimmCrystalls_18
+      name: Aethnubia_14
       rect:
         serializedVersion: 2
-        x: 48
-        y: 64
-        width: 16
-        height: 16
+        x: 80
+        y: 20
+        width: 20
+        height: 20
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape:
-      - - {x: -8, y: -8}
-        - {x: -8, y: -6}
-        - {x: -6, y: -5}
-        - {x: -2, y: -5}
-        - {x: -7, y: 0}
-        - {x: -7, y: 4}
-        - {x: -4, y: 4}
-        - {x: -4, y: 3}
-        - {x: -2, y: 3}
-        - {x: -2, y: 6}
-        - {x: -1, y: 7}
-        - {x: 0, y: 8}
-        - {x: 1, y: 8}
-        - {x: 2, y: 7}
-        - {x: 3, y: 6}
-        - {x: 3, y: 1}
-        - {x: 4, y: 1}
-        - {x: 4, y: 2}
-        - {x: 7, y: 2}
-        - {x: 7, y: -2}
-        - {x: 4, y: -5}
-        - {x: 7, y: -5}
-        - {x: 7, y: -7}
-        - {x: 6, y: -8}
-      - - {x: 7, y: 2}
-        - {x: 7, y: 2}
-        - {x: 7, y: 2}
-        - {x: 7, y: 2}
+      physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ab809fee6698b31449be7153731dafa1
-      internalID: 1117858663
+      spriteID: 9d41f8fef4bc592408a63173a94bc857
+      internalID: -1506005440
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ThalgrimmCrystalls_19
+      name: Aethnubia_15
       rect:
         serializedVersion: 2
-        x: 64
-        y: 64
-        width: 16
-        height: 16
+        x: 0
+        y: 0
+        width: 20
+        height: 20
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape:
-      - - {x: -5, y: -8}
-        - {x: -6, y: -7}
-        - {x: -6, y: -6}
-        - {x: -4, y: -6}
-        - {x: -4, y: -5}
-        - {x: -2, y: -5}
-        - {x: -5, y: -2}
-        - {x: -6, y: 1}
-        - {x: -8, y: 3}
-        - {x: -8, y: 5}
-        - {x: -5, y: 5}
-        - {x: -3, y: 3}
-        - {x: -3, y: 6}
-        - {x: -1, y: 8}
-        - {x: 0, y: 8}
-        - {x: 2, y: 6}
-        - {x: 2, y: 3}
-        - {x: 5, y: 3}
-        - {x: 5, y: 0}
-        - {x: 6, y: 0}
-        - {x: 6, y: -3}
-        - {x: 5, y: -4}
-        - {x: 4, y: -5}
-        - {x: 5, y: -5}
-        - {x: 5, y: -6}
-        - {x: 7, y: -6}
-        - {x: 7, y: -8}
+      physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0117079c2100e174d892ca233b42d8cc
-      internalID: 1412394584
+      spriteID: 6634f458c5cd50b418dc56376db5a460
+      internalID: -630073447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aethnubia_16
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 0
+        width: 20
+        height: 20
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d2025b6f45dfcc4aaff60a24645d4c3
+      internalID: 669703256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aethnubia_17
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 0
+        width: 20
+        height: 20
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bf77651294286b4ea90eea507628130
+      internalID: 51094048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aethnubia_18
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 0
+        width: 20
+        height: 20
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e672a61dd25b3de4ca006d8053132077
+      internalID: -720139134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Aethnubia_19
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 0
+        width: 20
+        height: 20
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c557d250a1b7464f9499d3ce25b6685
+      internalID: 753326501
       vertices: []
       indices: 
       edges: []
@@ -712,26 +540,26 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      ThalgrimmCrystalls_0: -425073718
-      ThalgrimmCrystalls_1: -1617265422
-      ThalgrimmCrystalls_10: 240447355
-      ThalgrimmCrystalls_11: 854172442
-      ThalgrimmCrystalls_12: 1954060701
-      ThalgrimmCrystalls_13: -1022548075
-      ThalgrimmCrystalls_14: 285773792
-      ThalgrimmCrystalls_15: 2028744214
-      ThalgrimmCrystalls_16: 2078092725
-      ThalgrimmCrystalls_17: -1116026320
-      ThalgrimmCrystalls_18: 1117858663
-      ThalgrimmCrystalls_19: 1412394584
-      ThalgrimmCrystalls_2: 1096583262
-      ThalgrimmCrystalls_3: -195082956
-      ThalgrimmCrystalls_4: -2016193078
-      ThalgrimmCrystalls_5: -1591536214
-      ThalgrimmCrystalls_6: 1825475098
-      ThalgrimmCrystalls_7: -743500954
-      ThalgrimmCrystalls_8: -1111801285
-      ThalgrimmCrystalls_9: -431191410
+      Aethnubia_0: -257374630
+      Aethnubia_1: -1040863644
+      Aethnubia_10: -1221291704
+      Aethnubia_11: 1960387366
+      Aethnubia_12: 1876794417
+      Aethnubia_13: -1353868406
+      Aethnubia_14: -1506005440
+      Aethnubia_15: -630073447
+      Aethnubia_16: 669703256
+      Aethnubia_17: 51094048
+      Aethnubia_18: -720139134
+      Aethnubia_19: 753326501
+      Aethnubia_2: -309042633
+      Aethnubia_3: -1860207927
+      Aethnubia_4: 221912134
+      Aethnubia_5: 308055325
+      Aethnubia_6: 2001948880
+      Aethnubia_7: -1904520428
+      Aethnubia_8: 1843551821
+      Aethnubia_9: -1243643790
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
