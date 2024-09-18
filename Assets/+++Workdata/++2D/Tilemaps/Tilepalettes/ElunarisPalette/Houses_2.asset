@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 13312, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: ThalgrimmCrystalls_1
+  m_Name: Houses_2
   m_EditorClassIdentifier: 
-  m_Sprite: {fileID: -143376556, guid: 8922259393d9ef64ebbf8054f3889ff5, type: 3}
+  m_Sprite: {fileID: 2073096385, guid: 56c0ed2c6f567db44b3cf23ae235a02e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Transform:
     e00: 1

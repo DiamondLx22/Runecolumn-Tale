@@ -48,7 +48,6 @@ public class Endboss : MonoBehaviour
     
 
     private BossForm currentBossForm = BossForm.Hugin;
-
     public AttackState currentAttackState;
 
     private BossHealth bossHealth;
@@ -71,8 +70,6 @@ public class Endboss : MonoBehaviour
 
     private void HandleTargetEnterAttackRange(Collider2D target)
     {
-        
-       
         HandleAttack(target);
     }
 
@@ -80,20 +77,31 @@ public class Endboss : MonoBehaviour
     {
         if (target)
         {
-            
             EndAttack();
         }
     }
 
     private void HandleAttack(Collider2D target)
     {
-        bool meleeRange = Vector2.Distance(transform.position, target.transform.position) < 1.2f;
-        
-       
-        
-            ColliderHit(target);
-            
+        bool meleeRange = Vector2.Distance(transform.position, target.transform.position) < 3f;
+
+        if (meleeRange)
+        {
+            StartMeleeAttack();
+        }
+        else
+        {
+            animator.SetTrigger("PrepareRangeAttack");
+        }
+    }
+
+    public void FireBossProjectile()
+    {
+        Collider2D target = bossDetect.detectObjects.FirstOrDefault();
+        if (target != null)
+        {
             FireProjectile(target);
+        }
     }
 
     private void FireProjectile(Collider2D target)
@@ -117,7 +125,8 @@ public class Endboss : MonoBehaviour
         {
             case AttackState.attack1:
                 meleeDamage = 10f; 
-                animator.SetTrigger("HuginMeleeAttack");
+                animator.SetTrigger("HuginsStorm");
+                ActivateHitbox();
                 break;
 
             case AttackState.attack2:
@@ -129,6 +138,24 @@ public class Endboss : MonoBehaviour
                 meleeDamage = 30f;
                 animator.SetTrigger("Attack3");
                 break;
+        }
+    }
+
+    private void ActivateHitbox()
+    {
+        float dirX = animator.GetFloat("dirX");
+        float dirY = animator.GetFloat("dirY");
+
+        hitboxColliderTopDown.enabled = false;
+        hitboxColliderRightLeft.enabled = false;
+
+        if (Mathf.Abs(dirX) > Mathf.Abs(dirY))
+        {
+            hitboxColliderRightLeft.enabled = true;
+        }
+        else
+        {
+            hitboxColliderTopDown.enabled = true;
         }
     }
 
@@ -237,7 +264,15 @@ public class Endboss : MonoBehaviour
     {
         rb.velocity = Vector2.zero;
     }
-    
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (hitboxColliderTopDown.enabled || hitboxColliderRightLeft.enabled)
+        {
+            ColliderHit(collider);
+        }
+    }
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
         EnemyHealth enemyHealth = collision.gameObject.GetComponent<EnemyHealth>();
