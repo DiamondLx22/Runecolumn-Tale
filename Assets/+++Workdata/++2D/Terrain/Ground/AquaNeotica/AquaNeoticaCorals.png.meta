@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -43,12 +43,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -72,7 +72,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -108,7 +108,429 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: AquaNeoticaCorals_4
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 6, y: -3}
+        - {x: -1, y: -3}
+        - {x: -2, y: -5}
+        - {x: -3, y: -6}
+        - {x: -4, y: -6}
+        - {x: -6, y: -4}
+        - {x: -6, y: -3}
+        - {x: -4, y: -1}
+        - {x: -4, y: 5}
+        - {x: -2, y: 5}
+        - {x: -2, y: 6}
+        - {x: 0, y: 6}
+        - {x: 0, y: 5}
+        - {x: 1, y: 5}
+        - {x: 1, y: 6}
+        - {x: 3, y: 6}
+        - {x: 3, y: 5}
+        - {x: 5, y: 5}
+        - {x: 5, y: 1}
+        - {x: 6, y: 1}
+        - {x: 7, y: 0}
+        - {x: 7, y: -2}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71b7701852d623b41962effcbf3427f2
+      internalID: 8692736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AquaNeoticaCorals_6
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 127
+        width: 25
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -1.5, y: -9.5}
+        - {x: -1.5, y: -8.5}
+        - {x: -8.5, y: -8.5}
+        - {x: -8.5, y: -5.5}
+        - {x: -9.5, y: -5.5}
+        - {x: -11.5, y: -3.5}
+        - {x: -11.5, y: -0.5}
+        - {x: -7.5, y: -0.5}
+        - {x: -7.5, y: 0.5}
+        - {x: -9.5, y: 0.5}
+        - {x: -12.5, y: 3.5}
+        - {x: -12.5, y: 8.5}
+        - {x: -8.5, y: 8.5}
+        - {x: -7.5, y: 7.5}
+        - {x: -5.5, y: 8.5}
+        - {x: -3.5, y: 9.5}
+        - {x: 4.5, y: 9.5}
+        - {x: 4.5, y: 8.5}
+        - {x: 7.5, y: 8.5}
+        - {x: 8.5, y: 7.5}
+        - {x: 11.5, y: 7.5}
+        - {x: 12.5, y: 5.5}
+        - {x: 12.5, y: 3.5}
+        - {x: 9.5, y: 0.5}
+        - {x: 8.5, y: 0.5}
+        - {x: 8.5, y: -3.5}
+        - {x: 7.5, y: -4.5}
+        - {x: 6.5, y: -6.5}
+        - {x: 5.5, y: -6.5}
+        - {x: 5.5, y: -8.5}
+        - {x: 3.5, y: -9.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: afbdcb15beb8951469000ee82be47c5f
+      internalID: 39467077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AquaNeoticaCorals_7
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 129
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -5.5, y: -9.5}
+        - {x: -6.5, y: -8.5}
+        - {x: -7.5, y: -6.5}
+        - {x: -7.5, y: 1.5}
+        - {x: -6.5, y: 3.5}
+        - {x: -5.5, y: 4.5}
+        - {x: -4.5, y: 4.5}
+        - {x: -4.5, y: 7.5}
+        - {x: -2.5, y: 7.5}
+        - {x: -2.5, y: 9.5}
+        - {x: -0.5, y: 9.5}
+        - {x: -0.5, y: 8.5}
+        - {x: 2.5, y: 8.5}
+        - {x: 2.5, y: 9.5}
+        - {x: 4.5, y: 9.5}
+        - {x: 4.5, y: 7.5}
+        - {x: 7.5, y: 7.5}
+        - {x: 7.5, y: 6.5}
+        - {x: 5.5, y: 6.5}
+        - {x: 5.5, y: 3.5}
+        - {x: 6.5, y: 3.5}
+        - {x: 6.5, y: 2.5}
+        - {x: 5.5, y: 2.5}
+        - {x: 5.5, y: 1.5}
+        - {x: 7.5, y: -0.5}
+        - {x: 7.5, y: -5.5}
+        - {x: 6.5, y: -5.5}
+        - {x: 6.5, y: -8.5}
+        - {x: 5.5, y: -9.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 284b6b036a0d13148a86aa4df65e94aa
+      internalID: -290987717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AquaNeoticaCorals_9
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -3, y: -5}
+        - {x: -3, y: -4}
+        - {x: -5, y: -4}
+        - {x: -6, y: -1}
+        - {x: -6, y: 1}
+        - {x: -7, y: 2}
+        - {x: -7, y: 4}
+        - {x: -6, y: 4}
+        - {x: -6, y: 7}
+        - {x: -5, y: 7}
+        - {x: -3, y: 5}
+        - {x: -1, y: 5}
+        - {x: -1, y: 8}
+        - {x: 4, y: 8}
+        - {x: 4, y: 6}
+        - {x: 5, y: 6}
+        - {x: 5, y: 4}
+        - {x: 6, y: 3}
+        - {x: 6, y: -1}
+        - {x: 5, y: -2}
+        - {x: 4, y: -3}
+        - {x: 3, y: -5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0652c2a1cf345784f847a226a37234cd
+      internalID: 2011004477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AquaNeoticaCorals_10
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -3, y: -4}
+        - {x: -5, y: -3}
+        - {x: -6, y: -1}
+        - {x: -6, y: 2}
+        - {x: -5, y: 4}
+        - {x: -5, y: 6}
+        - {x: -3, y: 6}
+        - {x: -3, y: 7}
+        - {x: -1, y: 7}
+        - {x: -1, y: 6}
+        - {x: 0, y: 6}
+        - {x: 0, y: 7}
+        - {x: 2, y: 7}
+        - {x: 4, y: 6}
+        - {x: 5, y: 3}
+        - {x: 6, y: 1}
+        - {x: 6, y: -2}
+        - {x: 5, y: -3}
+        - {x: 1, y: -4}
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4652f823d4484f41ae3fb1cad072214
+      internalID: -537788249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AquaNeoticaCorals_12
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 110
+        width: 21
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -4.5, y: -7}
+        - {x: -6.5, y: -6}
+        - {x: -8.5, y: -5}
+        - {x: -9.5, y: -4}
+        - {x: -10.5, y: -2}
+        - {x: -10.5, y: 2}
+        - {x: -9.5, y: 4}
+        - {x: -8.5, y: 4}
+        - {x: -8.5, y: 5}
+        - {x: -6.5, y: 5}
+        - {x: -6.5, y: 6}
+        - {x: -2.5, y: 6}
+        - {x: -2.5, y: 5}
+        - {x: 0.5, y: 5}
+        - {x: 0.5, y: 6}
+        - {x: 1.5, y: 7}
+        - {x: 6.5, y: 7}
+        - {x: 9.5, y: 4}
+        - {x: 10.5, y: 2}
+        - {x: 10.5, y: 1}
+        - {x: 10.5, y: -3}
+        - {x: 9.5, y: -3}
+        - {x: 9.5, y: -5}
+        - {x: 8.5, y: -6}
+        - {x: 6.5, y: -7}
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef8178270de330a4d986788efce589c9
+      internalID: 1624265352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AquaNeoticaCorals_13
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -3, y: -5}
+        - {x: -5, y: -4}
+        - {x: -6, y: -1}
+        - {x: -7, y: 2}
+        - {x: -7, y: 4}
+        - {x: -6, y: 5}
+        - {x: -6, y: 7}
+        - {x: -5, y: 7}
+        - {x: -4, y: 6}
+        - {x: -4, y: 5}
+        - {x: -1, y: 5}
+        - {x: -1, y: 8}
+        - {x: 4, y: 8}
+        - {x: 5, y: 6}
+        - {x: 6, y: 3}
+        - {x: 6, y: -1}
+        - {x: 5, y: -2}
+        - {x: 4, y: -3}
+        - {x: 3, y: -5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97e01ef0f8909be40b9119144275a2b0
+      internalID: 676820302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AquaNeoticaCorals_14
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 0, y: -7}
+        - {x: -4, y: -6}
+        - {x: -5, y: -5}
+        - {x: -5, y: -2}
+        - {x: -6, y: -2}
+        - {x: -6, y: 2}
+        - {x: -4, y: 4}
+        - {x: -1, y: 7}
+        - {x: 4, y: 7}
+        - {x: 5, y: 5}
+        - {x: 5, y: -2}
+        - {x: 4, y: -5}
+        - {x: 2, y: -7}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a8d9c68784d33f448490168e0807168
+      internalID: 625547005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AquaNeoticaCorals_17
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -3, y: -5}
+        - {x: -5, y: -4}
+        - {x: -5, y: -1}
+        - {x: -6, y: -1}
+        - {x: -6, y: 1}
+        - {x: -7, y: 2}
+        - {x: -7, y: 4.112007}
+        - {x: -6, y: 7}
+        - {x: -5, y: 7}
+        - {x: -3, y: 5}
+        - {x: -1, y: 5}
+        - {x: -1, y: 8}
+        - {x: 4, y: 8}
+        - {x: 4, y: 6}
+        - {x: 5, y: 6}
+        - {x: 5, y: 4}
+        - {x: 6, y: 3}
+        - {x: 6, y: 2}
+        - {x: 6, y: -1}
+        - {x: 5, y: -2}
+        - {x: 3, y: -3}
+        - {x: 3, y: -5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7585d4b24d9567742a8c0942d9001069
+      internalID: -1990549824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AquaNeoticaCorals_18
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -7, y: -6}
+        - {x: -7, y: 8}
+        - {x: -2, y: 8}
+        - {x: -2, y: 7}
+        - {x: -1, y: 7}
+        - {x: 0, y: 5}
+        - {x: 5, y: 5}
+        - {x: 5, y: 3}
+        - {x: 7, y: 3}
+        - {x: 7, y: -6}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5503b8475dd56724d84becd639ba6c8f
+      internalID: 1737411958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -119,7 +541,26 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      AquaNeoticaCorals_0: -1066679548
+      AquaNeoticaCorals_1: 284069476
+      AquaNeoticaCorals_10: -537788249
+      AquaNeoticaCorals_11: 1876060096
+      AquaNeoticaCorals_12: 1624265352
+      AquaNeoticaCorals_13: 676820302
+      AquaNeoticaCorals_14: 625547005
+      AquaNeoticaCorals_15: 319146141
+      AquaNeoticaCorals_16: -446154085
+      AquaNeoticaCorals_17: -1990549824
+      AquaNeoticaCorals_18: 1737411958
+      AquaNeoticaCorals_2: 1224252522
+      AquaNeoticaCorals_3: 1338430981
+      AquaNeoticaCorals_4: 8692736
+      AquaNeoticaCorals_5: 1656515815
+      AquaNeoticaCorals_6: 39467077
+      AquaNeoticaCorals_7: -290987717
+      AquaNeoticaCorals_8: -1534716696
+      AquaNeoticaCorals_9: 2011004477
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
